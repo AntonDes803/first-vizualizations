@@ -5,7 +5,7 @@ const BurgerBtn = () => {
   return (
     <button className={styles.burgerBtn}>
       <svg>
-        <use href="/sprite.svg#icon-MenuBtn"></use>
+        <use href="/sprite.svg#icon-menu"></use>
       </svg>
     </button>
   );
