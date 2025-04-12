@@ -2,4 +2,69 @@
 
 .header {
   @include variables.sectionSidePadding;
+  width: 100%;
+  max-width: 100%;
+
+  position: fixed;
+  background-color: variables.$secondary-600;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    gap: 56px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 40px;
+  }
+}
+
+.phone {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  & span {
+    display: none;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    gap: 16px;
+
+    & span {
+      display: inline-block;
+      color: variables.$secondaryTextColor;
+
+      @include variables.bodyText-Regular;
+    }
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+
+    & svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    & span {
+      display: inline-block;
+      color: variables.$secondaryTextColor;
+    }
+  }
 }

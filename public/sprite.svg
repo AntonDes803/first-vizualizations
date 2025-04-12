@@ -1,0 +1,16 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-MenuBtn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.75" d="M5 7h21.333"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.75" d="M5 13h21.333"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M24.299 24.713c-0.44 0-0.829-0.091-1.168-0.272-0.336-0.181-0.6-0.437-0.792-0.768s-0.288-0.717-0.288-1.16v-3.676l0.592-0.004v3.604c0 0.299 0.051 0.557 0.152 0.776 0.101 0.216 0.233 0.395 0.396 0.536 0.165 0.139 0.345 0.241 0.54 0.308s0.384 0.1 0.568 0.1c0.187 0 0.377-0.033 0.572-0.1s0.373-0.169 0.536-0.308c0.163-0.141 0.295-0.32 0.396-0.536 0.101-0.219 0.152-0.477 0.152-0.776v-3.604h0.592v3.68c0 0.443-0.096 0.829-0.288 1.16-0.192 0.328-0.457 0.584-0.796 0.768-0.336 0.181-0.724 0.272-1.164 0.272z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M16.574 24.593v-5.76h0.592l3.172 4.72v-4.72h0.592v5.76h-0.592l-3.172-4.724v4.724h-0.592z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M12.012 24.593v-5.76h3.6v0.564h-3.012v1.992h2.532v0.564h-2.532v2.076h3.012v0.564h-3.6z"></path>
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M5.285 24.593v-5.76h0.54l2.264 4.844 2.252-4.844h0.548v5.756h-0.56v-4.444l-2.052 4.448h-0.38l-2.048-4.448v4.448h-0.564z"></path>
+</symbol>
+
+<symbol id="icon-phone" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.5" d="M24.158 19.603l-5.491 1.064c-3.709-1.862-6-4-7.333-7.333l1.027-5.507-1.941-5.16h-5.001c-1.503 0-2.687 1.242-2.463 2.729 0.561 3.711 2.213 10.44 7.045 15.271 5.074 5.074 12.381 7.275 16.403 8.15 1.553 0.338 2.931-0.874 2.931-2.463v-4.779l-5.176-1.972z"></path>
+</symbol>
+</defs>
+</svg>
