@@ -1,5 +1,9 @@
 const ServiceIdSection = ({ lang, dictionary }) => {
-  return <section className="section">ServiceIdSection</section>;
+  return (
+    <section className="section">
+      <div className="container">ServiceIdSection</div>
+    </section>
+  );
 };
 
 export default ServiceIdSection;

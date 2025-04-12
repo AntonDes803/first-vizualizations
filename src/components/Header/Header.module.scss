@@ -1,0 +1,5 @@
+@use "../../app/variables";
+
+.header {
+  @include variables.sectionSidePadding;
+}

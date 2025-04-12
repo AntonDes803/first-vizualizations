@@ -1,0 +1,17 @@
+@use "../../app/variables";
+
+.section {
+  padding-top: 112px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 148px;
+    //если будет стрелка вниз
+    padding-bottom: 80px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: 132px;
+    //если будет стрелка вниз
+    padding-bottom: 48px;
+  }
+}
