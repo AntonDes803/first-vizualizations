@@ -28,5 +28,35 @@ export const navLinksData = [
     titleUk: "Усі послуги",
     titleEn: "All services",
     href: "/services",
+    serviceId: [
+      {
+        titleUk: "Комерційний дизайн",
+        titleEn: "Commercial design",
+        href: "/commercial-design",
+      },
+      {
+        titleUk: "Дизайн будинків",
+        titleEn: "House design",
+        href: "/house-design",
+      },
+      {
+        titleUk: "Дизайн квартир",
+        titleEn: "Apartments design",
+        href: "/apartments-design",
+      },
+      {
+        titleUk: "Архітектурне проектування",
+        titleEn: "Architectural design",
+        href: "/architectural-design",
+      },
+    ],
   },
 ];
+
+export const headerNavigation = navLinksData.filter((el) => {
+  return el.href !== "/services";
+});
+
+export const headerServices = navLinksData.find(
+  (el) => el.href === "/services"
+);

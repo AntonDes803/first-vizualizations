@@ -1,5 +1,6 @@
 import BurgerBtn from "../buttons/BurgerBtn/BurgerBtn";
 import Logo from "../Logo/Logo";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import styles from "./Header.module.scss";
 import PhoneLink from "./PhoneLink/PhoneLink";
 
@@ -15,6 +16,8 @@ const Header = ({ lang, dictionary }) => {
           <BurgerBtn />
         </div>
       </div>
+
+      <BurgerMenu />
     </header>
   );
 };
