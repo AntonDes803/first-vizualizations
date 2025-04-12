@@ -1,3 +1,5 @@
+// использование переменных в своих стилях - variables.$laptop
+
 $mobile: "360px";
 $tablet: "768px";
 $laptop: "1024px";
@@ -28,6 +30,7 @@ $alertWarning: #ffce2b;
 $alertSuccess: #006934;
 $alertSystem: #02007f;
 
+// использование миксинов в своих стилях - @include variables.sectionSidePadding
 @mixin sectionSidePadding {
   & {
     padding-left: 20px;
@@ -91,60 +94,175 @@ $alertSystem: #02007f;
   }
 }
 
-// @mixin pageTitle {
-//   & {
-//     font-family: ukraineHeadRegular;
-//     font-size: 24px;
-//     font-weight: 400;
-//     line-height: 1.4;
-//     text-align: center;
-//   }
+// стили текста. использование, например, - @include variables.title-h1
 
-//   @media screen and (min-width: $tablet) {
-//     font-size: 32px;
-//     line-height: 1.3;
-//   }
+// H/H1
+@mixin title-h1 {
+  & {
+    font-family: PTSerif-Regular;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.25;
+  }
 
-//   @media screen and (min-width: $laptop) {
-//     font-size: 36px;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    font-size: 58px;
+  }
 
-// @mixin sectionTitle {
-//   & {
-//     font-family: ukraineHeadRegular;
-//     font-weight: 400;
-//     font-size: 22px;
-//     line-height: 1.4;
-//     text-align: center;
-//   }
+  @media screen and (min-width: $desktop) {
+    font-size: 88px;
+  }
+}
 
-//   @media screen and (min-width: $tablet) {
-//     font-size: 28px;
-//     line-height: 1.3;
-//   }
+// H/H2
+@mixin title-h2 {
+  & {
+    font-family: PTSerif-Regular;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
 
-//   @media screen and (min-width: $laptop) {
-//     font-size: 32px;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    font-size: 44px;
+  }
 
-// @mixin sectionSubTitle {
-//   & {
-//     font-weight: 400;
-//     font-size: 20px;
-//     line-height: 1.4;
-//     text-align: center;
-//   }
+  @media screen and (min-width: $desktop) {
+    font-size: 52px;
+  }
+}
 
-//   @media screen and (min-width: $tablet) {
-//     font-size: 22px;
-//   }
+// H/H3
+@mixin title-h3 {
+  & {
+    font-family: PTSerif-Regular;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 1.3;
+  }
 
-//   @media screen and (min-width: $laptop) {
-//     font-size: 28px;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 38px;
+  }
+}
+
+// Subtitle/Subtitle1/Regular/
+@mixin subtitle1-Regular {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 28px;
+  }
+}
+
+// Subtitle/Subtitle1/Bold/
+@mixin subtitle1-Bold {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 28px;
+  }
+}
+
+// Subtitle/Subtitle2/Regular/
+@mixin subtitle2-Regular {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+  }
+}
+
+// Subtitle/Subtitle2/Bold/
+@mixin subtitle2-Bold {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 22px;
+  }
+}
+
+// Body/Regular
+@mixin bodyText-Regular {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+
+// Body/Bold/
+@mixin bodyText-Bold {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.7;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
+}
+
+// Notification
+@mixin notification {
+  & {
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
+}
 
 // @mixin imgWrapper {
 //   & {
