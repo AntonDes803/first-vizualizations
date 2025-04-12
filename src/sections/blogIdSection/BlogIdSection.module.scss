@@ -1,0 +1,13 @@
+@use "../../app/variables";
+
+.section {
+  padding-top: 96px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 116px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: 124px;
+  }
+}

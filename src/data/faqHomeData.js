@@ -1,5 +1,7 @@
 export const faqHomeData = [
-  { question: "", answer: "" },
-  { question: "", answer: "" },
-  { question: "", answer: "" },
+  { questionUk: "", answerUk: "", questionEn: "", answerEn: "" },
+  { questionUk: "", answerUk: "", questionEn: "", answerEn: "" },
+  { questionUk: "", answerUk: "", questionEn: "", answerEn: "" },
+  { questionUk: "", answerUk: "", questionEn: "", answerEn: "" },
+  { questionUk: "", answerUk: "", questionEn: "", answerEn: "" },
 ];

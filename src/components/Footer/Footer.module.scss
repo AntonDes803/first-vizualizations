@@ -1,0 +1,17 @@
+@use "../../app/variables";
+
+.footer {
+  @include variables.sectionSidePadding;
+
+  & {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: variables.$secondaryTextColor;
+    background-color: variables.$secondaryBgColor;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

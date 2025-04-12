@@ -1,32 +1,32 @@
 export const navLinksData = [
   {
     titleUk: "Головна",
-    titleRu: "Главная",
+    titleEn: "Main",
     href: "/",
   },
   {
     titleUk: "Про нас",
-    titleRu: "О нас",
+    titleEn: "About us",
     href: "/about-us",
   },
   {
     titleUk: "Портфоліо",
-    titleRu: "Портфолио",
+    titleEn: "Portfolio",
     href: "/portfolio",
   },
   {
     titleUk: "Контакти",
-    titleRu: "Контакты",
+    titleEn: "Contacts",
     href: "/contacts",
   },
   {
     titleUk: "Блог",
-    titleRu: "Блог",
+    titleEn: "Blog",
     href: "/blog",
   },
   {
     titleUk: "Усі послуги",
-    titleRu: "Все услуги",
+    titleEn: "All services",
     href: "/services",
   },
 ];

@@ -76,6 +76,21 @@ $alertSystem: #02007f;
   }
 }
 
+@mixin heroSectionsPadding {
+  & {
+    width: 100%;
+    padding: 128px 20px 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 240px 32px 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 220px 120px 48px;
+  }
+}
+
 // @mixin pageTitle {
 //   & {
 //     font-family: ukraineHeadRegular;
