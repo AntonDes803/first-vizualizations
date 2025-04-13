@@ -89,7 +89,18 @@ export default async function Home({ params }) {
   //   },
   // };
 
-  const dictionary = await getDictionary(lang);
+  const {
+    homeHeroSection,
+    homePortfolioSection,
+    homeExperienceSection,
+    homeWhyMeSection,
+    homeTeamSection,
+    homeStatisticsSection,
+    homeAfterWorkSection,
+    homeServicesSection,
+    homeWorkProcessSection,
+    homeFaqSection,
+  } = await getDictionary(lang);
   const faqData = faqHomeData;
 
   return (
@@ -99,16 +110,16 @@ export default async function Home({ params }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       /> */}
 
-      <HomeHeroSection lang={lang} dictionary={dictionary} />
-      <HomePortfolioSection lang={lang} dictionary={dictionary} />
-      <HomeExperienceSection lang={lang} dictionary={dictionary} />
-      <HomeWhyMeSection lang={lang} dictionary={dictionary} />
-      <HomeTeamSection lang={lang} dictionary={dictionary} />
-      <HomeStatisticsSection lang={lang} dictionary={dictionary} />
-      <HomeAfterWorkSection lang={lang} dictionary={dictionary} />
-      <HomeServicesSection lang={lang} dictionary={dictionary} />
-      <HomeWorkProcessSection lang={lang} dictionary={dictionary} />
-      <HomeFaqSection lang={lang} dictionary={dictionary} data={faqData} />
+      <HomeHeroSection lang={lang} dictionary={homeHeroSection} />
+      <HomePortfolioSection lang={lang} dictionary={homePortfolioSection} />
+      <HomeExperienceSection lang={lang} dictionary={homeExperienceSection} />
+      <HomeWhyMeSection lang={lang} dictionary={homeWhyMeSection} />
+      <HomeTeamSection lang={lang} dictionary={homeTeamSection} />
+      <HomeStatisticsSection lang={lang} dictionary={homeStatisticsSection} />
+      <HomeAfterWorkSection lang={lang} dictionary={homeAfterWorkSection} />
+      <HomeServicesSection lang={lang} dictionary={homeServicesSection} />
+      <HomeWorkProcessSection lang={lang} dictionary={homeWorkProcessSection} />
+      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
     </>
   );
 }

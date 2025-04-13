@@ -5,13 +5,13 @@ import { faqHomeData } from "@/data/faqHomeData";
 
 const BlogPage = async ({ params }) => {
   const { lang } = await params;
-  const dictionary = await getDictionary(lang);
+  const { blogSection, homeFaqSection } = await getDictionary(lang);
   const faqData = faqHomeData;
 
   return (
     <>
-      <BlogSection lang={lang} dictionary={dictionary} />
-      <HomeFaqSection lang={lang} dictionary={dictionary} data={faqData} />
+      <BlogSection lang={lang} dictionary={blogSection} />
+      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
     </>
   );
 };

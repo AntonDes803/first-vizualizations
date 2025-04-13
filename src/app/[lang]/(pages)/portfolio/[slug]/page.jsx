@@ -7,15 +7,26 @@ import { faqHomeData } from "@/data/faqHomeData";
 
 const PortfolioIdPage = async ({ params }) => {
   const { lang } = await params;
-  const dictionary = await getDictionary(lang);
+  const {
+    portfolioIdHeroSection,
+    portfolioIdVideoSection,
+    portfolioIdSolutionSection,
+    homeFaqSection,
+  } = await getDictionary(lang);
   const faqData = faqHomeData;
 
   return (
     <>
-      <PortfolioIdHeroSection lang={lang} dictionary={dictionary} />
-      <PortfolioIdVideoSection lang={lang} dictionary={dictionary} />
-      <PortfolioIdSolutionSection lang={lang} dictionary={dictionary} />
-      <HomeFaqSection lang={lang} dictionary={dictionary} data={faqData} />
+      <PortfolioIdHeroSection lang={lang} dictionary={portfolioIdHeroSection} />
+      <PortfolioIdVideoSection
+        lang={lang}
+        dictionary={portfolioIdVideoSection}
+      />
+      <PortfolioIdSolutionSection
+        lang={lang}
+        dictionary={portfolioIdSolutionSection}
+      />
+      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
     </>
   );
 };
