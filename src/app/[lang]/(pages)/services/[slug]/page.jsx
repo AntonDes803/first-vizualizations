@@ -7,15 +7,20 @@ import { faqHomeData } from "@/data/faqHomeData";
 
 const ServicesIdPage = async ({ params }) => {
   const { lang } = params;
-  const dictionary = await getDictionary(lang);
+  const {
+    serviceIdHeroSection,
+    serviceIdSection,
+    homeWorkProcessSection,
+    homeFaqSection,
+  } = await getDictionary(lang);
   const faqData = faqHomeData;
 
   return (
     <>
-      <ServiceIdHeroSection lang={lang} dictionary={dictionary} />
-      <ServiceIdSection lang={lang} dictionary={dictionary} />
-      <HomeWorkProcessSection lang={lang} dictionary={dictionary} />
-      <HomeFaqSection lang={lang} dictionary={dictionary} data={faqData} />
+      <ServiceIdHeroSection lang={lang} dictionary={serviceIdHeroSection} />
+      <ServiceIdSection lang={lang} dictionary={serviceIdSection} />
+      <HomeWorkProcessSection lang={lang} dictionary={homeWorkProcessSection} />
+      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
     </>
   );
 };

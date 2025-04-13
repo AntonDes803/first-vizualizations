@@ -6,14 +6,15 @@ import { faqHomeData } from "@/data/faqHomeData";
 
 const PortfolioPage = async ({ params }) => {
   const { lang } = await params;
-  const dictionary = await getDictionary(lang);
+  const { portfolioHeroSection, portfolioSection, homeFaqSection } =
+    await getDictionary(lang);
   const faqData = faqHomeData;
 
   return (
     <>
-      <PortfolioHeroSection lang={lang} dictionary={dictionary} />
-      <PortfolioSection lang={lang} dictionary={dictionary} />
-      <HomeFaqSection lang={lang} dictionary={dictionary} data={faqData} />
+      <PortfolioHeroSection lang={lang} dictionary={portfolioHeroSection} />
+      <PortfolioSection lang={lang} dictionary={portfolioSection} />
+      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
     </>
   );
 };

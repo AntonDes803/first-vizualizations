@@ -3,7 +3,48 @@
   "header": {
     "topTitle": "Покрівля"
   },
+  "aboutUsHeroSection": {},
+  "aboutUsSection": {},
+  "aboutUsValuesSection": {},
+  "blogIdSection": {},
+  "blogSection": {},
+  "contactsSection": {},
+  "homeAfterWorkSection": {
+    "title": "З MALOV&PARTNERS ВИ ОТРИМАЄТЕ"
+  },
+  "homeExperienceSection": {
+    "title": "12+ років досвіду роботи"
+  },
+  "homeFaqSection": {
+    "title": "FAQ"
+  },
+  "homeHeroSection": {},
+  "homePortfolioSection": {
+    "title": "ГОТОВІ ПРОЄКТИ"
+  },
+  "homeServicesSection": {
+    "title": "ПОСЛУГИ MALOV&PARTNERS"
+  },
+  "homeStatisticsSection": {},
+  "homeTeamSection": {
+    "title": "ПРО НАС MALOV&PARTNERS"
+  },
+  "homeWhyMeSection": {
+    "title": "ЧОМУ ОБИРАЮТЬ MALOV&PARTNERS"
+  },
+  "homeWorkProcessSection": {
+    "title": "ЕТАПИ СПІВПРАЦІ З НАМИ"
+  },
+  "portfolioHeroSection": {},
+  "portfolioIdHeroSection": {},
+  "portfolioIdSolutionSection": {},
+  "portfolioIdVideoSection": {},
+  "portfolioSection": {},
+  "serviceIdHeroSection": {},
+  "serviceIdSection": {},
+  "servicesHeroSection": {},
+  "servicesSection": {},
   "footer": {
-    "policy": "Підвал"
+    "policy": "Політика конфіденційності"
   }
 }

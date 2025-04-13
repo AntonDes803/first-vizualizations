@@ -16,15 +16,15 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ children, params }) {
   const { lang } = await params;
-  const dictionary = await getDictionary(lang);
+  const { header, footer } = await getDictionary(lang);
 
   return (
     <html lang={lang}>
       <body>
         <SiteProvider>
-          <Header lang={lang} dictionary={dictionary} />
+          <Header lang={lang} dictionary={header} />
           <main>{children}</main>
-          <Footer lang={lang} dictionary={dictionary} />
+          <Footer lang={lang} dictionary={footer} />
         </SiteProvider>
       </body>
     </html>

@@ -3,7 +3,48 @@
   "header": {
     "topTitle": "Roof"
   },
+  "aboutUsHeroSection": {},
+  "aboutUsSection": {},
+  "aboutUsValuesSection": {},
+  "blogIdSection": {},
+  "blogSection": {},
+  "contactsSection": {},
+  "homeAfterWorkSection": {
+    "title": "WITH MALOV&PARTNERS YOU GET"
+  },
+  "homeExperienceSection": {
+    "title": "12+ years of work experience"
+  },
+  "homeFaqSection": {
+    "title": "FAQ"
+  },
+  "homeHeroSection": {},
+  "homePortfolioSection": {
+    "title": "COMPLETED PROJECTS"
+  },
+  "homeServicesSection": {
+    "title": "MALOV&PARTNERS SERVICES"
+  },
+  "homeStatisticsSection": {},
+  "homeTeamSection": {
+    "title": "ABOUT US MALOV&PARTNERS"
+  },
+  "homeWhyMeSection": {
+    "title": "WHY CHOOSE MALOV&PARTNERS"
+  },
+  "homeWorkProcessSection": {
+    "title": "STAGES OF COOPERATION WITH US"
+  },
+  "portfolioHeroSection": {},
+  "portfolioIdHeroSection": {},
+  "portfolioIdSolutionSection": {},
+  "portfolioIdVideoSection": {},
+  "portfolioSection": {},
+  "serviceIdHeroSection": {},
+  "serviceIdSection": {},
+  "servicesHeroSection": {},
+  "servicesSection": {},
   "footer": {
-    "policy": "Basement"
+    "policy": "Privacy policy"
   }
 }
