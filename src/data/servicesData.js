@@ -1,6 +1,24 @@
+import { navLinksData } from "./navLinksData";
+
+const commercialDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Commercial design").href;
+
+const houseDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "House design").href;
+
+const apartmentDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Apartment design").href;
+
+const architecturalDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Architectural design").href;
+
 export const servicesData = [
   {
-    slug: "",
+    slug: apartmentDesignHref,
     categoryUk: "Дизайн інтер’єру квартир",
     categoryEn: "",
     cardTextUk:
@@ -18,7 +36,7 @@ export const servicesData = [
     images: ["", "", ""],
   },
   {
-    slug: "",
+    slug: houseDesignHref,
     categoryUk: "Дизайн інтер’єру будинків",
     categoryEn: "",
     cardTextUk:
@@ -34,7 +52,7 @@ export const servicesData = [
     images: ["", "", ""],
   },
   {
-    slug: "",
+    slug: commercialDesignHref,
     categoryUk: "Дизайн інтер’єру комерційних приміщень",
     categoryEn: "",
     cardTextUk:
@@ -50,7 +68,7 @@ export const servicesData = [
     images: ["", "", ""],
   },
   {
-    slug: "",
+    slug: architecturalDesignHref,
     categoryUk: "Архітектурне проєктування",
     categoryEn: "",
     cardTextUk:

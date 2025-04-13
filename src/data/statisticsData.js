@@ -1,22 +1,22 @@
 export const statisticsData = [
   {
     number: "12",
-    textUk: "РОКІВ ДОСВІДУ РОБОТИ",
+    textUk: "років досвіду роботи",
     textEn: "",
   },
   {
     number: "38",
-    textUk: "ПРОЄКТІВ НА РІК",
+    textUk: "проєктів на рік",
     textEn: "",
   },
   {
     number: "1500",
-    textUk: "М² РЕМОНТУ З НАМИ",
+    textUk: "м² ремонту з нами",
     textEn: "",
   },
   {
     number: "20",
-    textUk: "ДОСВІДЧЕНИХ ФАХІВЦІВ",
+    textUk: "досвідчених фахівців",
     textEn: "",
   },
 ];

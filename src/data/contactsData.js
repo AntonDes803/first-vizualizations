@@ -2,9 +2,10 @@ export const contactsData = [
   {
     name: "phone",
     type: "phone",
-    href: "tel:+380981085033",
+    // href: "tel:+380981085033",
+    href: "tel:+380636876176",
     icon: "/sprite.svg#icon-phone",
-    contact: "+38 (098) 108-50-33",
+    contact: "+38 (063) 687-61-76",
   },
 
   {
