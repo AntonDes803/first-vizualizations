@@ -3,6 +3,7 @@ import styles from "./HomePortfolioSection.module.scss";
 
 const HomePortfolioSection = ({ lang, dictionary }) => {
   // console.log("projectsData", projectsData);
+
   return (
     <section className="section">
       <div className="container">

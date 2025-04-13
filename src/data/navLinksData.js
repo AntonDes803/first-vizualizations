@@ -41,11 +41,11 @@ export const navLinksData = [
       },
       {
         titleUk: "Дизайн квартир",
-        titleEn: "Apartments design",
-        href: "/apartments-design",
+        titleEn: "Apartment design",
+        href: "/apartment-design",
       },
       {
-        titleUk: "Архітектурне проектування",
+        titleUk: "Архітектурне проєктування",
         titleEn: "Architectural design",
         href: "/architectural-design",
       },

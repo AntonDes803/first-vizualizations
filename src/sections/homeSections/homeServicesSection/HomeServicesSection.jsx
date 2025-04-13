@@ -2,7 +2,7 @@ import { servicesData } from "@/data/servicesData";
 import styles from "./HomeServicesSection.module.scss";
 
 const HomeServicesSection = ({ lang, dictionary }) => {
-  // console.log('servicesData', servicesData);
+  // console.log("servicesData", servicesData);
 
   return (
     <section className="section">
