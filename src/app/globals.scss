@@ -66,6 +66,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.stopBodyScroll {
+  overflow-y: hidden;
+}
+
 main {
   flex: 1;
   display: flex;

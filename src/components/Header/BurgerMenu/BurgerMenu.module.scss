@@ -1,0 +1,36 @@
+@use "../../../app/variables";
+
+.burgerMenuFrame {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+}
+
+.burgerMenuSection {
+  width: 100%;
+  height: fit-content;
+  background-color: variables.$mainBgColor;
+}
+
+.burgerMenuSectionVisible {
+  transform: translateY(0);
+}
+
+.burgerMenuSectionHidden {
+  transform: translateY(-100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -2,11 +2,15 @@
 
 .header {
   @include variables.sectionSidePadding;
-  width: 100%;
-  max-width: 100%;
 
-  position: fixed;
-  background-color: variables.$secondary-600;
+  & {
+    width: 100%;
+    max-width: 100%;
+
+    position: fixed;
+    background-color: variables.$secondary-600;
+    position: relative;
+  }
 }
 
 .container {

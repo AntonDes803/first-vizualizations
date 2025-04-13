@@ -4,7 +4,8 @@ import { useState, createContext } from "react";
 export const SiteContext = createContext();
 
 export const SiteProvider = ({ children }) => {
-  const [isMobileMenu, setIsMobileMenu] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileMenuContent, setmobileMenuContent] = useState(false);
 
   //   const [modalFrame, setModalFrame] = useState(false);
   //   const [backDrop, setBackDrop] = useState(false);
@@ -12,8 +13,10 @@ export const SiteProvider = ({ children }) => {
   return (
     <SiteContext.Provider
       value={{
-        isMobileMenu,
-        setIsMobileMenu,
+        mobileMenu,
+        setMobileMenu,
+        mobileMenuContent,
+        setmobileMenuContent,
         // modalFrame,
         // setModalFrame,
         // backDrop,
