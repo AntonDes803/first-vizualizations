@@ -1,0 +1,47 @@
+@use "@/app/variables";
+
+.card {
+  width: 100%;
+  padding: 12px;
+  border: solid 1px variables.$secondaryBgColor;
+
+  @media screen and (min-width: variables.$tablet) {
+    width: calc((100% - 16px) / 2);
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: calc((100% - 48px) / 3);
+    padding: 16px 12px;
+  }
+}
+
+.icon {
+  display: block;
+  margin: 0px auto 8px;
+  width: 56px;
+  height: 56px;
+
+  @media screen and (min-width: variables.$tablet) {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.title {
+  @include variables.bodyText-Bold;
+
+  & {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 12px;
+  }
+}

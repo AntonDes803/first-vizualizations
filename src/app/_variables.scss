@@ -14,7 +14,9 @@ $primary-500: #f64135;
 // $secondary-900: #2d3037;
 $mainTextColor: #2d3037;
 $secondary-800: #40454f;
-$secondary-700: #515764;
+// $secondary-700: #515764;
+$descriptionColor: #515764;
+
 $secondary-600: #626a7b;
 $secondary-200: #b8bcc5;
 // $secondary-0: #ffffff;
@@ -171,9 +173,9 @@ $alertSystem: #02007f;
 // Subtitle/Subtitle1/Bold/
 @mixin subtitle1-Bold {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Bold, sans-serif;
     font-size: 22px;
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 1.4;
   }
 
@@ -207,9 +209,9 @@ $alertSystem: #02007f;
 // Subtitle/Subtitle2/Bold/
 @mixin subtitle2-Bold {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Bold, sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 1.4;
   }
 
@@ -239,9 +241,9 @@ $alertSystem: #02007f;
 // Body/Bold/
 @mixin bodyText-Bold {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Bold, sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 1.7;
   }
 
