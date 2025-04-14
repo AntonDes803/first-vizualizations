@@ -1,1 +1,15 @@
-@use "../../../app/variables";
+@use "@/app/variables";
+
+.title {
+  @include variables.title-h2;
+  // &{
+  //   margin: 0 -12px;
+  // }
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h1;
+    // &{
+    //   margin: 0 ;
+    // }
+  }
+}

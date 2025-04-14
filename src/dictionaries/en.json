@@ -3,11 +3,17 @@
   "header": {
     "topTitle": "Roof"
   },
-  "aboutUsHeroSection": {},
+  "aboutUsHeroSection": {
+    "title": "Malov&Partners – дизайн, що відчувається"
+  },
   "aboutUsSection": {},
-  "aboutUsValuesSection": {},
+  "aboutUsValuesSection": {
+    "title": "Важливі цінності для Malov&Partners"
+  },
   "blogIdSection": {},
-  "blogSection": {},
+  "blogSection": {
+    "title": "Блог Malov&Partners"
+  },
   "contactsSection": {},
   "homeAfterWorkSection": {
     "title": "With Malov&Partners you get"
@@ -30,20 +36,27 @@
     "title": "About us Malov&Partners"
   },
   "homeWhyMeSection": {
-    "title": "Why choose Malov&Partners"
+    "title": "Why choose Malov&Partners",
+    "description": "Ми не просто створюємо інтер’єри – ми створюємо простори, які працюють для вас. Ось шість причин, чому нам довіряють:"
   },
   "homeWorkProcessSection": {
     "title": "Stages of cooperation with us"
   },
-  "portfolioHeroSection": {},
+  "portfolioHeroSection": {
+    "title": "Портфоліо Malov&Partners"
+  },
   "portfolioIdHeroSection": {},
   "portfolioIdSolutionSection": {},
   "portfolioIdVideoSection": {},
   "portfolioSection": {},
   "serviceIdHeroSection": {},
   "serviceIdSection": {},
-  "servicesHeroSection": {},
-  "servicesSection": {},
+  "servicesHeroSection": {
+    "title": "Послуги Malov&Partners"
+  },
+  "servicesSection": {
+    "title": "3d візуалізація кожного дизайну"
+  },
   "footer": {
     "policy": "Privacy policy"
   }

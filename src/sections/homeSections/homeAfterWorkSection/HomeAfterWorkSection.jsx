@@ -1,14 +1,19 @@
+import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
 import { afterWorkData } from "@/data/afterWorkData";
 import styles from "./HomeAfterWorkSection.module.scss";
 
 const HomeAfterWorkSection = ({ lang, dictionary }) => {
-  // console.log("afterWorkData", afterWorkData);
+  const sectionTitle = dictionary.title.toUpperCase();
+  const titleArray = stringSplittingByDelimiter(sectionTitle, "&");
 
   return (
     <section className="section">
       <div className="container">
-        {/* HomeAfterWorkSection */}
-        <h2>{dictionary.title}</h2>
+        <h2 className={styles.title}>
+          {titleArray[0]}
+          <span className="ampersandColor">{titleArray[1]}</span>
+          {titleArray[2]}
+        </h2>
       </div>
     </section>
   );
