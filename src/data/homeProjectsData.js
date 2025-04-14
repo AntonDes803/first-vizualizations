@@ -1,12 +1,10 @@
-// параметр number можна отримувати динамічно - (порядковий номер елементу+1)/array.length
-
 import { navLinksData } from "./navLinksData";
 
 const portfolioHref = navLinksData.find(
   (el) => el.titleEn === "Portfolio"
 ).href;
 
-export const homeHeroSliderData = [
+export const homeProjectsData = [
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру квартир",

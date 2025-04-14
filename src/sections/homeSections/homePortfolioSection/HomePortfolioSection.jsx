@@ -1,8 +1,8 @@
-import { projectsData } from "@/data/projectsData";
+import { homeProjectsData } from "@/data/homeProjectsData";
 import styles from "./HomePortfolioSection.module.scss";
 
 const HomePortfolioSection = ({ lang, dictionary }) => {
-  // console.log("projectsData", projectsData);
+  // console.log("homeProjectsData", homeProjectsData);
 
   return (
     <section className="section">
