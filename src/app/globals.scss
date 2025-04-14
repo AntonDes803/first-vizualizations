@@ -64,6 +64,10 @@ body {
   // сглаживание шрифтов методом антиалиасинга
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (min-width: variables.$desktop) {
+    font-size: 16px;
+  }
 }
 
 .stopBodyScroll {

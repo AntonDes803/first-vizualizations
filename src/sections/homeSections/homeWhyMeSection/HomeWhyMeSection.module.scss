@@ -1,1 +1,53 @@
-@use "../../../app/variables";
+@use "@/app/variables";
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    row-gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0px;
+    column-gap: 65px;
+    margin-bottom: 24px;
+  }
+}
+
+.title {
+  @include variables.title-h2;
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h1;
+  }
+}
+
+.description {
+  @include variables.bodyText-Regular;
+
+  & {
+    color: variables.$descriptionColor;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+  }
+}
