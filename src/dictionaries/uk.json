@@ -3,11 +3,17 @@
   "header": {
     "topTitle": "Покрівля"
   },
-  "aboutUsHeroSection": {},
+  "aboutUsHeroSection": {
+    "title": "Malov&Partners – дизайн, що відчувається"
+  },
   "aboutUsSection": {},
-  "aboutUsValuesSection": {},
+  "aboutUsValuesSection": {
+    "title": "Важливі цінності для Malov&Partners"
+  },
   "blogIdSection": {},
-  "blogSection": {},
+  "blogSection": {
+    "title": "Блог Malov&Partners"
+  },
   "contactsSection": {},
   "homeAfterWorkSection": {
     "title": "З Malov&Partners ви отримаєте"
@@ -36,15 +42,21 @@
   "homeWorkProcessSection": {
     "title": "Етапи співпраці з нами"
   },
-  "portfolioHeroSection": {},
+  "portfolioHeroSection": {
+    "title": "Портфоліо Malov&Partners"
+  },
   "portfolioIdHeroSection": {},
   "portfolioIdSolutionSection": {},
   "portfolioIdVideoSection": {},
   "portfolioSection": {},
   "serviceIdHeroSection": {},
   "serviceIdSection": {},
-  "servicesHeroSection": {},
-  "servicesSection": {},
+  "servicesHeroSection": {
+    "title": "Послуги Malov&Partners"
+  },
+  "servicesSection": {
+    "title": "3d візуалізація кожного дизайну"
+  },
   "footer": {
     "policy": "Політика конфіденційності"
   }

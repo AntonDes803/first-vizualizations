@@ -1,12 +1,20 @@
+import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
 import { aboutValuesData } from "@/data/aboutValuesData";
 import styles from "./AboutUsValuesSection.module.scss";
 
 const AboutUsValuesSection = ({ lang, dictionary }) => {
-  // console.log("aboutValuesData", aboutValuesData);
+  const sectionTitle = dictionary.title.toUpperCase();
+  const titleArray = stringSplittingByDelimiter(sectionTitle, "&");
 
   return (
     <section className="section">
-      <div className="container">AboutUsValuesSection</div>
+      <div className="container">
+        <h2 className={styles.title}>
+          {titleArray[0]}
+          <span className="ampersandColor">{titleArray[1]}</span>
+          {titleArray[2]}
+        </h2>
+      </div>
     </section>
   );
 };

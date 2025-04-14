@@ -5,7 +5,7 @@ import { getDictionary } from "@/helpers/getDictionary";
 import { faqHomeData } from "@/data/faqHomeData";
 
 const ServicesPage = async ({ params }) => {
-  const { lang } = params;
+  const { lang } = await params;
   const { servicesHeroSection, servicesSection, homeFaqSection } =
     await getDictionary(lang);
   const faqData = faqHomeData;

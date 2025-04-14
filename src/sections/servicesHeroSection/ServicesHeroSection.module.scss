@@ -1,5 +1,13 @@
-@use "../../app/variables";
+@use "@/app/variables";
 
 .section {
   @include variables.heroSectionsPadding;
+}
+
+.title {
+  @include variables.title-h3;
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h2;
+  }
 }

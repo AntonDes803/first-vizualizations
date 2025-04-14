@@ -1,1 +1,5 @@
-@use "../../app/variables";
+@use "@/app/variables";
+
+.title {
+  @include variables.title-h2;
+}
