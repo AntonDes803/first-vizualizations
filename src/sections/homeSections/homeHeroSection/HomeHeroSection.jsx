@@ -15,18 +15,26 @@ const HomeHeroSection = ({ lang, dictionary }) => {
     return () => clearInterval(interval);
   }, []);
 
-  const currentSlide = homeHeroSliderData[currentIndex];
-
   return (
     <section
-      key={currentIndex}
-      className={`${styles.section} ${styles.slide} ${
-        currentSlide.index === currentIndex ? styles.active : ''
-      }`}
+      className={`${styles.section}
+       `}
     >
-      <div className={`container ${styles.container}`}>
-        <h1 className={styles.title}>{currentSlide.titleUk}</h1>
-      </div>
+      {homeHeroSliderData.map((data, index) => (
+        <div
+          key={index}
+          className={`${styles.background} ${
+            index === currentIndex ? styles.active : ''
+          }`}
+          style={{
+            backgroundImage: `linear-gradient(rgba(45, 48, 55, 0.45), rgba(45, 48, 55, 0.45)), url(${data.image})`,
+          }}
+        >
+          <div className={`container ${styles.container}`}>
+            <h1 className={styles.title}>{data.titleUk}</h1>
+          </div>
+        </div>
+      ))}
     </section>
   );
 };
