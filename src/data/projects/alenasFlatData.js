@@ -2,7 +2,7 @@ export const alenasFlatData = {
   slug: "alenas-flat",
   categoryUk: "Квартири", // Квартири Будинки Комерція Архітектура
   categoryEn: "Apartments",
-  mainImage: "/public/images/projects/alenas-flat/common/design-alenas-flat-living-room-01.webp", // она же идет на портфолиоАйдиХеро
+  mainImage: "/images/projects/alenas-flat/common/design-alenas-flat-living-room-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири ЖК Парус “Balance”",
   altEn: "Design of the apartment in Parus “Balance”",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
@@ -65,87 +65,87 @@ export const alenasFlatData = {
       ],
       images: [
         { 
-          src: "/public/images/projects/alenas-flat/common/design-alenas-flat-living-room-02.webp",
+          src: "/images/projects/alenas-flat/common/design-alenas-flat-living-room-02.webp",
           altUk: "Вітальня з панорамними вікнами та зелено-світлим мінімалістичним дизайном",
           altEn: "Living room with panoramic windows and green and light minimalist design",
         },
         { 
-          src: "/public/images/projects/alenas-flat/common/design-alenas-flat-living-room-03.webp", 
+          src: "/images/projects/alenas-flat/common/design-alenas-flat-living-room-03.webp", 
           altUk: "Дизайн вітальні в зелених світлих відтінках", 
           altEn: "Living room design in light green shades",
         },
         { 
-          src: "/public/images/projects/alenas-flat/common/design-alenas-flat-living-room-04.webp", 
+          src: "/images/projects/alenas-flat/common/design-alenas-flat-living-room-04.webp", 
           altUk: "Сучасний дизайн вітальні із зеленим диваном та дерев'яною стіною", 
           altEn: "Modern living room design with green sofa and wooden wall", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-01.webp", 
+          src: "/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-01.webp", 
           altUk: "Сучасна спальня з дерев'яним ліжком та стриманим декором", 
           altEn: "Modern bedroom with wooden bed and discreet decor", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-02.webp", 
+          src: "/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-02.webp", 
           altUk: "Сучасна спальня з ліжком та стриманим дерев'яним декором", 
           altEn: "Modern bedroom with a bed and discreet wooden decor", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-03.webp", 
+          src: "/images/projects/alenas-flat/bedroom/design-alenas-flat-bedroom-03.webp", 
           altUk: "Дизайн спальні в сучасному стриманому дерев'яному стилі", 
           altEn: "Bedroom design in a modern restrained wooden style", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/bedroom/design-alenas-flat-office-place-01.webp", 
+          src: "/images/projects/alenas-flat/bedroom/design-alenas-flat-office-place-01.webp", 
           altUk: "Дизайн робочої зони в сучасні спальні з панорамним вікном", 
           altEn: "Workspace design in a modern bedroom with a panoramic window", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/bedroom/design-alenas-flat-small-bedroom-01.webp", 
+          src: "/images/projects/alenas-flat/bedroom/design-alenas-flat-small-bedroom-01.webp", 
           altUk: "Сучасний дизайн дитячої кімнати з панорамним вікном", 
           altEn: "Modern design of a children's room with a panoramic window", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-01.webp", 
+          src: "/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-01.webp", 
           altUk: "Кухня в світло-зелених тонах", 
           altEn: "The kitchen in light green colors", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-02.webp", 
+          src: "/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-02.webp", 
           altUk: "Дизайн кухні в світло-зелених тонах з дерев'яним столом", 
           altEn: "Kitchen design in light green tones with a wooden table", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-03.webp", 
+          src: "/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-03.webp", 
           altUk: "Дизайн кухні в стриманих дерев'яних тонах з великим настінним телевізором", 
           altEn: "Kitchen design in restrained wooden colors with a large wall-mounted TV", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-04.webp", 
+          src: "/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-04.webp", 
           altUk: "Дизайн кухні в стриманих дерев'яних тонах з великим настінним телевізором та LED-підсвіткою", 
           altEn: "Kitchen design in restrained wooden colors with a large wall-mounted TV and LED lighting", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-05.webp", 
+          src: "/images/projects/alenas-flat/kitchen/design-alenas-flat-kitchen-05.webp", 
           altUk: "Сучасна розділена кухня в світло-зелених тонах з дерев'яним столом", 
           altEn: "Modern divided kitchen in light green tones with wooden table", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/hall/design-alenas-flat-hall-01.webp", 
+          src: "/images/projects/alenas-flat/hall/design-alenas-flat-hall-01.webp", 
           altUk: "Сучасний хол в світло-зелених тонах з бордовим стільцем", 
           altEn: "Modern hall in light green tones with a burgundy chair", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/hall/design-alenas-flat-hall-02.webp", 
+          src: "/images/projects/alenas-flat/hall/design-alenas-flat-hall-02.webp", 
           altUk: "Дизайн сучасного холу в світло-зелених тонах з бордовим стільцем та зеленими шафами", 
           altEn: "Design of a modern hall in light green tones with a burgundy chair and green cabinets", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/hall/design-alenas-flat-hall-03.webp", 
+          src: "/images/projects/alenas-flat/hall/design-alenas-flat-hall-03.webp", 
           altUk: "Дизайн сучасного коридору в світло-зелених тонах з бордовим стільцем та зеленими шафами", 
           altEn: "Modern corridor design in light green tones with burgundy chair and green cabinets", 
         },
         { 
-          src: "/public/images/projects/alenas-flat/hall/design-alenas-flat-hall-04.webp", 
+          src: "/images/projects/alenas-flat/hall/design-alenas-flat-hall-04.webp", 
           altUk: "Сучасний коридор в світло-зелених тонах із зеленими шафами", 
           altEn: "Modern corridor in light green tones with green cabinets", 
         },
