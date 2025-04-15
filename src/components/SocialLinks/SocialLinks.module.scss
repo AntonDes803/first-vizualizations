@@ -19,21 +19,39 @@
   height: 32px;
   fill: variables.$secondaryTextColor;
   stroke: none;
+  &:hover,
+  &:focus {
+    fill: variables.$primary-500;
+  }
 }
 
 .instagramIconLight {
   fill: none;
   stroke: variables.$secondaryTextColor;
+  &:hover,
+  &:focus {
+    fill: none;
+    stroke: variables.$primary-500;
+  }
 }
 
 .socialIconDark {
   width: 32px;
   height: 32px;
   fill: variables.$mainTextColor;
-  stroke: variables.$mainTextColor;
+
+  &:hover,
+  &:focus {
+    fill: variables.$primary-500;
+  }
 }
 
 .instagramIconDark {
   fill: none;
   stroke: variables.$mainTextColor;
+  &:hover,
+  &:focus {
+    fill: none;
+    stroke: variables.$primary-500;
+  }
 }

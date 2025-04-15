@@ -16,12 +16,12 @@
   background-position: center bottom;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  z-index: -2;
+  z-index: -1;
 }
 
 .background.active {
   opacity: 1;
-  z-index: -1;
+  z-index: 0;
 }
 
 .container {
@@ -32,6 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  z-index: 1;
 
   @media screen and (min-width: variables.$tablet) {
     padding: 240px 80px 32px;
