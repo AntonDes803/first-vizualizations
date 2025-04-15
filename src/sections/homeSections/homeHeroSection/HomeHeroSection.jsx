@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { homeHeroSliderData } from '@/data/homeHeroSliderData';
-import SocialLinks from '@/components/SocialLinks/SocialLinks';
-import styles from './HomeHeroSection.module.scss';
-import { stringSplittingByDelimiter } from '@/helpers/stringSplittingByDelimiter';
+import { useEffect, useState } from "react";
+import { homeHeroSliderData } from "@/data/homeHeroSliderData";
+import SocialLinks from "@/components/SocialLinks/SocialLinks";
+import styles from "./HomeHeroSection.module.scss";
+import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
 
 const HomeHeroSection = ({ lang, dictionary }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,12 +24,12 @@ const HomeHeroSection = ({ lang, dictionary }) => {
     >
       {homeHeroSliderData.map((data, index) => {
         const sectionTitle = data.titleUk.toUpperCase();
-        const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
+        const titleArray = stringSplittingByDelimiter(sectionTitle, "’");
         return (
           <div
             key={index}
             className={`${styles.background} ${
-              index === currentIndex ? styles.active : ''
+              index === currentIndex ? styles.active : ""
             }`}
             style={{
               backgroundImage: `linear-gradient(rgba(45, 48, 55, 0.45), rgba(45, 48, 55, 0.45)), url(${data.image})`,
@@ -42,12 +42,13 @@ const HomeHeroSection = ({ lang, dictionary }) => {
                 {titleArray[2]}
               </h1>
               <ul className={styles.number}>
-                <li>{String(index + 1).padStart(2, '0')}/</li>
+                <li>{String(index + 1).padStart(2, "0")}/</li>
                 <li className="ampersandColor">
-                  {String(homeHeroSliderData.length).padStart(2, '0')}
+                  {String(homeHeroSliderData.length).padStart(2, "0")}
                 </li>
               </ul>
-              <SocialLinks id={styles.socLinks} light />
+              {/* <SocialLinks id={styles.socLinks} light /> и стилей с таким названием не нашел у тебя */}
+              <SocialLinks id={styles.socLinks} />
             </div>
           </div>
         );

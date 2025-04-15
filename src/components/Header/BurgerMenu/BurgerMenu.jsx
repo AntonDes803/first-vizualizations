@@ -1,13 +1,12 @@
 "use client";
-
-import { SiteContext } from "@/context/SiteContext";
 import React, { useContext, useEffect } from "react";
-import styles from "./BurgerMenu.module.scss";
-import Navigation from "@/components/Navigation/Navigation";
-import { headerNavigation, headerServices } from "@/data/navLinksData";
-
-import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
 import Link from "next/link";
+import { SiteContext } from "@/context/SiteContext";
+import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
+import Navigation from "@/components/Navigation/Navigation";
+import SocialLinks from "@/components/SocialLinks/SocialLinks";
+import { headerNavigation, headerServices } from "@/data/navLinksData";
+import styles from "./BurgerMenu.module.scss";
 
 const BurgerMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
@@ -49,7 +48,7 @@ const BurgerMenu = () => {
               </Link>
             ))}
           </ul>
-          <p>SocLinks</p>
+          <SocialLinks dark />
         </div>
       </div>
     </div>

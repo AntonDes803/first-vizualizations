@@ -1,57 +1,161 @@
-@use '../../app/variables';
+@use "@/app/variables";
 
 .socialList {
   display: flex;
   align-items: center;
   column-gap: 8px;
-  @media screen and (min-width: variables.$tablet) {
-    column-gap: 14px;
+
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 16px;
   }
 }
 
-.socLinkItemLight {
+.socLinkItem {
   width: 32px;
   height: 32px;
 }
 
-.socialIconLight {
+.iconClass {
   width: 32px;
   height: 32px;
+}
+
+.facebook {
   fill: variables.$secondaryTextColor;
-  stroke: none;
-  &:hover,
-  &:focus {
-    fill: variables.$primary-500;
-  }
 }
 
-.instagramIconLight {
+.socLinkItem:hover .facebook,
+.socLinkItem:active .facebook {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.facebookDark {
+  fill: variables.$mainTextColor;
+}
+
+.socLinkItem:hover .facebookDark,
+.socLinkItem:active .facebookDark {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.instagram {
   fill: none;
   stroke: variables.$secondaryTextColor;
-  &:hover,
-  &:focus {
-    fill: none;
-    stroke: variables.$primary-500;
-  }
 }
 
-.socialIconDark {
-  width: 32px;
-  height: 32px;
-  fill: variables.$mainTextColor;
-
-  &:hover,
-  &:focus {
-    fill: variables.$primary-500;
-  }
+.socLinkItem:hover .instagram,
+.socLinkItem:active .instagram {
+  stroke: variables.$hoverBtnBgColor;
 }
 
-.instagramIconDark {
+.instagramDark {
   fill: none;
   stroke: variables.$mainTextColor;
-  &:hover,
-  &:focus {
-    fill: none;
-    stroke: variables.$primary-500;
-  }
 }
+
+.socLinkItem:hover .instagramDark,
+.socLinkItem:active .instagramDark {
+  stroke: variables.$hoverBtnBgColor;
+}
+
+.viber {
+  fill: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .viber,
+.socLinkItem:active .viber {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.viberDark {
+  fill: variables.$mainTextColor;
+}
+
+.socLinkItem:hover .viberDark,
+.socLinkItem:active .viberDark {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.telegram {
+  width: 30px;
+  height: 30px;
+  fill: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .telegram,
+.socLinkItem:active .telegram {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.telegramDark {
+  width: 30px;
+  height: 30px;
+  fill: variables.$mainTextColor;
+}
+
+.socLinkItem:hover .telegramDark,
+.socLinkItem:active .telegramDark {
+  fill: variables.$hoverBtnBgColor;
+}
+
+//------------------------------------------------------
+
+// Ivika
+
+// @use '../../app/variables';
+
+// .socialList {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 8px;
+//   @media screen and (min-width: variables.$tablet) {
+//     column-gap: 14px;
+//   }
+// }
+
+// .socLinkItemLight {
+//   width: 32px;
+//   height: 32px;
+// }
+
+// .socialIconLight {
+//   width: 32px;
+//   height: 32px;
+//   fill: variables.$secondaryTextColor;
+//   stroke: none;
+//   &:hover,
+//   &:focus {
+//     fill: variables.$primary-500;
+//   }
+// }
+
+// .instagramIconLight {
+//   fill: none;
+//   stroke: variables.$secondaryTextColor;
+//   &:hover,
+//   &:focus {
+//     fill: none;
+//     stroke: variables.$primary-500;
+//   }
+// }
+
+// .socialIconDark {
+//   width: 32px;
+//   height: 32px;
+//   fill: variables.$mainTextColor;
+
+//   &:hover,
+//   &:focus {
+//     fill: variables.$primary-500;
+//   }
+// }
+
+// .instagramIconDark {
+//   fill: none;
+//   stroke: variables.$mainTextColor;
+//   &:hover,
+//   &:focus {
+//     fill: none;
+//     stroke: variables.$primary-500;
+//   }
+// }
