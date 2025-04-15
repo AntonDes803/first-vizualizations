@@ -4,7 +4,9 @@
   display: flex;
   align-items: center;
   column-gap: 8px;
-  // background-color: #fff;
+  @media screen and (min-width: variables.$tablet) {
+    column-gap: 14px;
+  }
 }
 
 .socLinkItemLight {
@@ -15,23 +17,41 @@
 .socialIconLight {
   width: 32px;
   height: 32px;
-  fill: #fff;
+  fill: variables.$secondaryTextColor;
   stroke: none;
+  &:hover,
+  &:focus {
+    fill: variables.$primary-500;
+  }
 }
 
 .instagramIconLight {
   fill: none;
-  stroke: #fff;
+  stroke: variables.$secondaryTextColor;
+  &:hover,
+  &:focus {
+    fill: none;
+    stroke: variables.$primary-500;
+  }
 }
 
 .socialIconDark {
   width: 32px;
   height: 32px;
-  fill: #000;
-  stroke: #000;
+  fill: variables.$mainTextColor;
+
+  &:hover,
+  &:focus {
+    fill: variables.$primary-500;
+  }
 }
 
 .instagramIconDark {
   fill: none;
-  stroke: #000;
+  stroke: variables.$mainTextColor;
+  &:hover,
+  &:focus {
+    fill: none;
+    stroke: variables.$primary-500;
+  }
 }
