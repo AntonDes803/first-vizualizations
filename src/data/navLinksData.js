@@ -60,3 +60,27 @@ export const headerNavigation = navLinksData.filter((el) => {
 export const headerServices = navLinksData.find(
   (el) => el.href === "/services"
 );
+
+export const aboutUsHref = navLinksData.find(
+  (el) => el.titleEn === "About us"
+).href;
+
+export const portfolioHref = navLinksData.find(
+  (el) => el.titleEn === "Portfolio"
+).href;
+
+export const commercialDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Commercial design").href;
+
+export const houseDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "House design").href;
+
+export const apartmentDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Apartment design").href;
+
+export const architecturalDesignHref = navLinksData
+  .find((el) => el.titleEn === "All services")
+  .serviceId.find((item) => item.titleEn === "Architectural design").href;
