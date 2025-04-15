@@ -1,0 +1,37 @@
+@use '../../app/variables';
+
+.socialList {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  // background-color: #fff;
+}
+
+.socLinkItemLight {
+  width: 32px;
+  height: 32px;
+}
+
+.socialIconLight {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  stroke: none;
+}
+
+.instagramIconLight {
+  fill: none;
+  stroke: #fff;
+}
+
+.socialIconDark {
+  width: 32px;
+  height: 32px;
+  fill: #000;
+  stroke: #000;
+}
+
+.instagramIconDark {
+  fill: none;
+  stroke: #000;
+}

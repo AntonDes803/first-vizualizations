@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { homeHeroSliderData } from '@/data/homeHeroSliderData';
 import styles from './HomeHeroSection.module.scss';
+import SocialLinks from '@/components/SocialLinks/SocialLinks';
 
 const HomeHeroSection = ({ lang, dictionary }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,6 +33,7 @@ const HomeHeroSection = ({ lang, dictionary }) => {
         >
           <div className={`container ${styles.container}`}>
             <h1 className={styles.title}>{data.titleUk}</h1>
+            <SocialLinks id={styles.socLinks} light />
           </div>
         </div>
       ))}
