@@ -156,9 +156,9 @@ $alertSystem: #02007f;
 // Subtitle/Subtitle1/Regular/
 @mixin subtitle1-Regular {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Regular, sans-serif;
     font-size: 22px;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.4;
   }
 
@@ -192,9 +192,9 @@ $alertSystem: #02007f;
 // Subtitle/Subtitle2/Regular/
 @mixin subtitle2-Regular {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Regular, sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.4;
   }
 
@@ -228,9 +228,9 @@ $alertSystem: #02007f;
 // Body/Regular
 @mixin bodyText-Regular {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Regular, sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.7;
   }
 
@@ -256,9 +256,9 @@ $alertSystem: #02007f;
 // Notification
 @mixin notification {
   & {
-    font-family: Manrope, sans-serif;
+    font-family: Manrope-Regular, sans-serif;
     font-size: 12px;
-    font-weight: 400;
+    // font-weight: 400;
     line-height: 1.7;
   }
 

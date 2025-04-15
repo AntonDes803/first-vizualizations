@@ -33,7 +33,11 @@
   },
   "homeStatisticsSection": {},
   "homeTeamSection": {
-    "title": "Про нас Malov&Partners"
+    "title": "Про нас Malov&Partners",
+    "subTitle": "Дизайн, що відповідає вашому стилю життя",
+    "text": "Ми в MALOV&PARTNERS створюємо інтер’єри, які гармонійно поєднують стиль і практичність. Наш підхід – це увага до деталей, індивідуальність у кожному рішенні та контроль на всіх етапах.",
+    "linkText": "БІЛЬШЕ ПРО НАС",
+    "imgAlt": "Опис фото"
   },
   "homeWhyMeSection": {
     "title": "Чому обирають Malov&Partners",

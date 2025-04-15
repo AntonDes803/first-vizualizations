@@ -1,0 +1,41 @@
+@use "@/app/variables";
+
+.link {
+  @include variables.bodyText-Bold;
+  & {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 2px;
+    border-bottom: solid 1px variables.$mainTextColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: variables.$hoverBtnBgColor;
+      color: variables.$hoverBtnBgColor;
+    }
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    column-gap: 8px;
+  }
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: variables.$mainTextColor;
+
+  &:hover,
+  &:focus {
+    stroke: variables.$hoverBtnBgColor;
+  }
+}
+
+.link:hover .arrowIcon,
+.link:focus .arrowIcon {
+  stroke: variables.$hoverBtnBgColor;
+}

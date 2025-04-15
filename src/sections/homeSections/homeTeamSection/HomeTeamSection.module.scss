@@ -1,9 +1,103 @@
 @use "@/app/variables";
 
+.section {
+  max-width: 1440px;
+  background-color: variables.$secondaryBgColor;
+  color: variables.$secondaryTextColor;
+}
+
 .title {
   @include variables.title-h2;
+  & {
+    margin-bottom: 8px;
+  }
 
   @media screen and (min-width: variables.$tablet) {
     @include variables.title-h1;
+    & {
+      margin-bottom: 12px;
+    }
   }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.subTitle {
+  @include variables.subtitle1-Regular;
+  & {
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 72px;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0px;
+    column-gap: 16px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 24px;
+  }
+}
+
+.textAndLinkWrapper {
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: 690px;
+  }
+}
+
+.text {
+  margin-bottom: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.customLink {
+  border-bottom: solid 1px variables.$secondaryTextColor;
+}
+
+.customIcon {
+  stroke: variables.$secondaryTextColor;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320/382;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+    aspect-ratio: 344/411;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    flex: 0 1 auto; //обнуление flex:1
+    width: 486px;
+  }
+}
+
+.img {
+  display: block;
+  object-fit: cover;
 }

@@ -1,20 +1,9 @@
-import { navLinksData } from "./navLinksData";
-
-const commercialDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Commercial design").href;
-
-const houseDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "House design").href;
-
-const apartmentDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Apartment design").href;
-
-const architecturalDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Architectural design").href;
+import {
+  apartmentDesignHref,
+  architecturalDesignHref,
+  commercialDesignHref,
+  houseDesignHref,
+} from "./navLinksData";
 
 export const servicesData = [
   {
