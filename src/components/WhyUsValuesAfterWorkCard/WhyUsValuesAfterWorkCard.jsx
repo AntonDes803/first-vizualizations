@@ -1,10 +1,15 @@
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./WhyUsValuesAfterWorkCard.module.scss";
 
-const WhyUsValuesAfterWorkCard = ({ lang, data }) => {
+const WhyUsValuesAfterWorkCard = ({
+  lang,
+  data,
+  customCardClass,
+  customIconClass,
+}) => {
   return (
-    <li className={styles.card}>
-      <svg className={styles.icon}>
+    <li className={`${styles.card} ${customCardClass}`}>
+      <svg className={`${styles.icon} ${customIconClass}`}>
         <use href={data.iconHref} />
       </svg>
       <h3 className={styles.title}>
