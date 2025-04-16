@@ -1,5 +1,6 @@
 export const aboutValuesData = [
   {
+    iconHref: "/sprite.svg#icon-holding_star",
     titleUk: "Індивідуальний підхід",
     titleEn: "",
     textUk:
@@ -7,6 +8,7 @@ export const aboutValuesData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-holding_star",
     titleUk: "Гармонія стилю та функціональності",
     titleEn: "",
     textUk:
@@ -14,6 +16,7 @@ export const aboutValuesData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-holding_star",
     titleUk: "Деталі, що мають значення",
     titleEn: "",
     textUk:
@@ -21,6 +24,7 @@ export const aboutValuesData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-holding_star",
     titleUk: "Прозорий процес і якісний результат",
     titleEn: "",
     textUk:

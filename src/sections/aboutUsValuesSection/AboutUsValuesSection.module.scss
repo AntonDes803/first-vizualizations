@@ -1,9 +1,52 @@
 @use "@/app/variables";
 
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    row-gap: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    row-gap: 24px;
+  }
+}
+
 .title {
   @include variables.title-h2;
 
   @media screen and (min-width: variables.$tablet) {
     @include variables.title-h1;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+  }
+}
+
+.customCard {
+  @media screen and (min-width: variables.$desktop) {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.customIcon {
+  @media screen and (min-width: variables.$tablet) {
+    width: 72px;
+    height: 72px;
   }
 }
