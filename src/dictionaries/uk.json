@@ -4,7 +4,8 @@
     "topTitle": "Покрівля"
   },
   "aboutUsHeroSection": {
-    "title": "Malov&Partners – дизайн, що відчувається"
+    "title": "Malov&Partners – дизайн, що відчувається",
+    "description": "Створюємо інтер'єри, які гармонійно поєднують стиль, функціональність та ваші унікальні побажання."
   },
   "aboutUsSection": {},
   "aboutUsValuesSection": {
@@ -48,7 +49,9 @@
     "title": "Етапи співпраці з нами"
   },
   "portfolioHeroSection": {
-    "title": "Портфоліо Malov&Partners"
+    "title": "Портфоліо Malov&Partners",
+    "description": "“Великий дизайн починається з  ще більшої історії”",
+    "autor": "Lorinda Mamo"
   },
   "portfolioIdHeroSection": {},
   "portfolioIdSolutionSection": {},
@@ -57,7 +60,8 @@
   "serviceIdHeroSection": {},
   "serviceIdSection": {},
   "servicesHeroSection": {
-    "title": "Послуги Malov&Partners"
+    "title": "Послуги Malov&Partners",
+    "description": "Втілюємо ваші ідеї у реальність: від концепції до повної реалізації."
   },
   "servicesSection": {
     "title": "3d візуалізація кожного дизайну"

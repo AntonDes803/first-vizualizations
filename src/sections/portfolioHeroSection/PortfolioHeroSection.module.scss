@@ -1,13 +1,83 @@
-@use "@/app/variables";
+@use '@/app/variables';
 
 .section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(45, 48, 55, 0.45);
+  // background-image: linear-gradient(
+  //     rgba(45, 48, 55, 0.45),
+  //     rgba(45, 48, 55, 0.45)
+  //   ),
+  //   url('../../../public/images/dev/');
+  // background-size: cover;
+  // background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   @include variables.heroSectionsPadding;
+
+  @media screen and (min-width: variables.$desktop) {
+    padding: 220px 0px 48px;
+  }
 }
 
 .title {
   @include variables.title-h3;
+  & {
+    color: variables.$secondaryTextColor;
+    margin-bottom: 8px;
+  }
 
   @media screen and (min-width: variables.$tablet) {
     @include variables.title-h2;
+    & {
+      color: variables.$secondaryTextColor;
+      margin-bottom: 12px;
+      width: 60%;
+    }
+  }
+  @media screen and (min-width: variables.$desktop) {
+    width: 70%;
   }
 }
+
+.descContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  max-width: 360px;
+  @media screen and (min-width: variables.$tablet) {
+    max-width: 604px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    max-width: 706px;
+  }
+
+  .desc {
+    @include variables.subtitle2-Regular;
+    & {
+      color: variables.$secondaryTextColor;
+    }
+
+    @media screen and (min-width: variables.$tablet) {
+      @include variables.subtitle1-Regular;
+    }
+    @media screen and (min-width: variables.$desktop) {
+      // width: 60%;
+    }
+  }
+
+  .author {
+    align-self: flex-end;
+  }
+}
+
+// .autor {
+//   width: 100%;
+//   text-align: end;
+// }

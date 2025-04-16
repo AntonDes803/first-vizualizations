@@ -1,9 +1,9 @@
 // использование переменных в своих стилях - variables.$laptop
 
-$mobile: "360px";
-$tablet: "768px";
-$laptop: "1024px";
-$desktop: "1440px";
+$mobile: '360px';
+$tablet: '768px';
+$laptop: '1024px';
+$desktop: '1440px';
 
 // $primary-900: #ba181b;
 $hoverBtnBgColor: #ba181b;
@@ -83,6 +83,18 @@ $alertSystem: #02007f;
 }
 
 @mixin heroSectionsPadding {
+  & {
+    width: 100%;
+    padding: 128px 20px 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 240px 32px 80px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 220px 120px 48px;
+  }
   & {
     width: 100%;
     padding: 128px 20px 20px;
