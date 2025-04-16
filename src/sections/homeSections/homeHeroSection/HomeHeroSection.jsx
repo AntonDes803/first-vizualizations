@@ -48,7 +48,7 @@ const HomeHeroSection = ({ lang, dictionary }) => {
                 </li>
               </ul>
               {/* <SocialLinks id={styles.socLinks} light /> и стилей с таким названием не нашел у тебя */}
-              <SocialLinks id={styles.socLinks} />
+              <SocialLinks />
             </div>
           </div>
         );
