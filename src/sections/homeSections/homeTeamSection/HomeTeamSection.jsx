@@ -1,12 +1,12 @@
-import Image from "next/image";
-import CustomLink from "@/components/CustomLink/CustomLink";
-import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
-import { aboutUsHref } from "@/data/navLinksData";
-import styles from "./HomeTeamSection.module.scss";
+import Image from 'next/image';
+import CustomLink from '@/components/CustomLink/CustomLink';
+import { stringSplittingByDelimiter } from '@/helpers/stringSplittingByDelimiter';
+import { aboutUsHref } from '@/data/navLinksData';
+import styles from './HomeTeamSection.module.scss';
 
 const HomeTeamSection = ({ lang, dictionary }) => {
   const sectionTitle = dictionary.title.toUpperCase();
-  const titleArray = stringSplittingByDelimiter(sectionTitle, "&");
+  const titleArray = stringSplittingByDelimiter(sectionTitle, '&');
 
   return (
     <section className={`section ${styles.section}`}>

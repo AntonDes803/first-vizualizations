@@ -1,5 +1,148 @@
-@use "@/app/variables";
+@use '@/app/variables';
 
 .title {
   @include variables.title-h2;
+  & {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.servicesContent {
+  & li:first-child {
+    margin-bottom: 12px;
+  }
+  margin-bottom: 16px;
+  @media screen and (min-width: variables.$tablet) {
+    columns: 2;
+    column-gap: 16px;
+    margin-bottom: 20px;
+
+    & li {
+      break-inside: avoid;
+    }
+    & li:first-child {
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.servicesList {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  row-gap: 12px;
+
+  width: 100%;
+
+  margin-bottom: 16px;
+
+  & li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320 / 220;
+  & img {
+    object-fit: cover;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    aspect-ratio: 344 / 353;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    aspect-ratio: 588 / 353;
+  }
+}
+
+.servicesItem {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid variables.$secondaryBgColor;
+  border-top: none;
+}
+
+.servicesTitle {
+  @include variables.subtitle2-Bold;
+  & {
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 8px;
+  }
+}
+
+.servicesDesc {
+  @include variables.bodyText-Regular;
+  & {
+    color: variables.$descriptionColor;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.servicesProjectsCount {
+  @include variables.bodyText-Regular;
+  & {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+  }
+}
+
+.desktop {
+  display: none;
+  @media screen and (min-width: variables.$desktop) {
+    display: block;
+  }
+}
+
+.mobile {
+  @media screen and (min-width: variables.$desktop) {
+    display: none;
+  }
 }
