@@ -1,5 +1,6 @@
 export const afterWorkData = [
   {
+    iconHref: "/sprite.svg#icon-check_circle",
     titleUk: "Продуманий простір до дрібниць",
     titleEn: "",
     textUk:
@@ -7,6 +8,7 @@ export const afterWorkData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-check_circle",
     titleUk: "Економія часу",
     titleEn: "",
     textUk:
@@ -14,6 +16,7 @@ export const afterWorkData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-check_circle",
     titleUk: "Гармонія стилю та функціональності",
     titleEn: "",
     textUk:
@@ -21,6 +24,7 @@ export const afterWorkData = [
     textEn: "",
   },
   {
+    iconHref: "/sprite.svg#icon-check_circle",
     titleUk: "Реалізація без сюрпризів",
     titleEn: "",
     textUk:
