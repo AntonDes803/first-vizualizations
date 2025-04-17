@@ -5,7 +5,7 @@ import styles from "./CustomLink.module.scss";
 export default function CustomLink({
   linkCustomClass,
   iconCustomClass,
-  id,
+  white,
   href,
   lang,
   text,
@@ -13,10 +13,13 @@ export default function CustomLink({
   const isDefaultLang = lang === i18n.defaultLocale;
   const path = isDefaultLang ? href : `/${lang}${href}`;
 
+  const linkClassname = white ? "linkWhite" : "link";
+  const arrowIconClassname = white ? "arrowIconWhite" : "arrowIcon";
+
   return (
-    <Link className={styles.link + " " + linkCustomClass} id={id} href={path}>
+    <Link className={styles[linkClassname] + " " + linkCustomClass} href={path}>
       {text}
-      <svg className={styles.arrowIcon + " " + iconCustomClass}>
+      <svg className={styles[arrowIconClassname] + " " + iconCustomClass}>
         <use href="../sprite.svg#icon-arrow_right" />
       </svg>
     </Link>
