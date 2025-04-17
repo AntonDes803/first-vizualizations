@@ -1,12 +1,11 @@
 "use client";
 import React, { useContext, useEffect } from "react";
-import Link from "next/link";
 import { SiteContext } from "@/context/SiteContext";
 import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
-import Navigation from "@/components/Navigation/Navigation";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
-import { headerNavigation, headerServices } from "@/data/navLinksData";
+
 import styles from "./BurgerMenu.module.scss";
+import HeaderNav from "../HeaderNav/HeaderNav";
 
 const BurgerMenu = () => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
@@ -35,20 +34,35 @@ const BurgerMenu = () => {
         }
       >
         <div className={`container ${styles.container}`}>
-          <LangSwitcher />
-          <Navigation
+          <HeaderNav />
+
+          {/* <Navigation
             className={styles.headerNavigation}
-            data={headerNavigation}
-          />
-          <Link href={headerServices.href}>{headerServices.titleUk}</Link>
-          <ul>
-            {headerServices.serviceId.map((el, i) => (
-              <Link key={i} href={`${headerServices.href}${el.href}`}>
-                {el.titleUk}
-              </Link>
-            ))}
-          </ul>
-          <SocialLinks dark />
+            data={navLinksData}
+            arrowStyles={{
+              usual: styles.arrowStyles,
+              isClicked: styles.arrowStylesClicked,
+            }}
+            titleWrapp={styles.titleWrapp}
+            scvHref="/sprite.svg#icon-arrow_right"
+            subMenuStyles={{
+              usual: styles.subMenu,
+              visible: styles.subMenuVisible,
+              hidden: styles.subMenuHidden,
+            }}
+            onMouseOver={(e) => {
+              e.target.classList.add(`${styles.hoverLink}`);
+            }}
+            onMouseOut={(e) => {
+              e.target.classList.remove(`${styles.hoverLink}`);
+            }}
+          /> */}
+
+          <div>
+            <LangSwitcher />
+
+            <SocialLinks dark />
+          </div>
         </div>
       </div>
     </div>

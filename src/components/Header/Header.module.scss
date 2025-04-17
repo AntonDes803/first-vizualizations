@@ -1,4 +1,4 @@
-@use "../../app/variables";
+@use "@/app/variables";
 
 .header {
   @include variables.sectionSidePadding;
@@ -8,8 +8,7 @@
     max-width: 100%;
 
     position: fixed;
-    background-color: variables.$secondary-600;
-    position: relative;
+    z-index: 100;
   }
 }
 
