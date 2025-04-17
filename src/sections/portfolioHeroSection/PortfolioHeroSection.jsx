@@ -16,9 +16,9 @@ const PortfolioHeroSection = ({ lang, dictionary }) => {
             {titleArray[2]}
           </h1>
           <div className={styles.descContainer}>
-            <p className={styles.desc}>{dictionary.description}</p>
+            <p className={styles.desc}>{dictionary.quote}</p>
             <p className={`${styles.desc} ${styles.author} `}>
-              {dictionary.autor}
+              {dictionary.quoteAuthor}
             </p>
           </div>
         </div>
