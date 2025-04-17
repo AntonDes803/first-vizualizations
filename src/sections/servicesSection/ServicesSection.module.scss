@@ -47,6 +47,8 @@
 
   width: 100%;
 
+  margin-bottom: 16px;
+
   & li {
     position: relative;
     display: flex;
@@ -56,9 +58,11 @@
   @media screen and (min-width: variables.$tablet) {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: variables.$desktop) {
     gap: 24px;
+    margin-bottom: 24px;
   }
 }
 

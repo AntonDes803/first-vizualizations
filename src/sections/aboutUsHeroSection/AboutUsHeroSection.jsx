@@ -17,7 +17,7 @@ const AboutUsHeroSection = ({ lang, dictionary }) => {
           </h1>
           <p className={styles.desc}>{dictionary.description}</p>
         </div>
-        <HeroBtnArrow />
+        <HeroBtnArrow href="aboutUsSection" />
       </div>
     </section>
   );

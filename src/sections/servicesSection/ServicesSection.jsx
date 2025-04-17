@@ -4,13 +4,14 @@ import styles from './ServicesSection.module.scss';
 import CustomLink from '@/components/CustomLink/CustomLink';
 import { servicesHref } from '@/data/navLinksData';
 import Image from 'next/image';
+import CallBtn from '@/components/buttons/CallBtn/CallBtn';
 
 const ServicesSection = ({ lang, dictionary }) => {
   const sectionTitle = dictionary.title.toUpperCase();
   const titleArray = stringSplittingByDelimiter(sectionTitle, '3D');
 
   return (
-    <section className="section">
+    <section className="section" id="servicesSection">
       <div className="container">
         <h2 className={styles.title}>
           {titleArray[0]}
@@ -55,6 +56,7 @@ const ServicesSection = ({ lang, dictionary }) => {
             </li>
           ))}
         </ul>
+        <CallBtn text={dictionary.orderBtnText} />
       </div>
     </section>
   );
