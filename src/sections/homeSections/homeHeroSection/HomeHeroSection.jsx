@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { homeHeroSliderData } from '@/data/homeHeroSliderData';
-import SocialLinks from '@/components/SocialLinks/SocialLinks';
-import styles from './HomeHeroSection.module.scss';
-import { stringSplittingByDelimiter } from '@/helpers/stringSplittingByDelimiter';
-import CustomLink from '@/components/CustomLink/CustomLink';
-import { servicesHref } from '@/data/navLinksData';
+import { useEffect, useState } from "react";
+import { homeHeroSliderData } from "@/data/homeHeroSliderData";
+import SocialLinks from "@/components/SocialLinks/SocialLinks";
+import styles from "./HomeHeroSection.module.scss";
+import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
+import CustomLink from "@/components/CustomLink/CustomLink";
+import { servicesHref } from "@/data/navLinksData";
 
 const HomeHeroSection = ({ lang, dictionary }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,12 +26,12 @@ const HomeHeroSection = ({ lang, dictionary }) => {
     >
       {homeHeroSliderData.map((data, index) => {
         const sectionTitle = data.titleUk.toUpperCase();
-        const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
+        const titleArray = stringSplittingByDelimiter(sectionTitle, "’");
         return (
           <div
             key={index}
             className={`${styles.background} ${
-              index === currentIndex ? styles.active : ''
+              index === currentIndex ? styles.active : ""
             }`}
             style={{
               backgroundImage: `linear-gradient(rgba(45, 48, 55, 0.45), rgba(45, 48, 55, 0.45)), url(${data.image})`,
@@ -45,15 +45,16 @@ const HomeHeroSection = ({ lang, dictionary }) => {
               </h1>
               <CustomLink
                 linkCustomClass={styles.customLink}
-                iconCustomClass={styles.customIcon}
+                iconCustomClass=""
+                white
                 href={servicesHref}
                 lang={lang}
-                text={dictionary.linkMore}
+                text={dictionary.linkText}
               />
               <ul className={styles.number}>
-                <li>{String(index + 1).padStart(2, '0')}/</li>
+                <li>{String(index + 1).padStart(2, "0")}/</li>
                 <li className="ampersandColor">
-                  {String(homeHeroSliderData.length).padStart(2, '0')}
+                  {String(homeHeroSliderData.length).padStart(2, "0")}
                 </li>
               </ul>
               <SocialLinks />

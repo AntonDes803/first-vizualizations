@@ -21,8 +21,9 @@ const HomeTeamSection = ({ lang, dictionary }) => {
           <div className={styles.textAndLinkWrapper}>
             <p className={styles.text}>{dictionary.text}</p>
             <CustomLink
-              linkCustomClass={styles.customLink}
-              iconCustomClass={styles.customIcon}
+              linkCustomClass=""
+              iconCustomClass=""
+              white
               href={aboutUsHref}
               lang={lang}
               text={dictionary.linkText}
