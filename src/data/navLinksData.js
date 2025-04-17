@@ -1,33 +1,34 @@
 export const navLinksData = [
   {
-    titleUk: "Головна",
-    titleEn: "Main",
-    href: "/",
+    titleUk: 'Головна',
+    titleEn: 'Main',
+    href: '/',
   },
   {
     titleUk: "Усі послуги",
     titleEn: "All services",
     href: "/services",
+
     serviceId: [
       {
-        titleUk: "Комерційний дизайн",
-        titleEn: "Commercial design",
-        href: "/commercial-design",
+        titleUk: 'Комерційний дизайн',
+        titleEn: 'Commercial design',
+        href: '/commercial-design',
       },
       {
-        titleUk: "Дизайн будинків",
-        titleEn: "House design",
-        href: "/house-design",
+        titleUk: 'Дизайн будинків',
+        titleEn: 'House design',
+        href: '/house-design',
       },
       {
-        titleUk: "Дизайн квартир",
-        titleEn: "Apartment design",
-        href: "/apartment-design",
+        titleUk: 'Дизайн квартир',
+        titleEn: 'Apartment design',
+        href: '/apartment-design',
       },
       {
-        titleUk: "Архітектурне проєктування",
-        titleEn: "Architectural design",
-        href: "/architectural-design",
+        titleUk: 'Архітектурне проєктування',
+        titleEn: 'Architectural design',
+        href: '/architectural-design',
       },
     ],
   },
@@ -54,33 +55,37 @@ export const navLinksData = [
 ];
 
 export const headerNavigation = navLinksData.filter((el) => {
-  return el.href !== "/services";
+  return el.href !== '/services';
 });
 
 export const headerServices = navLinksData.find(
-  (el) => el.href === "/services"
+  (el) => el.href === '/services'
 );
 
+export const servicesHref = navLinksData.find(
+  (el) => el.titleEn === 'All services'
+).href;
+
 export const aboutUsHref = navLinksData.find(
-  (el) => el.titleEn === "About us"
+  (el) => el.titleEn === 'About us'
 ).href;
 
 export const portfolioHref = navLinksData.find(
-  (el) => el.titleEn === "Portfolio"
+  (el) => el.titleEn === 'Portfolio'
 ).href;
 
 export const commercialDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Commercial design").href;
+  .find((el) => el.titleEn === 'All services')
+  .serviceId.find((item) => item.titleEn === 'Commercial design').href;
 
 export const houseDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "House design").href;
+  .find((el) => el.titleEn === 'All services')
+  .serviceId.find((item) => item.titleEn === 'House design').href;
 
 export const apartmentDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Apartment design").href;
+  .find((el) => el.titleEn === 'All services')
+  .serviceId.find((item) => item.titleEn === 'Apartment design').href;
 
 export const architecturalDesignHref = navLinksData
-  .find((el) => el.titleEn === "All services")
-  .serviceId.find((item) => item.titleEn === "Architectural design").href;
+  .find((el) => el.titleEn === 'All services')
+  .serviceId.find((item) => item.titleEn === 'Architectural design').href;

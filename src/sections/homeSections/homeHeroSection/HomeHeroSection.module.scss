@@ -1,4 +1,4 @@
-@use "@/app/variables";
+@use '@/app/variables';
 
 .section {
   width: 100%;
@@ -49,7 +49,6 @@
     width: 100%;
     color: variables.$secondaryTextColor;
     text-transform: uppercase;
-    margin-bottom: auto;
   }
   @media screen and (min-width: variables.$tablet) {
     width: 100%;
@@ -57,6 +56,16 @@
   @media screen and (min-width: variables.$desktop) {
     width: 75%;
   }
+}
+
+.customLink {
+  color: variables.$secondaryTextColor;
+  border-bottom: solid 1px variables.$secondaryTextColor;
+  margin-bottom: auto;
+}
+
+.customIcon {
+  stroke: variables.$secondaryTextColor;
 }
 
 .number {

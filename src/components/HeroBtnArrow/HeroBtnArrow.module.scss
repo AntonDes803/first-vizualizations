@@ -1,0 +1,42 @@
+@use '../../app/variables';
+
+.btnSchevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid variables.$secondaryTextColor;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  @media screen and (min-width: variables.$tablet) {
+    width: 56px;
+    height: 56px;
+  }
+  &:hover,
+  &:focus {
+    border: none;
+    transform: translateY(8px);
+    transition: transform 0.3s ease, scale 0.3s ease;
+    & .svg {
+      scale: 1.4;
+    }
+  }
+}
+
+.svg {
+  width: 22px;
+  height: 22px;
+  stroke: variables.$secondaryTextColor;
+  fill: none;
+  @media screen and (min-width: variables.$tablet) {
+    width: 32px;
+    height: 32px;
+  }
+  &:hover,
+  &:focus {
+    stroke: variables.$secondaryTextColor;
+  }
+}

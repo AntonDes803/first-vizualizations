@@ -42,7 +42,9 @@
   "homeFaqSection": {
     "title": "FAQ"
   },
-  "homeHeroSection": {},
+  "homeHeroSection": {
+    "linkMore": "БІЛЬШЕ ПРОЄКТІВ"
+  },
   "homePortfolioSection": {
     "title": "Готові проєкти",
     "linkText": "ВІДКРИТИ ПОРТФОЛІО"
