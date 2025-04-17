@@ -28,6 +28,7 @@ const AboutUsValuesSection = ({ lang, dictionary }) => {
             />
           ))}
         </ul>
+
         <CallBtn customClass="" text={dictionary.callBtnText} />
       </div>
     </section>

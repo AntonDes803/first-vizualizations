@@ -10,3 +10,7 @@ const CallBtn = ({ customClass, text }) => {
 };
 
 export default CallBtn;
+
+// customClass="" text={dictionary.callBtnText}
+
+// customClass="" text={dictionary.orderBtnText}

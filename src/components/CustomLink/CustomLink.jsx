@@ -25,3 +25,5 @@ export default function CustomLink({
     </Link>
   );
 }
+
+// linkCustomClass=""  iconCustomClass="" text={dictionary.linkText}

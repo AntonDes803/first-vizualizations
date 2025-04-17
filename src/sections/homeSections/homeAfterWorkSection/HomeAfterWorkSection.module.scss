@@ -1,15 +1,71 @@
 @use "@/app/variables";
 
+.section {
+  max-width: 1440px;
+  background-color: variables.$secondaryBgColor;
+}
+
 .title {
   @include variables.title-h2;
-  // &{
-  //   margin: 0 -12px;
-  // }
+  & {
+    color: variables.$secondaryTextColor;
+    margin: 0px -12px 16px;
+  }
+
+  @media screen and (min-width: 381px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 
   @media screen and (min-width: variables.$tablet) {
     @include variables.title-h1;
-    // &{
-    //   margin: 0 ;
-    // }
+    & {
+      margin-bottom: 20px;
+    }
   }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.customCard {
+  background-color: variables.$secondaryTextColor;
+  border: none;
+
+  @media screen and (min-width: variables.$desktop) {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+.customIcon {
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: variables.$tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.customBtn {
+  background-color: variables.$mainBgColor;
 }
