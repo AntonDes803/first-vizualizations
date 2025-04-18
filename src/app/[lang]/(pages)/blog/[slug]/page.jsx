@@ -4,8 +4,9 @@ import { getDictionary } from "@/helpers/getDictionary";
 import { faqHomeData } from "@/data/faqHomeData";
 
 const BlogIdPage = async ({ params }) => {
-  const { lang } = await params;
+  const { lang, slug } = await params;
   const { blogIdSection, homeFaqSection } = await getDictionary(lang);
+
   const faqData = faqHomeData;
 
   return (
