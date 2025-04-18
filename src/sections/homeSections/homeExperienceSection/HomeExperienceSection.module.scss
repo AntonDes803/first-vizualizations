@@ -1,1 +1,46 @@
 @use "@/app/variables";
+
+.containerHomeExperience {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row-reverse;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+.boxTitle {
+  width: 100%;
+}
+
+.title {
+  @include variables.subtitle1-Bold;
+}
+
+.text {
+  @include variables.bodyText-Regular;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 12px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: 16px;
+    padding-bottom: 56px;
+  }
+}
+.boxHomeExperience {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.imgHomeExperience {
+  width: 100%;
+  height: auto !important;
+  position: relative !important;
+}
