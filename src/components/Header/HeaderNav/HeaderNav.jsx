@@ -47,7 +47,7 @@ const HeaderNav = () => {
                   : `${styles.subMenu} ${styles.subMenuHidden}`
               }
             >
-              {el.serviceId.map((el, i) => (
+              {el.serviceId.map((item, i) => (
                 <li
                   key={i}
                   onMouseOver={(e) => {
@@ -61,7 +61,7 @@ const HeaderNav = () => {
                     <use href="sprite.svg#icon-dot"></use>
                   </svg>
 
-                  <Link href={`${el.href}${el.href}`}>{el.titleUk}</Link>
+                  <Link href={`${el.href}${item.href}`}>{item.titleUk}</Link>
                 </li>
               ))}
             </ul>

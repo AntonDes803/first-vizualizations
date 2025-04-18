@@ -22,7 +22,7 @@ const PortfolioHeroSection = ({ lang, dictionary }) => {
             </p>
           </div>
         </div>
-        <HeroBtnArrow />
+        <HeroBtnArrow href="portfolioSection" />
       </div>
     </section>
   );
