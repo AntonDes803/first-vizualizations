@@ -7,6 +7,8 @@
 
   @media screen and (min-width: variables.$tablet) {
     flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: variables.$desktop) {
@@ -16,7 +18,7 @@
 }
 
 .boxTitle {
-  width: 100%;
+  //   width: 100%;
 }
 
 .title {
