@@ -1,24 +1,24 @@
 import Image from "next/image";
-import s from "./HomeExperienceSection.module.scss";
 import CallBtn from "@/components/buttons/CallBtn/CallBtn";
+import styles from "./HomeExperienceSection.module.scss";
 
 const HomeExperienceSection = ({ lang, dictionary }) => {
   return (
     <section className="section">
-      <div className={`"container"  ${s.containerHomeExperience}`}>
+      <div className={`"container"  ${styles.container}`}>
         {/* HomeExperienceSection */}
-        <div className={s.boxTitle}>
-          <h2 className={s.title}>{dictionary.title}</h2>
-          <p className={s.text}>{dictionary.description}</p>
+        <div className={styles.boxTitle}>
+          <h2 className={styles.title}>{dictionary.title}</h2>
+          <p className={styles.text}>{dictionary.description}</p>
 
           <CallBtn customClass="" text={dictionary.orderBtnText} />
         </div>
-        <div className={s.boxHomeExperience}>
+        <div className={styles.boxHomeExperience}>
           <Image
-            className={s.imgHomeExperience}
+            className={styles.imgHomeExperience}
             src="/images/dev/homePage/home-page-work-experience-img.webp"
             alt="home-page-work-experience-img"
-            sizes="(max-width: 768px ) 100vw, "
+            sizes="(max-width: 767px ) 95vw, (max-width: 1439px ) 45vw, 588px"
             fill={true}
           />
         </div>
