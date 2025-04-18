@@ -37,7 +37,9 @@
     }
 
     @media screen and (min-width: variables.$tablet) {
-        margin-bottom: 12px;
+        & {
+            margin-bottom: 12px;
+        }
     }
 }
 
