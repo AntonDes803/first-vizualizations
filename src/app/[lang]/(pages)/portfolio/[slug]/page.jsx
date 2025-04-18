@@ -6,13 +6,14 @@ import { getDictionary } from "@/helpers/getDictionary";
 import { faqHomeData } from "@/data/faqHomeData";
 
 const PortfolioIdPage = async ({ params }) => {
-  const { lang } = await params;
+  const { lang, slug } = await params;
   const {
     portfolioIdHeroSection,
     portfolioIdVideoSection,
     portfolioIdSolutionSection,
     homeFaqSection,
   } = await getDictionary(lang);
+
   const faqData = faqHomeData;
 
   return (
