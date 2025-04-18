@@ -12,7 +12,7 @@ const HomePortfolioCard = ({ lang, dictionary, data }) => {
           className={styles.img}
           src={data.image}
           alt={lang === i18n.locales[0] ? data.imgAltUk : data.imgAltEn}
-          sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+          sizes="(max-width: 767px) 95vw, (max-width: 1439px) 30vw, 384px"
           fill={true}
         />
       </div>
