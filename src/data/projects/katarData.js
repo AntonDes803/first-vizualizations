@@ -3,6 +3,8 @@ export const katarData = {
   categoryUk: "", // Квартири Будинки Комерція Архітектура
   categoryEn: "",
   mainImage: "", // она же идет на портфолиоАйдиХеро
+  altUk: "",
+  altEn: "",
   typeUk: "", // Квартира Будинок Комерція Архітектура
   typeEn: "",
   locationUk: "", // Центральний ЖК “Premium”
@@ -22,8 +24,8 @@ export const katarData = {
       textsUk: ["", ""],
       textsEn: ["", ""],
       images: [
-        { src: "", alt: "" },
-        { src: "", alt: "" },
+        { src: "", altUk: "", altEn: "" },
+        { src: "", altUk: "", altEn: "" },
       ],
     },
     {
@@ -32,7 +34,7 @@ export const katarData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [{ src: "", alt: "" }],
+      images: [{ src: "", altUk: "", altEn: "" }],
     },
     {
       type: "visualization",
@@ -41,9 +43,9 @@ export const katarData = {
       textsUk: ["", ""],
       textsEn: ["", ""],
       images: [
-        { src: "", alt: "" },
-        { src: "", alt: "" },
-        { src: "", alt: "" },
+        { src: "", altUk: "", altEn: "" },
+        { src: "", altUk: "", altEn: "" },
+        { src: "", altUk: "", altEn: "" },
       ],
     },
   ],

@@ -2,7 +2,9 @@ export const architecturalData = {
   slug: "architectural-design",
   categoryUk: "Архітектура", // Квартири Будинки Комерція Архітектура
   categoryEn: "Architecture",
-  mainImage: "/public/images/projects/architectural/architectural-design-house-forest-01.webp", // она же идет на портфолиоАйдиХеро
+  mainImage: "/images/projects/architectural/architectural-design-house-forest-01.webp", // она же идет на портфолиоАйдиХеро
+  altUk: "Архітектурний дизайн",
+  altEn: "Architectural design",
   typeUk: "Архітектура", // Квартира Будинок Комерція Архітектура
   typeEn: "Architecture",
   locationUk: "Україна", // Центральний ЖК “Premium”
@@ -48,47 +50,47 @@ export const architecturalData = {
       ],
       images: [
         { 
-          src: "/public/images/projects/architectural/architectural-design-01.webp",
+          src: "/images/projects/architectural/architectural-design-01.webp",
           altUk: "Архітектурний проєкт сучасного будинку в темному стилі з великими панорамними вікнами",
           altEn: "Architectural design of a modern house in a dark style with large panoramic windows",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-02.webp",
+          src: "/images/projects/architectural/architectural-design-02.webp",
           altUk: "Дизайн проєкту сучасного будинку в брутальному стилі",
           altEn: "Design of a modern house project in a brutal style",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-03.webp",
+          src: "/images/projects/architectural/architectural-design-03.webp",
           altUk: "Архітектурний проєкт сучасного будинку в мінімалістичному стилі з великими панорамним вікном",
           altEn: "Architectural project of a modern house in a minimalist style with a large panoramic window",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-blue-hall-01.webp",
+          src: "/images/projects/architectural/architectural-design-blue-hall-01.webp",
           altUk: "Дизайн сучасного коридору в світло-синіх кольорах",
           altEn: "Design of a modern corridor in light blue colors",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-house-forest-01.webp",
+          src: "/images/projects/architectural/architectural-design-house-forest-01.webp",
           altUk: "Дизайн проєкту сучасного будинку в світлих тонах на березі моря",
           altEn: "Design of a modern house project in light colors by the sea",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-relaxing-house-01.webp",
+          src: "/images/projects/architectural/architectural-design-relaxing-house-01.webp",
           altUk: "Дизайн сучасної вітальні будинку в світлих тонах розташована на другому поверсі",
           altEn: "Design of a modern living room at home in light colors located on the second floor",
         },
         { 
-          src: "/public/images/projects/architectural/architectural-design-relaxing-zone-01.webp",
+          src: "/images/projects/architectural/architectural-design-relaxing-zone-01.webp",
           altUk: "Дизайн кімнати відпочинку преміум-класу",
           altEn: "Design of a premium lounge",
         },
         { 
-          src: "/public/images/projects/architectural/design-bath-room-01.webp",
+          src: "/images/projects/architectural/design-bath-room-01.webp",
           altUk: "Проєкт візуалізації ванної кімнати в брутальних темно-червоних тонах",
           altEn: "Bathroom visualization project in brutal dark red colors",
         },
         { 
-          src: "/public/images/projects/architectural/visualization-nature-01.webp",
+          src: "/images/projects/architectural/visualization-nature-01.webp",
           altUk: "Візуалізація глечика, стакану молока та хліба",
           altEn: "Visualization of a jug, a glass of milk and bread",
         },
