@@ -1,9 +1,71 @@
 @use "@/app/variables";
 
 .title {
-  @include variables.title-h2;
+    margin-bottom: 8px;
+    @include variables.title-h2;
 
-  @media screen and (min-width: variables.$tablet) {
-    @include variables.title-h1;
-  }
+    @media screen and (min-width: variables.$tablet) {
+        @include variables.title-h1;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        margin-left: 16px;
+    }
+}
+
+.customLink {
+    align-items: flex-end;
+    @media screen and (min-width: variables.$tablet) {
+        min-inline-size: 137px;
+        margin-left: 12px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        min-inline-size: 150px;
+        margin-left: 12px;
+    }
+}
+
+.description {
+    margin-bottom: 12px;
+    font-size: 22px;
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 24px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        font-size: 28px;
+    }
+}
+
+.descriptionWrapper {
+    margin-bottom: 16px;
+    @media screen and (min-width: variables.$tablet) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        margin-bottom: 24px;
+    }
+}
+
+.cardList {
+    // display: grid;
+    // grid-template-columns: 1fr;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    @media screen and (min-width: variables.$tablet) {
+        // grid-template-columns: repeat(2);
+        flex-wrap: wrap;
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 12px;
+    }
+
+    @media screen and (min-width: variables.$desktop) {
+        column-gap: 0;
+        justify-content: space-between;
+    }
 }

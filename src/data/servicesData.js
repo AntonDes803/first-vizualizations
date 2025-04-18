@@ -22,7 +22,7 @@ export const servicesData = [
     text2Uk:
       "Наш підхід передбачає ретельне планування, зонування та використання якісних матеріалів. Завдяки цьому ви отримуєте не просто красивий інтер’єр, а продумане рішення для комфортного життя.",
     text2En: "",
-    images: ["", "", ""],
+    images: ["/images/dev/homePage/all-services-design-apartments.webp", "", ""],
   },
   {
     slug: houseDesignHref,
@@ -38,7 +38,7 @@ export const servicesData = [
     text1En: "",
     text2Uk: "",
     text2En: "",
-    images: ["", "", ""],
+    images: ["/images/dev/homePage/all-services-design-houses.webp", "", ""],
   },
   {
     slug: commercialDesignHref,
@@ -54,7 +54,7 @@ export const servicesData = [
     text1En: "",
     text2Uk: "",
     text2En: "",
-    images: ["", "", ""],
+    images: ["/images/dev/homePage/all-services-design-commercial-premises.webp", "", ""],
   },
   {
     slug: architecturalDesignHref,
@@ -70,6 +70,6 @@ export const servicesData = [
     text1En: "",
     text2Uk: "",
     text2En: "",
-    images: ["", "", ""],
+    images: ["/images/dev/homePage/all-services-architectural-design.webp", "", ""],
   },
 ];

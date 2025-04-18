@@ -4,26 +4,26 @@ import { useState, createContext } from "react";
 export const SiteContext = createContext();
 
 export const SiteProvider = ({ children }) => {
-  const [mobileMenu, setMobileMenu] = useState(false);
-  const [mobileMenuContent, setmobileMenuContent] = useState(false);
+    const [mobileMenu, setMobileMenu] = useState(false);
+    const [mobileMenuContent, setmobileMenuContent] = useState(false);
+    const [isModalOpen, setModalOpen] = useState(false);
 
-  //   const [modalFrame, setModalFrame] = useState(false);
-  //   const [backDrop, setBackDrop] = useState(false);
+    //   const [backDrop, setBackDrop] = useState(false);
 
-  return (
-    <SiteContext.Provider
-      value={{
-        mobileMenu,
-        setMobileMenu,
-        mobileMenuContent,
-        setmobileMenuContent,
-        // modalFrame,
-        // setModalFrame,
-        // backDrop,
-        // setBackDrop,
-      }}
-    >
-      {children}
-    </SiteContext.Provider>
-  );
+    return (
+        <SiteContext.Provider
+            value={{
+                mobileMenu,
+                setMobileMenu,
+                mobileMenuContent,
+                setmobileMenuContent,
+                isModalOpen,
+                setModalOpen,
+                // backDrop,
+                // setBackDrop,
+            }}
+        >
+            {children}
+        </SiteContext.Provider>
+    );
 };
