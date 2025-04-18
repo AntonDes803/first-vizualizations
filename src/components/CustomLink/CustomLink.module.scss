@@ -4,6 +4,7 @@
   @include variables.bodyText-Bold;
   & {
     width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     column-gap: 4px;
@@ -28,6 +29,7 @@
   @include variables.bodyText-Bold;
   & {
     width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     column-gap: 4px;
