@@ -1,4 +1,4 @@
-export const faqArchitecturalDesignData = [
+export const serviceIdArchitecturalFaqData = [
     { 
     questionUk: "З чого починається архітектурне проєктування?", 
     answerUk: "З ескізного проєкту: аналізуємо ділянку, освітлення, розташування, і створюємо базову концепцію будинку. Далі - планування, фасади, розрізи, візуалізації.", 
