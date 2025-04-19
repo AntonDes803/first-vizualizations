@@ -3,7 +3,7 @@ import AboutUsSection from "@/sections/aboutUsSection/AboutUsSection";
 import AboutUsValuesSection from "@/sections/aboutUsValuesSection/AboutUsValuesSection";
 import HomeFaqSection from "@/sections/homeSections/homeFaqSection/HomeFaqSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { faqHomeData } from "@/data/faqHomeData";
+import { aboutUsFaqData } from "@/data/faq/aboutUsFaqData";
 
 const AboutUsPage = async ({ params }) => {
   const { lang } = await params;
@@ -13,14 +13,17 @@ const AboutUsPage = async ({ params }) => {
     aboutUsValuesSection,
     homeFaqSection,
   } = await getDictionary(lang);
-  const faqData = faqHomeData;
 
   return (
     <>
       <AboutUsHeroSection lang={lang} dictionary={aboutUsHeroSection} />
       <AboutUsSection lang={lang} dictionary={aboutUsSection} />
       <AboutUsValuesSection lang={lang} dictionary={aboutUsValuesSection} />
-      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
+      <HomeFaqSection
+        lang={lang}
+        dictionary={homeFaqSection}
+        data={aboutUsFaqData}
+      />
     </>
   );
 };

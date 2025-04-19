@@ -3,7 +3,8 @@ import PortfolioIdSolutionSection from "@/sections/portfolioIdSolutionSection/Po
 import PortfolioIdVideoSection from "@/sections/portfolioIdVideoSection/PortfolioIdVideoSection";
 import HomeFaqSection from "@/sections/homeSections/homeFaqSection/HomeFaqSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { faqHomeData } from "@/data/faqHomeData";
+import { arrOfProjects } from "@/data/projects/arrOfProjects";
+import { arrOfPortfolioIdFaqData } from "@/data/faq/arrOfPortfolioIdFaqData";
 
 const PortfolioIdPage = async ({ params }) => {
   const { lang, slug } = await params;
@@ -14,20 +15,33 @@ const PortfolioIdPage = async ({ params }) => {
     homeFaqSection,
   } = await getDictionary(lang);
 
-  const faqData = faqHomeData;
+  const projectIdData = arrOfProjects.find((item) => item.slug === slug);
+  const projectIdFaqData = arrOfPortfolioIdFaqData.find(
+    (item) => item.category === projectIdData.categoryEn
+  );
 
   return (
     <>
-      <PortfolioIdHeroSection lang={lang} dictionary={portfolioIdHeroSection} />
+      <PortfolioIdHeroSection
+        lang={lang}
+        dictionary={portfolioIdHeroSection}
+        data={projectIdData}
+      />
       <PortfolioIdVideoSection
         lang={lang}
         dictionary={portfolioIdVideoSection}
+        data={projectIdData}
       />
       <PortfolioIdSolutionSection
         lang={lang}
         dictionary={portfolioIdSolutionSection}
+        data={projectIdData}
       />
-      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
+      <HomeFaqSection
+        lang={lang}
+        dictionary={homeFaqSection}
+        data={projectIdFaqData}
+      />
     </>
   );
 };

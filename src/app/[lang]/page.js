@@ -9,7 +9,7 @@ import HomeTeamSection from "@/sections/homeSections/homeTeamSection/HomeTeamSec
 import HomeWhyMeSection from "@/sections/homeSections/homeWhyMeSection/HomeWhyMeSection";
 import HomeWorkProcessSection from "@/sections/homeSections/homeWorkProcessSection/HomeWorkProcessSection";
 import { getDictionary } from "@/helpers/getDictionary";
-import { faqHomeData } from "@/data/faqHomeData";
+import { homeFaqData } from "@/data/faq/homeFaqData";
 
 // export async function generateMetadata({ params }) {
 //   const { lang } = params;
@@ -101,7 +101,6 @@ export default async function Home({ params }) {
     homeWorkProcessSection,
     homeFaqSection,
   } = await getDictionary(lang);
-  const faqData = faqHomeData;
 
   return (
     <>
@@ -119,7 +118,11 @@ export default async function Home({ params }) {
       <HomeAfterWorkSection lang={lang} dictionary={homeAfterWorkSection} />
       <HomeServicesSection lang={lang} dictionary={homeServicesSection} />
       <HomeWorkProcessSection lang={lang} dictionary={homeWorkProcessSection} />
-      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
+      <HomeFaqSection
+        lang={lang}
+        dictionary={homeFaqSection}
+        data={homeFaqData}
+      />
     </>
   );
 }

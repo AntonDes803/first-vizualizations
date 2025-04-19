@@ -58,7 +58,11 @@ const HeaderNav = () => {
                   }}
                 >
                   <svg>
-                    <use href="sprite.svg#icon-dot"></use>
+                    {/* так було */}
+                    {/* <use href="sprite.svg#icon-dot"></use> */}
+                    {/* а так має бути */}
+                    <use href="/sprite.svg#icon-dot"></use>
+                    {/* ось іпричина помилки */}
                   </svg>
 
                   <Link href={`${el.href}${item.href}`}>{item.titleUk}</Link>

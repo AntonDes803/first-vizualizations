@@ -1,18 +1,13 @@
 import {
-  apartmentDesignHref,
-  architecturalDesignHref,
-  commercialDesignHref,
-  houseDesignHref,
-} from "./navLinksData";
-
-const apartmentDesignSlug = apartmentDesignHref.slice(1);
-const architecturalDesignSlug = architecturalDesignHref.slice(1);
-const commercialDesignSlug = commercialDesignHref.slice(1);
-const houseDesignSlug = houseDesignHref.slice(1);
+  apartmentsCategoryData,
+  architectureCategoryData,
+  businessCategoryData,
+  housesCategoryData,
+} from "./projectCategories";
 
 export const servicesData = [
   {
-    slug: apartmentDesignSlug,
+    slug: apartmentsCategoryData.id,
     categoryUk: "Дизайн інтер’єру квартир",
     categoryEn: "",
     cardTextUk:
@@ -35,7 +30,7 @@ export const servicesData = [
     imageMain: "/images/dev/servicesPage/all-services-design-apartments.webp",
   },
   {
-    slug: houseDesignSlug,
+    slug: housesCategoryData.id,
     categoryUk: "Дизайн інтер’єру будинків",
     categoryEn: "",
     cardTextUk:
@@ -52,7 +47,7 @@ export const servicesData = [
     imageMain: "/images/dev/servicesPage/all-services-design-houses.webp",
   },
   {
-    slug: commercialDesignSlug,
+    slug: businessCategoryData.id,
     categoryUk: "Дизайн інтер’єру комерційних приміщень",
     categoryEn: "",
     cardTextUk:
@@ -73,7 +68,7 @@ export const servicesData = [
     imageMain: "/images/dev/servicesPage/all-services-design-commercial.webp",
   },
   {
-    slug: architecturalDesignSlug,
+    slug: architectureCategoryData.id,
     categoryUk: "Архітектурне проєктування",
     categoryEn: "",
     cardTextUk:
