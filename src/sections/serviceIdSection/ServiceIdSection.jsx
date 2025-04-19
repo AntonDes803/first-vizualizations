@@ -6,6 +6,8 @@ import CustomLink from '@/components/CustomLink/CustomLink';
 import styles from './ServiceIdSection.module.scss';
 
 const ServiceIdSection = ({ lang, dictionary, data }) => {
+  // console.log("data", data);
+
   return (
     <section className="section" id="serviceIdSection">
       <ul className={`container ${styles.servisesIdList}`}>

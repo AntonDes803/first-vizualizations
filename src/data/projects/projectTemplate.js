@@ -2,8 +2,8 @@
 
 export const projectTemplate = {
   slug: "",
-  categoryUk: "", // Квартири Будинки Комерція Архітектура
-  categoryEn: "",
+  categoryUk: "", // apartmentsCategoryData.categoryUk housesCategoryData.categoryUk businessCategoryData.categoryUk architectureCategoryData.categoryUk
+  categoryEn: "", // apartmentsCategoryData.categoryEn housesCategoryData.categoryEn businessCategoryData.categoryEn architectureCategoryData.categoryEn
   mainImage: "", // она же идет на портфолиоАйдиХеро
   altUk: "",
   altEn: "",

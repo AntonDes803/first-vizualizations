@@ -1,10 +1,10 @@
-import HomeFaqSection from '@/sections/homeSections/homeFaqSection/HomeFaqSection';
-import HomeWorkProcessSection from '@/sections/homeSections/homeWorkProcessSection/HomeWorkProcessSection';
-import ServiceIdHeroSection from '@/sections/serviceIdHeroSection/ServiceIdHeroSection';
-import ServiceIdSection from '@/sections/serviceIdSection/ServiceIdSection';
-import { getDictionary } from '@/helpers/getDictionary';
-import { faqHomeData } from '@/data/faqHomeData';
-import { servicesData } from '@/data/servicesData';
+import HomeFaqSection from "@/sections/homeSections/homeFaqSection/HomeFaqSection";
+import HomeWorkProcessSection from "@/sections/homeSections/homeWorkProcessSection/HomeWorkProcessSection";
+import ServiceIdHeroSection from "@/sections/serviceIdHeroSection/ServiceIdHeroSection";
+import ServiceIdSection from "@/sections/serviceIdSection/ServiceIdSection";
+import { getDictionary } from "@/helpers/getDictionary";
+import { servicesData } from "@/data/servicesData";
+import { arrOfServiceIdFaqData } from "@/data/faq/arrOfServiceIdFaqData";
 
 const ServicesIdPage = async ({ params }) => {
   const { lang, slug } = await params;
@@ -15,9 +15,11 @@ const ServicesIdPage = async ({ params }) => {
     homeFaqSection,
   } = await getDictionary(lang);
 
-  const faqData = faqHomeData;
-
   const serviceData = servicesData.find((item) => item.slug === slug);
+
+  const serviceIdFaqData = arrOfServiceIdFaqData.find(
+    (item) => item.serviceIdSlug === slug
+  );
 
   return (
     <>
@@ -32,7 +34,11 @@ const ServicesIdPage = async ({ params }) => {
         data={serviceData}
       />
       <HomeWorkProcessSection lang={lang} dictionary={homeWorkProcessSection} />
-      <HomeFaqSection lang={lang} dictionary={homeFaqSection} data={faqData} />
+      <HomeFaqSection
+        lang={lang}
+        dictionary={homeFaqSection}
+        data={serviceIdFaqData}
+      />
     </>
   );
 };

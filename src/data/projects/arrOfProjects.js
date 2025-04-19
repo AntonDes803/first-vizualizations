@@ -10,7 +10,7 @@ import { restaurantEatFishData } from "./restaurantEatFishData";
 import { svitloPark } from "./svitloPark";
 import { svitloParkFirst } from "./svitloParkFirst";
 
-export const allProjects = [
+export const arrOfProjects = [
   alenasFlatData,
   architecturalData,
   beautyData,
@@ -21,5 +21,5 @@ export const allProjects = [
   ministerskyData,
   restaurantEatFishData,
   svitloPark,
-  svitloParkFirst
+  svitloParkFirst,
 ];

@@ -20,7 +20,8 @@ export default function CustomLink({
     <Link className={styles[linkClassname] + " " + linkCustomClass} href={path}>
       {text}
       <svg className={styles[arrowIconClassname] + " " + iconCustomClass}>
-        <use href="../sprite.svg#icon-arrow_right" />
+        {/* <use href="../sprite.svg#icon-arrow_right" /> */}
+        <use href="/sprite.svg#icon-arrow_right" />
       </svg>
     </Link>
   );
