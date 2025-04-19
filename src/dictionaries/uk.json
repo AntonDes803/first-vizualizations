@@ -90,7 +90,8 @@
     "quoteAuthor": "Lorinda Mamo"
   },
   "serviceIdSection": {
-    "callBtnText": "ЗВ’ЯЗАТИСЬ"
+    "callBtnText": "ЗВ’ЯЗАТИСЬ",
+    "linkText": "ДО ПОРТФОЛІО"
   },
   "servicesHeroSection": {
     "title": "Послуги Malov&Partners",

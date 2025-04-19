@@ -26,8 +26,7 @@ const ServicesIdPage = async ({ params }) => {
       <ServiceIdHeroSection
         lang={lang}
         dictionary={serviceIdHeroSection}
-        // data={serviceData}
-        service={serviceData}
+        data={serviceData}
       />
       <ServiceIdSection
         lang={lang}
