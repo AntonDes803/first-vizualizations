@@ -1,28 +1,16 @@
-// 'use client';
+import HeroBtnArrow from '@/components/HeroBtnArrow/HeroBtnArrow';
+import { stringSplittingByDelimiter } from '@/helpers/stringSplittingByDelimiter';
+import styles from './ServiceIdHeroSection.module.scss';
 
-// import { useParams } from 'next/navigation';
-// import { servicesData } from '@/data/servicesData';
-import HeroBtnArrow from "@/components/HeroBtnArrow/HeroBtnArrow";
-import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
-import styles from "./ServiceIdHeroSection.module.scss";
-
-// const ServiceIdHeroSection = ({ lang, dictionary, data, service }) => {
-const ServiceIdHeroSection = ({ lang, dictionary, service }) => {
-  // const params = useParams();
-  // const slug = params.slug;
-  // const service = servicesData.find((item) => item.slug === `/${slug}`);
-
-  // console.log(service);
-
-  // я б заменил service на data - чтоб везде однообразно и понятно
-  const sectionTitle = service.categoryUk.toUpperCase();
-  const titleArray = stringSplittingByDelimiter(sectionTitle, "’");
+const ServiceIdHeroSection = ({ lang, dictionary, data }) => {
+  const sectionTitle = data.categoryUk.toUpperCase();
+  const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
 
   return (
     <section
       className={styles.section}
       style={{
-        backgroundImage: `linear-gradient(rgba(45, 48, 55, 0.45), rgba(45, 48, 55, 0.45)), url(${service.images[0]})`,
+        backgroundImage: `linear-gradient(rgba(45, 48, 55, 0.45), rgba(45, 48, 55, 0.45)), url(${data.images[0]})`,
       }}
     >
       <div className={`container ${styles.container}`}>

@@ -1,10 +1,10 @@
-import HomeFaqSection from "@/sections/homeSections/homeFaqSection/HomeFaqSection";
-import HomeWorkProcessSection from "@/sections/homeSections/homeWorkProcessSection/HomeWorkProcessSection";
-import ServiceIdHeroSection from "@/sections/serviceIdHeroSection/ServiceIdHeroSection";
-import ServiceIdSection from "@/sections/serviceIdSection/ServiceIdSection";
-import { getDictionary } from "@/helpers/getDictionary";
-import { faqHomeData } from "@/data/faqHomeData";
-import { servicesData } from "@/data/servicesData";
+import HomeFaqSection from '@/sections/homeSections/homeFaqSection/HomeFaqSection';
+import HomeWorkProcessSection from '@/sections/homeSections/homeWorkProcessSection/HomeWorkProcessSection';
+import ServiceIdHeroSection from '@/sections/serviceIdHeroSection/ServiceIdHeroSection';
+import ServiceIdSection from '@/sections/serviceIdSection/ServiceIdSection';
+import { getDictionary } from '@/helpers/getDictionary';
+import { faqHomeData } from '@/data/faqHomeData';
+import { servicesData } from '@/data/servicesData';
 
 const ServicesIdPage = async ({ params }) => {
   const { lang, slug } = await params;
@@ -24,8 +24,7 @@ const ServicesIdPage = async ({ params }) => {
       <ServiceIdHeroSection
         lang={lang}
         dictionary={serviceIdHeroSection}
-        // data={serviceData}
-        service={serviceData}
+        data={serviceData}
       />
       <ServiceIdSection
         lang={lang}

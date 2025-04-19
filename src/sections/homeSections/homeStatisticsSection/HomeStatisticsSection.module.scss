@@ -1,1 +1,46 @@
-@use "@/app/variables";
+@use '@/app/variables';
+
+.statisticsList {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  row-gap: 12px;
+  @media screen and (min-width: variables.$tablet) {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0px;
+  }
+}
+
+.statisticsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statisticsNumber {
+  @include variables.title-h2;
+  & {
+    margin-bottom: 8px;
+  }
+}
+
+.statisticsDesk {
+  @include variables.subtitle2-Regular;
+  & {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 116px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    width: 142px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    width: 221px;
+    font-size: 28px;
+  }
+}

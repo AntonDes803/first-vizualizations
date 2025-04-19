@@ -1,11 +1,20 @@
-import { statisticsData } from "@/data/statisticsData";
-import styles from "./HomeStatisticsSection.module.scss";
+import { statisticsData } from '@/data/statisticsData';
+
+import styles from './HomeStatisticsSection.module.scss';
 
 const HomeStatisticsSection = ({ lang, dictionary }) => {
-  // console.log('statisticsData', statisticsData)
   return (
     <section className="section">
-      <div className="container">HomeStatisticsSection</div>
+      <ul className={`container ${styles.statisticsList}`}>
+        {statisticsData.map((data, index) => (
+          <li className={styles.statisticsItem} key={index}>
+            <h3 className={`${styles.statisticsNumber} ampersandColor`}>
+              {data.number}
+            </h3>
+            <p className={styles.statisticsDesk}>{data.textUk}</p>
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
