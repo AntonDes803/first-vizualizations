@@ -1,4 +1,4 @@
-export const faqCommercialDesignData = [
+export const servicesIdCommercialFaqData = [
     { 
     questionUk: "Скільки часу займає проєкт комерційного інтер’єру?", 
     answerUk: "Усе залежить від площі, стилістики та складності задач. Невелике кафе - це один термін, а медичний центр чи готель - зовсім інший. Орієнтовно - близько 3 тижні.", 
