@@ -1,3 +1,5 @@
+import { businessCategoryData } from "../projectCategories";
+
 export const restaurantEatFishData = {
   slug: "restaurant-eat-fish",
   categoryUk: businessCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
