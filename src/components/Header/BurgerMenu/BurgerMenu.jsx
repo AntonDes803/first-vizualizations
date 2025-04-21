@@ -33,7 +33,7 @@ const BurgerMenu = ({ lang }) => {
         }
       >
         <div className={`container ${styles.container}`}>
-          <HeaderNav />
+          <HeaderNav lang={lang} />
 
           {/* <Navigation
             className={styles.headerNavigation}
