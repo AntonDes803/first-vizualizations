@@ -40,7 +40,7 @@ const PortfolioIdPage = async ({ params }) => {
       <HomeFaqSection
         lang={lang}
         dictionary={homeFaqSection}
-        data={projectIdFaqData}
+        data={projectIdFaqData.blocks}
       />
     </>
   );

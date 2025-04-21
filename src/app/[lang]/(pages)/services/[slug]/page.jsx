@@ -37,7 +37,7 @@ const ServicesIdPage = async ({ params }) => {
       <HomeFaqSection
         lang={lang}
         dictionary={homeFaqSection}
-        data={serviceIdFaqData}
+        data={serviceIdFaqData.blocks}
       />
     </>
   );
