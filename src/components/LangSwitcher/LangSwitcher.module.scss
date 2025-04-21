@@ -1,1 +1,31 @@
 @use "@/app/variables";
+
+.langSwitch {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border-top: solid 1px variables.$mainTextColor;
+  border-bottom: solid 1px variables.$mainTextColor;
+
+  @media screen and (min-width: variables.$tablet) {
+    width: fit-content;
+    padding: 0;
+    border: none;
+  }
+}
+
+.langBtn {
+  color: variables.$langSwitcherLinkColor;
+  cursor: pointer;
+}
+
+.langBtn:hover {
+  color: variables.$hoverBtnBgColor;
+}
+
+.active {
+  color: variables.$mainTextColor;
+  border-bottom: solid 1px variables.$mainTextColor;
+}
