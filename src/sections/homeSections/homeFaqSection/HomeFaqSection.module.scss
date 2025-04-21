@@ -1,1 +1,107 @@
 @use "@/app/variables";
+
+.title {
+  @include variables.title-h2;
+  & {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h1;
+    & {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.faqItem {
+  border: 1px solid variables.$hoverBtnBgColor;
+}
+
+.faqTitle {
+  @include variables.subtitle2-Regular;
+
+  & {
+    padding: 12px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    color: variables.$secondaryTextColor;
+    background-color: variables.$mainTextColor;
+
+    cursor: pointer;
+
+    & svg {
+      width: 24px;
+      min-width: 24px;
+      height: 24px;
+    }
+
+    &:hover svg,
+    &:focus svg {
+      transform: rotate(45deg);
+    }
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    padding: 16px 12px;
+    gap: 16px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+}
+
+.isOpenSvg {
+  transform: rotate(45deg);
+}
+
+.isClosedSvg {
+  transform: rotate(0deg);
+}
+
+.answerWrapp {
+  interpolate-size: allow-keywords; //for chrome
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding-left: 8px;
+  padding-right: 40px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-left: 12px;
+    padding-right: 52px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding-left: 16px;
+    padding-right: 64px;
+  }
+}
+
+.openedAnswerWrapp {
+  max-height: 300px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.answer {
+  @include variables.bodyText-Regular;
+}
