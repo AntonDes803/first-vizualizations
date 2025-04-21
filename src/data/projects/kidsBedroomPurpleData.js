@@ -1,7 +1,9 @@
+import { apartmentsCategoryData } from "../projectCategories";
+
 export const kidsBedroomPurpleData = {
   slug: "kids-bedroom-purple",
-  categoryUk: "Квартири", // Квартири Будинки Комерція Архітектура
-  categoryEn: "Apartments",
+  categoryUk: apartmentsCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
+  categoryEn: apartmentsCategoryData.categoryEn,
   mainImage: "/images/projects/kids-bedroom-purple/kids-bedroom-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Візуалізація дизайну дитячої кімнати",
   altEn: "Visualization of the children's room design",

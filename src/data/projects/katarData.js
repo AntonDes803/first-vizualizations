@@ -1,7 +1,9 @@
+import { housesCategoryData } from "../projectCategories";
+
 export const katarData = {
   slug: "design-katar",
-  categoryUk: "Будинки", // Квартири Будинки Комерція Архітектура
-  categoryEn: "Houses",
+  categoryUk: housesCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
+  categoryEn: housesCategoryData.categoryEn,
   mainImage: "/images/projects/katar/hall/design-katar-hall-03.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Візуалізація будинку",
   altEn: "Visualization of the house",
