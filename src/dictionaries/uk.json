@@ -29,7 +29,8 @@
   "contactsSection": {
     "title": "ЗВ’ЯЗАТИСЬ З НАМИ:",
     "subTitle": "СОЦІАЛЬНІ МЕРЕЖІ:",
-    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
+    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ",
+    "imgAlt": "Фото"
   },
   "homeAfterWorkSection": {
     "title": "З Malov&Partners ви отримаєте",
@@ -81,7 +82,7 @@
   },
   "portfolioIdHeroSection": {},
   "portfolioIdSolutionSection": {
-    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
+    "orderBtnText": "ЗАМОВИТИ ПРОЄКТ"
   },
   "portfolioIdVideoSection": {},
   "portfolioSection": {},
