@@ -85,7 +85,7 @@ export const svitloPark = {
         { 
           src: "/images/projects/svitlo-park/common/design-svitlo-park-02.webp", 
           altUk: "Візуалізація дизайну вітальні преміум-класу в світлих тонах", 
-          altEn: "", 
+          altEn: "Visualization of a premium living room design in light colors", 
         },
         { 
           src: "/images/projects/svitlo-park/common/design-svitlo-park-01.webp", 
