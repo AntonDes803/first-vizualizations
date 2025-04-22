@@ -5,7 +5,7 @@ import styles from "./HomeExperienceSection.module.scss";
 const HomeExperienceSection = ({ lang, dictionary }) => {
   return (
     <section className="section">
-      <div className={`"container"  ${styles.container}`}>
+      <div className={`container  ${styles.container}`}>
         <div className={styles.boxTitle}>
           <h2 className={styles.title}>{dictionary.title}</h2>
           <p className={styles.text}>{dictionary.description}</p>
@@ -13,7 +13,7 @@ const HomeExperienceSection = ({ lang, dictionary }) => {
           {/* CallBtn нужно будет заменить на OrderBtn когда она появится */}
           <CallBtn customClass="" text={dictionary.orderBtnText} />
         </div>
-        <div className={styles.boxHomeExperience}>
+        <div className={styles.imgWrapper}>
           <Image
             className={styles.imgHomeExperience}
             src="/images/dev/homePage/home-page-work-experience-img.webp"
