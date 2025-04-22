@@ -13,7 +13,7 @@ export const kidsBedroomPurpleData = {
   locationEn: "",
   area: "", // 49
   styleUk: "сучасний", // сучасний мінімалізм
-  styleEn: "",
+  styleEn: "modern",
   year: "2024", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
@@ -51,28 +51,35 @@ export const kidsBedroomPurpleData = {
         "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
-        { 
-          src: "/images/projects/kids-bedroom-purple/kids-bedroom-02.webp", 
-          altUk: "Дизайн сучасної дитячої кімнати із LED-підсвіткою на стелі", 
-          altEn: "Design of a modern children's room with LED lighting on the ceiling", 
+        {
+          src: "/images/projects/kids-bedroom-purple/kids-bedroom-02.webp",
+          altUk: "Дизайн сучасної дитячої кімнати із LED-підсвіткою на стелі",
+          altEn:
+            "Design of a modern children's room with LED lighting on the ceiling",
         },
-        { 
-          src: "/images/projects/kids-bedroom-purple/kids-bedroom-03.webp", 
-          altUk: "Дизайн сучасної дитячої кімнати із LED-підсвіткою на стелі в світло-фіолетовому стилі", 
-          altEn: "Modern children's room design with LED ceiling lights in light purple style", 
+        {
+          src: "/images/projects/kids-bedroom-purple/kids-bedroom-03.webp",
+          altUk:
+            "Дизайн сучасної дитячої кімнати із LED-підсвіткою на стелі в світло-фіолетовому стилі",
+          altEn:
+            "Modern children's room design with LED ceiling lights in light purple style",
         },
-        { 
-          src: "/images/projects/kids-bedroom-purple/kids-bedroom-closet.webp", 
-          altUk: "Дизайн сучасної дитячої гардеробної із LED-підсвіткою в світлому стилі", 
-          altEn: "Design of a modern children's dressing room with LED lighting in a light style", 
+        {
+          src: "/images/projects/kids-bedroom-purple/kids-bedroom-closet.webp",
+          altUk:
+            "Дизайн сучасної дитячої гардеробної із LED-підсвіткою в світлому стилі",
+          altEn:
+            "Design of a modern children's dressing room with LED lighting in a light style",
         },
-        { 
-          src: "/images/projects/kids-bedroom-purple/kids-bedroom-office-place.webp", 
-          altUk: "Дизайн сучасної дитячої кімнати з великим дзеркалом та LED-підсвіткою і місцем для навчання", 
-          altEn: "Design of a modern children's room with a large mirror with LED lighting and a place for studying", 
+        {
+          src: "/images/projects/kids-bedroom-purple/kids-bedroom-office-place.webp",
+          altUk:
+            "Дизайн сучасної дитячої кімнати з великим дзеркалом та LED-підсвіткою і місцем для навчання",
+          altEn:
+            "Design of a modern children's room with a large mirror with LED lighting and a place for studying",
         },
-        { 
-          src: "/images/projects/kids-bedroom-purple/kids-bedroom-01.webp", 
+        {
+          src: "/images/projects/kids-bedroom-purple/kids-bedroom-01.webp",
           altUk: "Візуалізація дизайну сучасної дитячої кімнати",
           altEn: "Visualization of the design of a modern children's room",
         },

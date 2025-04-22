@@ -85,7 +85,13 @@
     "orderBtnText": "ЗАМОВИТИ ПРОЄКТ"
   },
   "portfolioIdVideoSection": {},
-  "portfolioSection": {},
+  "portfolioSection": {
+    "area": "Площа: ",
+    "measure": "м",
+    "style": "Стиль: ",
+    "year": " рік",
+    "cardLinkText": "ВІДКРИТИ ПРОЄКТ"
+  },
   "serviceIdHeroSection": {
     "quote": "“Великий дизайн починається з ще більшої історії”",
     "quoteAuthor": "Lorinda Mamo"
