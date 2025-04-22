@@ -1,1 +1,76 @@
 @use "@/app/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 24px;
+  }
+}
+
+.boxTitle {
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+  }
+}
+
+.title {
+  @include variables.subtitle1-Bold;
+
+  & {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.text {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 32px; // це має бути margin-bottom
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 56px; // це має бути margin-bottom
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320/216;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+    aspect-ratio: 344/236;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    flex: 0 1 auto; // обнуление flex:1
+    width: 690px;
+  }
+}
+
+.imgHomeExperience {
+  width: 100%;
+  position: relative;
+}
+
+.imgHomeExperience {
+  display: block;
+  object-fit: cover;
+}

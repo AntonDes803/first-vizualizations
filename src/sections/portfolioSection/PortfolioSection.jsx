@@ -1,5 +1,5 @@
-import { allProjects } from '@/data/projects/allProjects';
-import styles from './PortfolioSection.module.scss';
+import { allProjects } from "@/data/projects/arrOfProjects";
+import styles from "./PortfolioSection.module.scss";
 
 const PortfolioSection = ({ lang, dictionary }) => {
   // console.log("allProjects", allProjects);

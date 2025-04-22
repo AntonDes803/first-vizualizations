@@ -17,7 +17,7 @@ const Header = ({ lang, dictionary }) => {
         </div>
       </div>
 
-      <BurgerMenu />
+      <BurgerMenu lang={lang} />
     </header>
   );
 };

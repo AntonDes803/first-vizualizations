@@ -1,11 +1,27 @@
+import Image from "next/image";
+import CallBtn from "@/components/buttons/CallBtn/CallBtn";
 import styles from "./HomeExperienceSection.module.scss";
 
 const HomeExperienceSection = ({ lang, dictionary }) => {
   return (
     <section className="section">
-      <div className="container">
-        {/* HomeExperienceSection */}
-        <h2>{dictionary.title}</h2>
+      <div className={`container  ${styles.container}`}>
+        <div className={styles.boxTitle}>
+          <h2 className={styles.title}>{dictionary.title}</h2>
+          <p className={styles.text}>{dictionary.description}</p>
+
+          {/* CallBtn нужно будет заменить на OrderBtn когда она появится */}
+          <CallBtn customClass="" text={dictionary.orderBtnText} />
+        </div>
+        <div className={styles.imgWrapper}>
+          <Image
+            className={styles.imgHomeExperience}
+            src="/images/dev/homePage/home-page-work-experience-img.webp"
+            alt={dictionary.imgAlt}
+            sizes="(max-width: 767px ) 95vw, (max-width: 1439px ) 45vw, 588px"
+            fill={true}
+          />
+        </div>
       </div>
     </section>
   );

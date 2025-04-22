@@ -3,11 +3,10 @@ import React, { useContext, useEffect } from "react";
 import { SiteContext } from "@/context/SiteContext";
 import LangSwitcher from "@/components/LangSwitcher/LangSwitcher";
 import SocialLinks from "@/components/SocialLinks/SocialLinks";
-
-import styles from "./BurgerMenu.module.scss";
 import HeaderNav from "../HeaderNav/HeaderNav";
+import styles from "./BurgerMenu.module.scss";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ lang }) => {
   const { mobileMenu, mobileMenuContent } = useContext(SiteContext);
 
   useEffect(() => {
@@ -34,7 +33,7 @@ const BurgerMenu = () => {
         }
       >
         <div className={`container ${styles.container}`}>
-          <HeaderNav />
+          <HeaderNav lang={lang} />
 
           {/* <Navigation
             className={styles.headerNavigation}
@@ -59,7 +58,7 @@ const BurgerMenu = () => {
           /> */}
 
           <div>
-            <LangSwitcher />
+            <LangSwitcher lang={lang} />
 
             <SocialLinks dark />
           </div>

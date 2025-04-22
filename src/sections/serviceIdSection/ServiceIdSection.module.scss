@@ -1,1 +1,86 @@
-@use "@/app/variables";
+@use '@/app/variables';
+
+.servisesIdList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    row-gap: 20px;
+    margin-bottom: 20px;
+    & .servicesIdItem:last-child {
+      flex-direction: row-reverse;
+      align-items: center;
+      & .desc {
+        width: 50%;
+      }
+    }
+  }
+  @media screen and (min-width: variables.$desktop) {
+    row-gap: 29px;
+    margin-bottom: 24px;
+  }
+}
+
+.servicesIdItem {
+  @media screen and (min-width: variables.$tablet) {
+    display: flex;
+    column-gap: 16px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    align-items: center;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 16px;
+  @media screen and (min-width: variables.$tablet) {
+    width: 50%;
+    margin: 0;
+    & .desc {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.title {
+  @include variables.title-h3;
+  & {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.desc {
+  @include variables.bodyText-Regular;
+  & {
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    margin: 0;
+  }
+}
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320 / 280;
+  & img {
+    object-fit: cover;
+  }
+  @media screen and (min-width: variables.$tablet) {
+    width: 49%;
+    height: 36vw;
+    max-height: 512px;
+  }
+}

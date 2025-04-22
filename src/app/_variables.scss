@@ -18,8 +18,8 @@ $mainTextColor: #2d3037;
 $secondary-800: #40454f;
 // $secondary-700: #515764;
 $descriptionColor: #515764;
-
-$secondary-600: #626a7b;
+// $secondary-600: #626a7b;
+$langSwitcherLinkColor: #626a7b;
 $secondary-200: #b8bcc5;
 // $secondary-0: #ffffff;
 $secondaryTextColor: #ffffff;
@@ -171,7 +171,7 @@ $alertSystem: #02007f;
   & {
     font-family: Manrope-Regular, sans-serif;
     font-size: 22px;
-    // font-weight: 400;
+    font-weight: 400;
     line-height: 1.4;
   }
 
@@ -207,7 +207,7 @@ $alertSystem: #02007f;
   & {
     font-family: Manrope-Regular, sans-serif;
     font-size: 16px;
-    // font-weight: 400;
+    font-weight: 400;
     line-height: 1.4;
   }
 
@@ -243,7 +243,7 @@ $alertSystem: #02007f;
   & {
     font-family: Manrope-Regular, sans-serif;
     font-size: 14px;
-    // font-weight: 400;
+    font-weight: 400;
     line-height: 1.7;
   }
 
