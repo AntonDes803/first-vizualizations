@@ -7,20 +7,15 @@
 
   @media screen and (min-width: variables.$tablet) {
     flex-direction: row-reverse;
-    max-width: 1200px; // зайве, це в нас вже вказано в класі container в global.scss
-    margin: 0 auto; // зайве, це в нас вже вказано в класі container в global.scss
-    // align-items: center;
+    align-items: center;
   }
 
   @media screen and (min-width: variables.$desktop) {
     gap: 24px;
-    align-items: center; // думаю, це варто поставити починаючи з tablet - зі збільшенням екрану воно буде по центрі, а не зверху
   }
 }
 
 .boxTitle {
-  width: 100%; // зайве, блочні елементи і так займають 100%
-
   @media screen and (min-width: variables.$tablet) {
     flex: 1;
   }
@@ -28,52 +23,54 @@
 
 .title {
   @include variables.subtitle1-Bold;
-}
 
-.text {
-  @include variables.bodyText-Regular; // це зайве, це6 в нас дефолтні стилі в body в global.scss
   & {
-    padding-top: 8px; // це має бути margin-bottom в класі title
-    padding-bottom: 16px; // це має бути margin-bottom
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: variables.$tablet) {
-    padding-top: 12px; // це має бути margin-bottom в класі title
-    padding-bottom: 32px; // це має бути margin-bottom
+    margin-bottom: 12px;
   }
 
   @media screen and (min-width: variables.$desktop) {
-    padding-top: 16px; // це має бути margin-bottom в класі title
-    padding-bottom: 56px; // це має бути margin-bottom
+    margin-bottom: 16px;
   }
 }
 
-// стосовно неймінгу, краще називати що він обгортає.. наприклад, imgWrapper
-.boxHomeExperience {
+.text {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 32px; // це має бути margin-bottom
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 56px; // це має бути margin-bottom
+  }
+}
+
+.imgWrapper {
   position: relative;
   width: 100%;
-  height: 100%; // я б цю властивість забрав... тут в тебе розмір картинки на сайті не відповідає розміру на дизайні.... краще ставити aspect-ratio: 320/216; розмір буде змінюватися пропорційно
-  // aspect-ratio: 320/216;
+  aspect-ratio: 320/216;
 
-  // @media screen and (min-width: variables.$tablet) {
-  //   flex: 1;
-  //   aspect-ratio: 344/236;
-  // }
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+    aspect-ratio: 344/236;
+  }
 
-  // @media screen and (min-width: variables.$desktop) {
-  //   flex: 0 1 auto; // обнуление flex:1
-  //   width: 690px;
-  // }
+  @media screen and (min-width: variables.$desktop) {
+    flex: 0 1 auto; // обнуление flex:1
+    width: 690px;
+  }
 }
 
 .imgHomeExperience {
   width: 100%;
-  height: auto !important;
-  position: relative !important;
+  position: relative;
 }
 
-// я так робив, і перебивати з important нічого не потрібно... ти питав, чому картинка ansolute - це робить fill={true} в компоненті Image в jsx-файлі
-// .imgHomeExperience {
-//   display: block;
-//   object-fit: cover;
-// }
+.imgHomeExperience {
+  display: block;
+  object-fit: cover;
+}

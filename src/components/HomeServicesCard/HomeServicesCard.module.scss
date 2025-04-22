@@ -1,0 +1,59 @@
+@use "@/app/variables";
+
+.card {
+    width: 100%;
+
+    @media screen and (min-width: variables.$tablet) {
+        width: calc((100% - 16px) / 2);
+    }
+
+    @media screen and (min-width: variables.$desktop) {
+        width: calc((100% - 24px) / 4);
+    }
+}
+
+.titleWrapper {
+    border: solid 1px variables.$secondaryBgColor;
+    width: 100%;
+    padding: 12px;
+    @media screen and (min-width: variables.$tablet) {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        height: 140px;
+    }
+}
+
+.subTitle {
+    & {
+        @include variables.bodyText-Bold;
+    }
+    margin-bottom: 24px;
+    text-align: left;
+
+    @media screen and (min-width: variables.$tablet) {
+        margin-bottom: 12px;
+    }
+}
+
+.imgWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 321/220;
+
+    @media screen and (min-width: variables.$tablet) {
+        aspect-ratio: 344/290;
+    }
+
+    @media screen and (min-width: variables.$desktop) {
+        aspect-ratio: 282/353;
+    }
+}
+
+.img {
+    display: block;
+    object-fit: cover;
+}

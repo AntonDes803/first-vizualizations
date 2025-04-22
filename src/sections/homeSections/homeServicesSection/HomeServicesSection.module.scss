@@ -1,13 +1,18 @@
 @use "@/app/variables";
 
 .title {
+    & {
+        @include variables.title-h2;
+    }
     margin-bottom: 8px;
-    @include variables.title-h2;
 
     @media screen and (min-width: variables.$tablet) {
-        @include variables.title-h1;
+        & {
+            @include variables.title-h1;
+        }
         margin-bottom: 12px;
     }
+
     @media screen and (min-width: variables.$desktop) {
         margin-left: 16px;
     }
@@ -29,6 +34,7 @@
     margin-bottom: 12px;
     font-size: 22px;
     @media screen and (min-width: variables.$tablet) {
+        margin-bottom: 0;
         font-size: 24px;
     }
     @media screen and (min-width: variables.$desktop) {
@@ -38,6 +44,7 @@
 
 .descriptionWrapper {
     margin-bottom: 16px;
+    align-items: flex-end;
     @media screen and (min-width: variables.$tablet) {
         display: flex;
         justify-content: space-between;
