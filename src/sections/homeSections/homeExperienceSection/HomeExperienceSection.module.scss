@@ -23,21 +23,28 @@
 
 .title {
   @include variables.subtitle1-Bold;
-}
 
-.text {
   & {
-    margin-top: 8px; // це має бути margin-bottom в класі title
-    margin-bottom: 16px; // це має бути margin-bottom
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: variables.$tablet) {
-    margin-top: 12px; // це має бути margin-bottom в класі title
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.text {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
     margin-bottom: 32px; // це має бути margin-bottom
   }
 
   @media screen and (min-width: variables.$desktop) {
-    margin-top: 16px; // це має бути margin-bottom в класі title
     margin-bottom: 56px; // це має бути margin-bottom
   }
 }
