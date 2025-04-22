@@ -18,12 +18,14 @@ export const centralPremiumData = {
   year: "2024", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
+  panoramaTitleUk: "360 Панорама Квартири",
+  panoramaTitleEn: "360 Panorama of the Apartment",
   panoramaUrl: [
     { 
       src: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01.webp", 
       panoramaPreview: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01-preview.webp",
-      altUk: "Візуалізація дизайну 360 панорама ресторану", 
-      altEn: "Design visualization 360 panorama of the restaurant", 
+      altUk: "Дизайн 360 панорама квартири", 
+      altEn: "Design 360 panorama apartments", 
     },
   ],
 

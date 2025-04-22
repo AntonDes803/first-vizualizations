@@ -17,12 +17,14 @@ export const restaurantEatFishData = {
   year: "2025", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
+  panoramaTitleUk: "360 Панорама Ресторану",
+  panoramaTitleEn: "360 Panorama of the Restaurant",
   panoramaUrl: [
     { 
       src: "/images/projects/restaurant-eat-fish/panorama/design-360-panorama-restaurant-fish.webp", 
       panoramaPreview: "/images/projects/restaurant-eat-fish/panorama/design-360-panorama-restaurant-fish-preview.webp",
-      altUk: "Візуалізація дизайну 360 панорама ресторану", 
-      altEn: "Design visualization 360 panorama of the restaurant", 
+      altUk: "Дизайн 360 панорама ресторану", 
+      altEn: "Design 360 panorama of the restaurant", 
     },
     { 
       src: "/images/projects/restaurant-eat-fish/panorama/design-360-panorama-restaurant-fish-led-light.webp", 
@@ -30,12 +32,12 @@ export const restaurantEatFishData = {
       altUk: "Візуалізація дизайну 360 панорама ресторану з LED-підсвіткою", 
       altEn: "Design visualization 360 panorama of a restaurant with LED lighting", 
     },
-    { 
-      src: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01.webp", 
-      panoramaPreview: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01-preview.webp",
-      altUk: "Візуалізація дизайну 360 панорама ресторану", 
-      altEn: "Design visualization 360 panorama of the restaurant", 
-    },
+    // { 
+    //   src: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01.webp", 
+    //   panoramaPreview: "/images/projects/central-premium/panorama/design-360-panorama-central-premium-01-preview.webp",
+    //   altUk: "Візуалізація дизайну 360 панорама ресторану", 
+    //   altEn: "Design visualization 360 panorama of the restaurant", 
+    // },
   ],
   
 
