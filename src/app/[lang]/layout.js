@@ -1,9 +1,11 @@
-import "@/app/globals.scss";
+import { i18n } from "@/dictionaries/i18n.config";
 import { SiteProvider } from "@/context/SiteContext";
+import { getDictionary } from "@/helpers/getDictionary";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
-import { i18n } from "@/dictionaries/i18n.config";
-import { getDictionary } from "@/helpers/getDictionary";
+import ModalR from "@/components/Modal/Modal";
+
+import "@/app/globals.scss";
 
 export const metadata = {
   title: "Malov & Partners",
@@ -25,6 +27,7 @@ export default async function RootLayout({ children, params }) {
           <Header lang={lang} dictionary={header} />
           <main>{children}</main>
           <Footer lang={lang} dictionary={footer} />
+          <ModalR />
         </SiteProvider>
       </body>
     </html>
