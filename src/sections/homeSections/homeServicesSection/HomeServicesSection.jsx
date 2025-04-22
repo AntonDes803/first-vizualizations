@@ -2,7 +2,7 @@ import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter
 import { servicesData } from "@/data/servicesData";
 import styles from "./HomeServicesSection.module.scss";
 import CustomLink from "@/components/CustomLink/CustomLink";
-import ServicesHomeCard from "@/components/ServicesHomeCard/ServicesHomeCard";
+import ServicesHomeCard from "@/components/HomeServicesCard/HomeServicesCard";
 import { servicesHref } from "@/data/navLinksData";
 
 const HomeServicesSection = ({ lang, dictionary }) => {

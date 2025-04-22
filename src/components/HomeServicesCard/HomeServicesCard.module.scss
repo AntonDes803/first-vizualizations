@@ -9,7 +9,6 @@
 
     @media screen and (min-width: variables.$desktop) {
         width: calc((100% - 24px) / 4);
-        // padding: 16px 12px;
     }
 }
 
@@ -28,18 +27,15 @@
     }
 }
 
-.title {
-    @include variables.bodyText-Bold;
-
+.subTitle {
     & {
-        margin-bottom: 24px;
-        text-align: left;
+        @include variables.bodyText-Bold;
     }
+    margin-bottom: 24px;
+    text-align: left;
 
     @media screen and (min-width: variables.$tablet) {
-        & {
-            margin-bottom: 12px;
-        }
+        margin-bottom: 12px;
     }
 }
 
@@ -60,29 +56,4 @@
 .img {
     display: block;
     object-fit: cover;
-}
-
-.button {
-    width: 100%;
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 8px 28px;
-    border: solid 1px variables.$hoverBtnBgColor;
-    border-radius: 2px;
-
-    &:hover,
-    &:active {
-        background-color: variables.$hoverBtnBgColor;
-        color: variables.$secondaryTextColor;
-    }
-
-    @media screen and (min-width: variables.$tablet) {
-        padding: 8px 32px;
-    }
-
-    @media screen and (min-width: variables.$desktop) {
-        padding: 12px 56px;
-    }
 }

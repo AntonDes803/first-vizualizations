@@ -2,8 +2,8 @@
 
 import { useContext } from "react";
 import Modal from "react-modal";
-import { SiteContext } from "@/context/siteContext";
-import ContactForm from "@/components/OrderForm/OrderForm";
+import { SiteContext } from "@/context/SiteContext";
+// import ContactForm from "@/components/ContactForm/ContactForm";
 import "./Modal.css";
 
 const ModalR = () => {
@@ -18,7 +18,9 @@ const ModalR = () => {
             onRequestClose={closeModal}
             ariaHideApp={false}
         >
-            <ContactForm />
+            {/* <ContactForm /> */}
+
+            <div>Here will be form </div>
         </Modal>
     );
 };

@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { i18n } from "@/dictionaries/i18n.config";
+import OrderButton from "../buttons/OrderButton/OrderButton";
 
-import styles from "./ServicesHomeCard.module.scss";
+import styles from "./HomeServicesCard.module.scss";
 
-const ServicesHomeCard = ({ lang, data }) => {
+const HomeServicesCard = ({ lang, data }) => {
     // console.log("ServicesHomeCardData: ", data);
     return (
         <li className={styles.card}>
@@ -17,16 +18,16 @@ const ServicesHomeCard = ({ lang, data }) => {
                 />
             </div>
             <div className={styles.titleWrapper}>
-                <h3 className={styles.title}>
+                <h3 className={styles.subTitle}>
                     {(lang === i18n.locales[0]
                         ? data.categoryUk
                         : data.categoryEn
                     ).toUpperCase()}
                 </h3>
-                <button className={styles.button}>ЗАМОВИТИ</button>
+                <OrderButton text='ЗАМОВИТИ' />
             </div>
         </li>
     );
 };
 
-export default ServicesHomeCard;
+export default HomeServicesCard;

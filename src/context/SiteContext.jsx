@@ -7,8 +7,18 @@ export const SiteProvider = ({ children }) => {
     const [mobileMenu, setMobileMenu] = useState(false);
     const [mobileMenuContent, setmobileMenuContent] = useState(false);
     const [isModalOpen, setModalOpen] = useState(false);
+    // const [servisType, setServisType] = useState("");
 
     //   const [backDrop, setBackDrop] = useState(false);
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+
+    const closeModal = () => {
+        // setServisType("");
+        setModalOpen(false);
+    };
 
     return (
         <SiteContext.Provider
@@ -18,7 +28,8 @@ export const SiteProvider = ({ children }) => {
                 mobileMenuContent,
                 setmobileMenuContent,
                 isModalOpen,
-                setModalOpen,
+                openModal,
+                closeModal,
                 // backDrop,
                 // setBackDrop,
             }}
