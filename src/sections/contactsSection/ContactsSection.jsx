@@ -1,13 +1,9 @@
 import Image from "next/image";
-import OrderBtn from "@/components/buttons/OrderBtn/OrderBtn";
+import OrderButton from "@/components/buttons/OrderButton/OrderButton";
 import { contacts, faceInsta } from "@/data/contactsData";
 import styles from "./ContactsSection.module.scss";
 
 const ContactsSection = ({ lang, dictionary }) => {
-  // console.log("contacts", contacts);
-
-  // console.log("faceInsta", faceInsta);
-
   return (
     <section className={`section ${styles.section}`}>
       <div className={`container ${styles.container}`}>
@@ -55,7 +51,7 @@ const ContactsSection = ({ lang, dictionary }) => {
             })}
           </ul>
 
-          <OrderBtn
+          <OrderButton
             customClass={styles.customOrderBtn}
             text={dictionary.orderBtnText}
           />
