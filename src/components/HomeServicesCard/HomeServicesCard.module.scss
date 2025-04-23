@@ -23,7 +23,7 @@
         justify-content: space-between;
     }
     @media screen and (min-width: variables.$desktop) {
-        height: 140px;
+        min-height: 150px;
     }
 }
 
@@ -31,11 +31,11 @@
     & {
         @include variables.bodyText-Bold;
     }
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
     text-align: left;
 
     @media screen and (min-width: variables.$tablet) {
-        margin-bottom: 12px;
+        //     margin-bottom: 12px;
     }
 }
 

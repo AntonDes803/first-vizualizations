@@ -1,16 +1,16 @@
 @use "@/app/variables";
 
 .title {
+    @include variables.title-h2;
     & {
-        @include variables.title-h2;
+        margin-bottom: 8px;
     }
-    margin-bottom: 8px;
 
     @media screen and (min-width: variables.$tablet) {
+        @include variables.title-h1;
         & {
-            @include variables.title-h1;
+            margin-bottom: 12px;
         }
-        margin-bottom: 12px;
     }
 
     @media screen and (min-width: variables.$desktop) {
