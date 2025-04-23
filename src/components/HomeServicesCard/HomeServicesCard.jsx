@@ -17,14 +17,17 @@ const HomeServicesCard = ({ lang, data, dictionary }) => {
                     fill={true}
                 />
             </div>
-            <div className={styles.titleWrapper}>
+            <div className={styles.subTitleBox}>
                 <h3 className={styles.subTitle}>
                     {(lang === i18n.locales[0]
                         ? data.categoryUk
                         : data.categoryEn
                     ).toUpperCase()}
                 </h3>
-                <OrderButton text={dictionary.cardBtnText} />
+                <OrderButton
+                    text={dictionary.cardBtnText}
+                    customClass={styles.orderBtn}
+                />
             </div>
         </li>
     );
