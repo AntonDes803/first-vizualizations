@@ -12,30 +12,26 @@
     }
 }
 
-.titleWrapper {
+.subTitleBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 112px;
     border: solid 1px variables.$secondaryBgColor;
     width: 100%;
     padding: 12px;
     @media screen and (min-width: variables.$tablet) {
         height: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     @media screen and (min-width: variables.$desktop) {
-        height: 140px;
+        min-height: 140px;
     }
 }
 
 .subTitle {
+    @include variables.bodyText-Bold;
     & {
-        @include variables.bodyText-Bold;
-    }
-    margin-bottom: 24px;
-    text-align: left;
-
-    @media screen and (min-width: variables.$tablet) {
-        margin-bottom: 12px;
+        text-align: left;
     }
 }
 
@@ -56,4 +52,9 @@
 .img {
     display: block;
     object-fit: cover;
+}
+
+.orderBtn {
+    min-width: 0;
+    width: 100%;
 }

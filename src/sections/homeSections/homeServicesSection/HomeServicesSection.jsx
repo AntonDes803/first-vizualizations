@@ -34,7 +34,12 @@ const HomeServicesSection = ({ lang, dictionary }) => {
                 </div>
                 <ul className={styles.cardList}>
                     {servicesData.map((item, index) => (
-                        <ServicesHomeCard key={index} lang={lang} data={item} />
+                        <ServicesHomeCard
+                            key={index}
+                            lang={lang}
+                            data={item}
+                            dictionary={dictionary}
+                        />
                     ))}
                 </ul>
             </div>
