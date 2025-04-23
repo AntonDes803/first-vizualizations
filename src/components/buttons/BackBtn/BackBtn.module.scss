@@ -1,0 +1,47 @@
+@use "@/app/variables";
+
+.button {
+  @include variables.bodyText-Bold;
+
+  & {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    padding: 2px;
+    border: none;
+    border-bottom: solid 1px variables.$mainTextColor;
+    color: variables.$mainTextColor;
+    background-color: variables.$mainBgColor;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: variables.$hoverBtnBgColor;
+      color: variables.$hoverBtnBgColor;
+    }
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    column-gap: 8px;
+  }
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: variables.$mainTextColor;
+  rotate: 180deg;
+
+  &:hover,
+  &:focus {
+    stroke: variables.$hoverBtnBgColor;
+  }
+}
+
+.button:hover .arrowIcon,
+.button:focus .arrowIcon {
+  stroke: variables.$hoverBtnBgColor;
+}
