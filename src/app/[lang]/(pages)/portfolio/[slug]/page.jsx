@@ -34,10 +34,11 @@ const PortfolioIdPage = async ({ params }) => {
         data={projectIdData}
       /> */}
 
-      <PortfolioIdPanoramaViewerSection
-        panoramas={projectIdData?.panoramaUrl} 
+      {projectIdData?.panoramaUrl && <PortfolioIdPanoramaViewerSection
+        // panoramas={projectIdData?.panoramaUrl}
+        data={projectIdData} 
         lang={lang}
-      />
+      />}
         
 
       <PortfolioIdSolutionSection

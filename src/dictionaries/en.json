@@ -29,7 +29,8 @@
     "contactsSection": {
         "title": "ЗВ’ЯЗАТИСЬ З НАМИ:",
         "subTitle": "СОЦІАЛЬНІ МЕРЕЖІ:",
-        "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
+        "orderBtnText": "ЗАМОВИТИ ПРОЕКТ",
+        "imgAlt": "Фото"
     },
     "homeAfterWorkSection": {
         "title": "With Malov&Partners you get",
@@ -84,7 +85,13 @@
         "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
     },
     "portfolioIdVideoSection": {},
-    "portfolioSection": {},
+    "portfolioSection": {
+        "area": "Area: ",
+        "measure": "m",
+        "style": "Style: ",
+        "year": " year",
+        "cardLinkText": "ВІДКРИТИ ПРОЄКТ"
+    },
     "serviceIdHeroSection": {
         "quote": "“Великий дизайн починається з ще більшої історії”",
         "quoteAuthor": "Lorinda Mamo"

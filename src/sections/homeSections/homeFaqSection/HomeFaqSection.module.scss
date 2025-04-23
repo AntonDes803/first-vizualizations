@@ -19,7 +19,14 @@
 }
 
 .faqItem {
-  border: 1px solid variables.$hoverBtnBgColor;
+  // border: 1px solid variables.$hoverBtnBgColor;
+  border-top: 1px solid variables.$hoverBtnBgColor;
+  border-right: 1px solid variables.$hoverBtnBgColor;
+  border-left: 1px solid variables.$hoverBtnBgColor;
+}
+
+.faqItem:last-child {
+  border-bottom: 1px solid variables.$hoverBtnBgColor;
 }
 
 .faqTitle {

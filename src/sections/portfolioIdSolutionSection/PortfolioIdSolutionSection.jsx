@@ -1,3 +1,4 @@
+import OrderButton from "@/components/buttons/OrderButton/OrderButton";
 import styles from "./PortfolioIdSolutionSection.module.scss";
 
 const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
@@ -5,7 +6,10 @@ const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
 
   return (
     <section className="section">
-      <div className="container">PortfolioIdSolutionSection</div>
+      <div className="container">
+        PortfolioIdSolutionSection
+        <OrderButton customClass="" text={dictionary.orderBtnText} />
+      </div>
     </section>
   );
 };

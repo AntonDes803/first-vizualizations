@@ -372,6 +372,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import styles from './MultiPanoramaViewer.module.scss';
+import { i18n } from '@/dictionaries/i18n.config';
 
 const loadPannellumScript = () => {
   return new Promise((resolve, reject) => {
@@ -394,35 +395,38 @@ const loadPannellumCSS = () => {
   }
 };
 
-const MultiPanoramaViewer = ({ panoramas, lang = 'uk' }) => {
+const MultiPanoramaViewer = ({ data, lang }) => {
+  const {panoramaUrl} = data;
   const containerRef = useRef(null);
   const viewerRef = useRef(null);
   const [isActive, setIsActive] = useState(false);
   const [currentSceneIndex, setCurrentSceneIndex] = useState(0);
   const [fade, setFade] = useState(false);
+  const [isFullscreenFallback, setIsFullscreenFallback] = useState(false);
 
-  const getAlt = (panorama) => lang === 'en' ? panorama.altEn : panorama.altUk;
+
+  // const getAlt = (panorama) => lang === i18n.locales[0] ? panorama.altUk : panorama.altEn;
   const getSceneId = (index) => `scene${index}`;
 
   const buildScenes = () => {
     const scenes = {};
 
-    panoramas.forEach((p, index) => {
+    panoramaUrl.forEach((el, index) => {
       const sceneId = getSceneId(index);
-      const nextSceneId = getSceneId((index + 1) % panoramas.length);
+      const nextSceneId = getSceneId((index + 1) % panoramaUrl.length);
 
       const scene = {
-        title: getAlt(p),
-        panorama: p.src,
+        // title: getAlt(el),
+        panorama: el.src,
       };
 
-      if (panoramas.length > 1) {
+      if (panoramaUrl.length > 1) {
         scene.hotSpots = [
           {
             pitch: 2,
             yaw: 100,
             type: 'scene',
-            text: lang === 'en' ? 'Next scene' : 'Наступна сцена',
+            text: lang === i18n.locales[0] ? 'Наступна сцена' : 'Next scene',
             sceneId: nextSceneId,
           },
         ];
@@ -463,12 +467,19 @@ const MultiPanoramaViewer = ({ panoramas, lang = 'uk' }) => {
       const handleResize = () => {
         viewerRef.current?.resize();
       };
-
+      const handleExit = () => {
+        setIsFullscreenFallback(false);
+      };
+    
+      window.addEventListener('fullscreenchange', handleExit);
+  window.addEventListener('webkitfullscreenchange', handleExit);
       window.addEventListener('fullscreenchange', handleResize);
       window.addEventListener('webkitfullscreenchange', handleResize);
       window.addEventListener('resize', handleResize);
 
       return () => {
+        window.removeEventListener('fullscreenchange', handleExit);
+    window.removeEventListener('webkitfullscreenchange', handleExit);
         window.removeEventListener('fullscreenchange', handleResize);
         window.removeEventListener('webkitfullscreenchange', handleResize);
         window.removeEventListener('resize', handleResize);
@@ -478,39 +489,88 @@ const MultiPanoramaViewer = ({ panoramas, lang = 'uk' }) => {
 
   return (
     <div className={styles.viewerWrapper}>
-      {!isActive && panoramas?.[0] && (
+      {!isActive && panoramaUrl?.[0] && (
         <div
           className={styles.previewWrapper}
-          style={{ backgroundImage: `url(${panoramas[0].panoramaPreview})` }}
+          style={{ backgroundImage: `url(${panoramaUrl[0].panoramaPreview})` }}
           onClick={() => setIsActive(true)}
         >
           <div className={styles.previewText}>
-            🔄 {lang === 'en' ? 'View 360° Panorama' : 'Переглянути 360° панораму'}
+            🔄 {lang === i18n.locales[0] ? 'Переглянути 360° панораму' : 'View 360° Panorama'}
           </div>
         </div>
       )}
 
       {isActive && (
-        <div className={`${styles.viewerContainer} ${fade ? styles.fadeOut : ''}`}>
+        <div
+          className={`
+            ${styles.viewerContainer}
+            ${fade ? styles.fadeOut : ''}
+            ${isFullscreenFallback ? styles.fullscreenFallback : ''}
+          `}
+        >
           <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
-          {panoramas.length > 1 && (
             <div className={styles.controls}>
-              <button
-                className={styles.button}
-                onClick={() =>
-                  switchScene((currentSceneIndex - 1 + panoramas.length) % panoramas.length)
-                }
-              >
-                ⬅️
-              </button>
-              <button
-                className={styles.button}
-                onClick={() => switchScene((currentSceneIndex + 1) % panoramas.length)}
-              >
-                ➡️
-              </button>
+              {/* 🔄 Якщо є більше однієї сцени — показуємо кнопки навігації */}
+              {panoramaUrl.length > 1 && (
+                <>
+                  <button
+                    className={styles.button}
+                    onClick={() =>
+                      switchScene((currentSceneIndex - 1 + panoramaUrl.length) % panoramaUrl.length)
+                    }
+                  >
+                    ⬅️
+                  </button>
+                  <button
+                    className={styles.button}
+                    onClick={() => switchScene((currentSceneIndex + 1) % panoramaUrl.length)}
+                  >
+                    ➡️
+                  </button>
+                </>
+              )}
+
+              {/* 🔳 Fullscreen ON */}
+              {!isFullscreenFallback && (
+                <button
+                  className={styles.button}
+                  onClick={() => {
+                    const viewerEl = containerRef.current;
+                    const openFallback = () => setIsFullscreenFallback(true);
+
+                    if (viewerEl.requestFullscreen) {
+                      viewerEl.requestFullscreen().catch(openFallback);
+                    } else if (viewerEl.webkitRequestFullscreen) {
+                      viewerEl.webkitRequestFullscreen();
+                    } else if (viewerEl.mozRequestFullScreen) {
+                      viewerEl.mozRequestFullScreen();
+                    } else if (viewerEl.msRequestFullscreen) {
+                      viewerEl.msRequestFullscreen();
+                    } else {
+                      openFallback();
+                    }
+                  }}
+                >
+                  ⛶
+                </button>
+              )}
+
+              {/* 🔲 Fullscreen OFF */}
+              {isFullscreenFallback && (
+                <button
+                  className={styles.button}
+                  onClick={() => {
+                    if (document.fullscreenElement) {
+                      document.exitFullscreen();
+                    }
+                    setIsFullscreenFallback(false);
+                  }}
+                >
+                  🔙
+                </button>
+              )}
             </div>
-          )}
         </div>
       )}
     </div>
@@ -518,3 +578,4 @@ const MultiPanoramaViewer = ({ panoramas, lang = 'uk' }) => {
 };
 
 export default MultiPanoramaViewer;
+

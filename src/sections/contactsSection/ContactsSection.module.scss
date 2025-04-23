@@ -2,4 +2,247 @@
 
 .section {
   @include variables.pageTopPadding;
+  & {
+    color: variables.$secondaryTextColor;
+    background-color: variables.$secondaryBgColor;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    min-height: calc(100vh - 274px);
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    min-height: calc(100vh - 299px);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    align-items: center;
+    row-gap: 0px;
+    column-gap: 16px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 82px;
+  }
+}
+
+.contentWrapper {
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+  }
+}
+
+.title {
+  @include variables.title-h3;
+
+  & {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    @include variables.title-h2;
+
+    & {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.contactsList {
+  position: relative;
+  padding: 20px 0px 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 20px;
+  border-top: solid 1px variables.$secondaryTextColor;
+  border-bottom: solid 1px variables.$secondaryTextColor;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding: 24px 0px 28px;
+    row-gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    padding: 28px 0px 40px;
+    row-gap: 16px;
+  }
+}
+
+.contactsList::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: variables.$hoverBtnBgColor;
+  border-radius: 50%;
+}
+
+.contactsList::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  background-color: variables.$hoverBtnBgColor;
+  border-radius: 50%;
+}
+
+.socLinkItem {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.socLinkItem:hover,
+.socLinkItem:active {
+  color: variables.$hoverBtnBgColor;
+}
+
+.iconClass {
+  width: 24px;
+  height: 24px;
+}
+
+.phone {
+  fill: none;
+  stroke: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .phone,
+.socLinkItem:active .phone {
+  stroke: variables.$hoverBtnBgColor;
+}
+
+.viber {
+  width: 32px;
+  height: 32px;
+  margin-left: -4px;
+  fill: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .viber,
+.socLinkItem:active .viber {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.telegram {
+  fill: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .telegram,
+.socLinkItem:active .telegram {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.email {
+  fill: variables.$secondaryTextColor;
+}
+
+.socLinkItem:hover .email,
+.socLinkItem:active .email {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.subTitle {
+  @include variables.subtitle2-Regular;
+
+  & {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 16px;
+  }
+}
+
+.faceInstaWrapper {
+  display: flex;
+  column-gap: 8px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.faceInstaItem {
+  width: 24px;
+  height: 24px;
+}
+
+.facebook {
+  fill: variables.$secondaryTextColor;
+}
+
+.faceInstaItem:hover .facebook,
+.faceInstaItem:active .facebook {
+  fill: variables.$hoverBtnBgColor;
+}
+
+.instagram {
+  fill: none;
+  stroke: variables.$secondaryTextColor;
+}
+
+.faceInstaItem:hover .instagram,
+.faceInstaItem:active .instagram {
+  stroke: variables.$hoverBtnBgColor;
+}
+
+.customOrderBtn {
+  @media screen and (min-width: variables.$tablet) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: fit-content;
+    margin-left: 0;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320/375;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+    aspect-ratio: 344/403;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    flex: 0 1 auto; //обнуление flex:1
+    width: 588px;
+    height: 498px;
+  }
+}
+
+.img {
+  display: block;
+  object-fit: cover;
 }
