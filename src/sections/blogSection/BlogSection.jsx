@@ -1,8 +1,9 @@
 import { stringSplittingByDelimiter } from "@/helpers/stringSplittingByDelimiter";
-import { allBlogs } from "@/data/blog/allBlogs";
+import { arrOfBlogs } from "@/data/blog/arrOfBlogs";
 import styles from "./BlogSection.module.scss";
 
 const BlogSection = ({ lang, dictionary }) => {
+  // console.log("arrOfBlogs", arrOfBlogs);
   const sectionTitle = dictionary.title.toUpperCase();
   const titleArray = stringSplittingByDelimiter(sectionTitle, "&");
 
