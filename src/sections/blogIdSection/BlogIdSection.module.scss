@@ -11,3 +11,58 @@
     padding-top: 124px;
   }
 }
+
+.containerBlogId {
+  max-width: 792px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  text-align: center;
+  font-family: PTSerif-Regular;
+  @include variables.subtitle1-Regular;
+
+  & {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h2;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 320/200;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: variables.$tablet) {
+    aspect-ratio: 704/449;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: 792px;
+    aspect-ratio: 792/505;
+  }
+}
+
+.imgHomeExperience {
+  display: block;
+  object-fit: cover;
+}
+
+.text {
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.blockImg {
+  margin-top: 10px;
+}
