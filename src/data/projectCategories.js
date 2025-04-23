@@ -1,5 +1,10 @@
 export const projectCategories = [
   {
+    id: "all",
+    categoryUk: "Усі",
+    categoryEn: "All",
+  },
+  {
     id: "apartment-design",
     categoryUk: "Квартири",
     categoryEn: "Apartments",
