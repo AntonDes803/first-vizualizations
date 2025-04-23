@@ -4,7 +4,7 @@ import OrderButton from "../buttons/OrderButton/OrderButton";
 
 import styles from "./HomeServicesCard.module.scss";
 
-const HomeServicesCard = ({ lang, data }) => {
+const HomeServicesCard = ({ lang, data, dictionary }) => {
     // console.log("ServicesHomeCardData: ", data);
     return (
         <li className={styles.card}>
@@ -17,14 +17,17 @@ const HomeServicesCard = ({ lang, data }) => {
                     fill={true}
                 />
             </div>
-            <div className={styles.titleWrapper}>
+            <div className={styles.subTitleBox}>
                 <h3 className={styles.subTitle}>
                     {(lang === i18n.locales[0]
                         ? data.categoryUk
                         : data.categoryEn
                     ).toUpperCase()}
                 </h3>
-                <OrderButton text='ЗАМОВИТИ' />
+                <OrderButton
+                    text={dictionary.cardBtnText}
+                    customClass={styles.orderBtn}
+                />
             </div>
         </li>
     );
