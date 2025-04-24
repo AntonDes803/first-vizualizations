@@ -12,6 +12,10 @@
   }
 }
 
+.darkBg {
+  background-color: variables.$secondaryBgColor;
+}
+
 .container {
   display: flex;
   align-items: center;
