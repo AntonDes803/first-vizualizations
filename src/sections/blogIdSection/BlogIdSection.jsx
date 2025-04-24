@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomLink from "@/components/CustomLink/CustomLink";
+import BackBtn from "@/components/buttons/BackBtn/BackBtn";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./BlogIdSection.module.scss";
 
@@ -22,13 +22,12 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
   return (
     <section className={`section ${styles.section}`}>
       <div className="container">
-        {/* замінити CustomLink  назад */}
-        <CustomLink
+        <BackBtn
           linkCustomClass=""
           iconCustomClass=""
           href={"/blog"}
           lang={lang}
-          text={dictionary.linkText}
+          text={dictionary.backBtnText}
         />
         <div className={styles.containerBlogId}>
           <h2 className={styles.title}>
