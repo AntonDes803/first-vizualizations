@@ -24,22 +24,23 @@ const BlogSection = ({ lang, dictionary }) => {
         <ul className={styles.cardList}>
           {cardsToRender.map((item, index) => (
             <li key={index} className={styles.card}>
-              <div className={styles.imgWrapper}>
-                <Image
-                  className={styles.img}
-                  src={item.mainImage}
-                  alt={lang === i18n.locales[0] ? item.altUk : item.altEn}
-                  sizes="(max-width: 767px) 80vw, (max-width: 1439px) 45vw, 344px"
-                  fill={true}
-                />
+              <div className={styles.wrapperItem}>
+                <div className={styles.imgWrapper}>
+                  <Image
+                    className={styles.img}
+                    src={item.mainImage}
+                    alt={lang === i18n.locales[0] ? item.altUk : item.altEn}
+                    sizes="(max-width: 767px) 80vw, (max-width: 1439px) 45vw, 344px"
+                    fill={true}
+                  />
+                </div>
+                <h3 className={styles.titleCard}>
+                  {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
+                </h3>
+                <p className={styles.textCard}>
+                  {lang === i18n.locales[0] ? item.cardTextUk : item.cardTextEn}
+                </p>
               </div>
-              <h3 className={styles.titleCard}>
-                {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
-              </h3>
-
-              <p className={styles.textCard}>
-                {lang === i18n.locales[0] ? item.cardTextUk : item.cardTextEn}
-              </p>
               <div className={styles.wrappercustomLink}>
                 <span className={styles.chipCard}>{item.creatingData}</span>
                 {/* functional-interior-design-COPY -> Id */}
