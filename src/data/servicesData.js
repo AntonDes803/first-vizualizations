@@ -9,7 +9,7 @@ export const servicesData = [
   {
     slug: apartmentsCategoryData.id,
     categoryUk: "Дизайн інтер’єру квартир",
-    categoryEn: "",
+    categoryEn: "Apartment interior design",
     cardTextUk:
       "Створюємо комфортні, стильні та функціональні інтер’єри для квартир будь-якої площі.",
     cardTextEn: "",
@@ -32,7 +32,7 @@ export const servicesData = [
   {
     slug: housesCategoryData.id,
     categoryUk: "Дизайн інтер’єру будинків",
-    categoryEn: "",
+    categoryEn: "House interior design",
     cardTextUk:
       "Розробляємо концепції, що враховують архітектуру, ландшафт і особливості вашого будинку.",
     cardTextEn: "",
@@ -53,7 +53,7 @@ export const servicesData = [
   {
     slug: businessCategoryData.id,
     categoryUk: "Дизайн інтер’єру комерційних приміщень",
-    categoryEn: "",
+    categoryEn: "Commercial interior design",
     cardTextUk:
       "Розробка унікальних рішень для бізнесу: магазини, офіси, ресторани, готелі.",
     cardTextEn: "",
@@ -74,7 +74,7 @@ export const servicesData = [
   {
     slug: architectureCategoryData.id,
     categoryUk: "Архітектурне проєктування",
-    categoryEn: "",
+    categoryEn: "Architectural design",
     cardTextUk:
       "Комплексне створення будівель: від ескізу до робочої документації.",
     cardTextEn: "",

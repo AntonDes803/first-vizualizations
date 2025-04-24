@@ -1,6 +1,7 @@
 import { statisticsData } from '@/data/statisticsData';
 
 import styles from './HomeStatisticsSection.module.scss';
+import { i18n } from '@/dictionaries/i18n.config';
 
 const HomeStatisticsSection = ({ lang, dictionary }) => {
   return (
@@ -11,7 +12,7 @@ const HomeStatisticsSection = ({ lang, dictionary }) => {
             <h3 className={`${styles.statisticsNumber} ampersandColor`}>
               {data.number}
             </h3>
-            <p className={styles.statisticsDesk}>{data.textUk}</p>
+            <p className={styles.statisticsDesk}>{lang === i18n.locales[0] ? data.textUk : data.textEn}</p>
           </li>
         ))}
       </ul>

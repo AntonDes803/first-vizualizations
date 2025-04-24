@@ -10,7 +10,7 @@ export const homeProjectsData = [
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру квартир",
-    titleEn: "",
+    titleEn: "Apartment interior design",
     image:
       "/images/dev/homePage/home-page-ready-project-design-apartsment.webp",
     imgAltUk: "Квартири",
@@ -19,7 +19,7 @@ export const homeProjectsData = [
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру будинків",
-    titleEn: "",
+    titleEn: "House interior design",
     image: "/images/dev/homePage/home-page-ready-project-design-house.webp",
     imgAltUk: "Будинки",
     imgAltEn: "Houses",
@@ -27,7 +27,7 @@ export const homeProjectsData = [
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру комерційних приміщень",
-    titleEn: "",
+    titleEn: "Commercial interior design",
     image:
       "/images/dev/homePage/home-page-ready-project-design-commercial-premises.webp",
     imgAltUk: "Комерційні приміщення",
