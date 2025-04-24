@@ -4,7 +4,7 @@ import styles from './ServiceIdHeroSection.module.scss';
 import { i18n } from '@/dictionaries/i18n.config';
 
 const ServiceIdHeroSection = ({ lang, dictionary, data }) => {
-  const sectionTitle = lang === i18n ? data.categoryUk.toUpperCase() : data.categoryEn.toUpperCase();
+  const sectionTitle = lang === i18n.locales[0] ? data.categoryUk.toUpperCase() : data.categoryEn.toUpperCase();
   const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
 
   return (

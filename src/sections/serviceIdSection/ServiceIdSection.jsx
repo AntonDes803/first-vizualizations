@@ -14,8 +14,8 @@ const ServiceIdSection = ({ lang, dictionary, data }) => {
       <ul className={`container ${styles.servisesIdList}`}>
         <li className={styles.servicesIdItem}>
           <div className={styles.content}>
-            <h3 className={styles.title}>{lang === i18n ? data.titleUk : data.titleEn}</h3>
-            <p className={styles.desc}>{lang === i18n ? data.text1Uk : data.text1En}</p>
+            <h3 className={styles.title}>{lang === i18n.locales[0] ? data.titleUk : data.titleEn}</h3>
+            <p className={styles.desc}>{lang === i18n.locales[0] ? data.text1Uk : data.text1En}</p>
             <CustomLink
               href={portfolioHref}
               lang={lang}
@@ -25,14 +25,14 @@ const ServiceIdSection = ({ lang, dictionary, data }) => {
           <figure className={styles.imgContainer}>
             <Image
               src={data.images[1]}
-              alt={lang === i18n ? data.titleUk : data.titleEn}
+              alt={lang === i18n.locales[0] ? data.titleUk : data.titleEn}
               fill={true}
               sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 512px"
             />
           </figure>
         </li>
         <li className={styles.servicesIdItem}>
-          <p className={styles.desc}>{lang === i18n ? data.text2Uk : data.text2En}</p>
+          <p className={styles.desc}>{lang === i18n.locales[0] ? data.text2Uk : data.text2En}</p>
           <figure className={styles.imgContainer}>
             <Image
               src={data.images[2]}
