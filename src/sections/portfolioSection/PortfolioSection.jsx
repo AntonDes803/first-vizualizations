@@ -30,7 +30,7 @@ const PortfolioSection = ({ lang, dictionary }) => {
                   className={styles.img}
                   src={item.mainImage}
                   alt={lang === i18n.locales[0] ? item.altUk : item.altEn}
-                  sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+                  sizes="(max-width: 767px) 95vw, (max-width: 1439px) 62vw, 894px"
                   fill={true}
                 />
               </div>

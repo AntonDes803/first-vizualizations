@@ -1,1 +1,48 @@
 @use "@/app/variables";
+
+.floorPlanBlock {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.designBlock {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.visualizationBlock {
+  margin-bottom: 16px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.visualizationBlockTitle {
+  @include variables.title-h3;
+  & {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h2;
+  }
+}

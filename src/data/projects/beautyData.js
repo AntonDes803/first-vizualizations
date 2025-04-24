@@ -51,7 +51,7 @@ export const beautyData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [{ src: "", altUk: "", altEn: "" }],
+      images: [],
     },
     {
       type: "visualization",

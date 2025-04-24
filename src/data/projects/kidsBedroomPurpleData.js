@@ -25,10 +25,7 @@ export const kidsBedroomPurpleData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [
-        { src: "", altUk: "", altEn: "" },
-        { src: "", altUk: "", altEn: "" },
-      ],
+      images: [],
     },
     {
       type: "design",
@@ -36,7 +33,7 @@ export const kidsBedroomPurpleData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [{ src: "", altUk: "", altEn: "" }],
+      images: [],
     },
     {
       type: "visualization",
