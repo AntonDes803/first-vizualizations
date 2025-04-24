@@ -4,34 +4,34 @@
     "topTitle": "Roof"
   },
   "aboutUsHeroSection": {
-    "title": "Malov&Partners – дизайн, що відчувається",
-    "description": "Створюємо інтер'єри, які гармонійно поєднують стиль, функціональність та ваші унікальні побажання."
+    "title": "Malov&Partners – design that you can feel",
+    "description": "We create interiors that harmoniously combine style, functionality and your unique wishes"
   },
   "aboutUsSection": {
-    "title": "ПРО НАС",
-    "description": "Дизайн – це не просто краса. Це простір, який розуміє вас. У MALOV&PARTNERS ми перетворюємо інтер’єри на місця, де кожна деталь працює на комфорт, а кожен квадратний метр – на користь. Уже понад 12 років ми створюємо дизайн квартир, будинків та комерційних приміщень, поєднуючи естетику, зручність і ваші особисті бажання. Від ідеї до реалізації – ми ведемо кожен проєкт із увагою до деталей, щоб результат відповідав вашим очікуванням на 100%.",
-    "linkText": "НАШІ ПОСЛУГИ",
-    "imgAlt": "Фото наших послуг"
+    "title": "ABOUT US",
+    "description": "Design is not just about beauty. It is a space that understands you. At MALOV&PARTNERS, we turn interiors into places where every detail works for comfort and every square meter is for your benefit. For more than 12 years, we have been creating the design of apartments, houses and commercial premises, combining aesthetics, convenience and your personal desires. From idea to realization, we manage each project with attention to detail so that the result meets your expectations 100%.",
+    "linkText": "OUR SERVICES",
+    "imgAlt": "Photos of our services"
   },
   "aboutUsValuesSection": {
-    "title": "Важливі цінності для Malov&Partners",
-    "callBtnText": "ЗВ’ЯЗАТИСЬ"
+    "title": "Important values for Malov&Partners",
+    "callBtnText": "CONTACT US"
   },
   "blogIdSection": {
     "backBtnText": "BACK",
-    "subTitle": "ТАКОЖ ВАМ БУДЕ ЦІКАВО:",
-    "cardLinkText": "ЧИТАТИ ДАЛІ"
+    "subTitle": "YOU MAY ALSO BE INTERESTED IN:",
+    "cardLinkText": "READ MORE"
   },
   "blogSection": {
-    "title": "Блог Malov&Partners",
-    "description": "Надихайтесь ідеями, дізнавайтесь про тренди дизайну та отримуйте корисні поради від експертів.",
-    "cardLinkText": "ЧИТАТИ ДАЛІ"
+    "title": "Malov&Partners blog",
+    "description": "Get inspired by ideas, learn about design trends, and get useful tips from experts.",
+    "cardLinkText": "READ MORE"
   },
   "contactsSection": {
-    "title": "ЗВ’ЯЗАТИСЬ З НАМИ:",
-    "subTitle": "СОЦІАЛЬНІ МЕРЕЖІ:",
-    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ",
-    "imgAlt": "Фото"
+    "title": "CONTACT US:",
+    "subTitle": "SOCIAL MEDIA:",
+    "orderBtnText": "ORDER A PROJECT",
+    "imgAlt": "Photo"
   },
   "homeAfterWorkSection": {
     "title": "With Malov&Partners you get",
@@ -77,13 +77,13 @@
     "callBtnText": "CONTACT US"
   },
   "portfolioHeroSection": {
-    "title": "Портфоліо Malov&Partners",
-    "quote": "“Великий дизайн починається з ще більшої історії”",
+    "title": "Malov&Partners portfolio",
+    "quote": "“Great design begins with an even greater story”",
     "quoteAuthor": "Lorinda Mamo"
   },
   "portfolioIdHeroSection": {},
   "portfolioIdSolutionSection": {
-    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
+    "orderBtnText": "ORDER A PROJECT"
   },
   "portfolioIdVideoSection": {},
   "portfolioSection": {
@@ -91,39 +91,39 @@
     "measure": "m",
     "style": "Style: ",
     "year": " year",
-    "cardLinkText": "ВІДКРИТИ ПРОЄКТ"
+    "cardLinkText": "OPEN A PROJECT"
   },
   "serviceIdHeroSection": {
-    "quote": "“Великий дизайн починається з ще більшої історії”",
+    "quote": "“Great design begins with an even greater story”",
     "quoteAuthor": "Lorinda Mamo"
   },
   "serviceIdSection": {
-    "callBtnText": "ЗВ’ЯЗАТИСЬ",
-    "linkText": "ДО ПОРТФОЛІО"
+    "callBtnText": "CONTACT US",
+    "linkText": "TO PORTFOLIO"
   },
   "servicesHeroSection": {
-    "title": "Послуги Malov&Partners",
-    "description": "Втілюємо ваші ідеї у реальність: від концепції до повної реалізації."
+    "title": "Services of Malov&Partners",
+    "description": "We turn your ideas into reality: from concept to full implementation"
   },
   "servicesSection": {
-    "title": "3d візуалізація кожного дизайну",
-    "description-1": "Ми створюємо реалістичні 3D-візуалізації, які допомагають бізнесу, дизайнерам і брендам виділятися. Від концепції до фінального рендеру – кожна деталь опрацьована з точністю та креативністю.",
-    "description-2": " Використовуючи передові технології, ми перетворюємо ідеї на якісний візуальний контент. Наші рішення підходять для архітектури, продуктового дизайну, реклами та геймдеву. Довірте нам свій проєкт – і ми допоможемо зробити його вражаючим.",
-    "projectsCountText": "реалізованих проєктів",
-    "projectsCountTextMobile": "проєктів",
-    "cardLinkText": "ДІЗНАТИСЬ БІЛЬШЕ",
-    "orderBtnText": "ЗАМОВИТИ ПРОЕКТ"
+    "title": "3d visualization of each design",
+    "description-1": "We create realistic 3D visualizations that help businesses, designers, and brands stand out. From concept to final rendering, every detail is handled with precision and creativity.",
+    "description-2": " Using advanced technologies, we turn ideas into high-quality visual content. Our solutions are suitable for architecture, product design, advertising, and game development. Entrust us with your project and we'll help you make it impressive.",
+    "projectsCountText": "implemented projects",
+    "projectsCountTextMobile": "projects",
+    "cardLinkText": "LEARN MORE",
+    "orderBtnText": "ORDER A PROJECT"
   },
   "footer": {
     "policy": "Privacy policy"
   },
   "form": {
-    "title": "Давайте обговоримо ваш проєкт!",
-    "subTitle": "Де вам буде зручно спілкуватись?",
-    "orderBtnText": "ЗАМОВИТИ ДИЗАЙН"
+    "title": "Let's talk about your project!",
+    "subTitle": "Where will you be comfortable communicating?",
+    "orderBtnText": "ORDER A DESIGN"
   },
   "successForm": {
-    "title": "Ми отримали ваш запит і зв’яжемося з вами найближчим часом!",
+    "title": "We have received your request and will contact you shortly!",
     "btnText": "ОК"
   }
 }
