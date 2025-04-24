@@ -47,9 +47,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: variables.$desktop) {
     margin-bottom: 24px;
   }
@@ -58,6 +58,9 @@
 .card {
   padding: 12px;
   border: 1px solid variables.$secondaryBgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media screen and (min-width: variables.$tablet) {
     max-width: 344px;
   }
@@ -68,7 +71,6 @@
 
 .imgWrapper {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   aspect-ratio: 296/156;
   margin-bottom: 12px;
