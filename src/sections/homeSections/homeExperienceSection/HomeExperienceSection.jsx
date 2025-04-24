@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CallBtn from "@/components/buttons/CallBtn/CallBtn";
 import styles from "./HomeExperienceSection.module.scss";
+import OrderButton from "@/components/buttons/OrderButton/OrderButton";
 
 const HomeExperienceSection = ({ lang, dictionary }) => {
   return (
@@ -10,8 +11,7 @@ const HomeExperienceSection = ({ lang, dictionary }) => {
           <h2 className={styles.title}>{dictionary.title}</h2>
           <p className={styles.text}>{dictionary.description}</p>
 
-          {/* CallBtn нужно будет заменить на OrderBtn когда она появится */}
-          <CallBtn customClass="" text={dictionary.orderBtnText} />
+          <OrderButton customClass="" text={dictionary.orderBtnText} />
         </div>
         <div className={styles.imgWrapper}>
           <Image

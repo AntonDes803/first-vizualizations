@@ -7,7 +7,6 @@ const PortfolioIdPanoramaViewerSection = ({ data, lang }) => {
     <section className="section">
       <div className="container">
         <h2 className={styles.title}>{lang === i18n.locales[0] ? data.panoramaTitleUk : data.panoramaTitleEn}</h2>
-        {/* <PanoramaViewer imagePath={imagePath} previewImage={previewImage}/> */}
         <MultiPanoramaViewer data={data} lang={lang} />
       </div>
     </section>

@@ -1,9 +1,10 @@
 import HeroBtnArrow from '@/components/HeroBtnArrow/HeroBtnArrow';
 import { stringSplittingByDelimiter } from '@/helpers/stringSplittingByDelimiter';
 import styles from './ServiceIdHeroSection.module.scss';
+import { i18n } from '@/dictionaries/i18n.config';
 
 const ServiceIdHeroSection = ({ lang, dictionary, data }) => {
-  const sectionTitle = data.categoryUk.toUpperCase();
+  const sectionTitle = lang === i18n.locales[0] ? data.categoryUk.toUpperCase() : data.categoryEn.toUpperCase();
   const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
 
   return (

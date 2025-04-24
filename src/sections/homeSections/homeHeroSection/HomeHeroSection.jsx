@@ -8,6 +8,7 @@ import SocialLinks from '@/components/SocialLinks/SocialLinks';
 import CustomLink from '@/components/CustomLink/CustomLink';
 
 import styles from './HomeHeroSection.module.scss';
+import { i18n } from '@/dictionaries/i18n.config';
 
 const HomeHeroSection = ({ lang, dictionary }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,7 +27,7 @@ const HomeHeroSection = ({ lang, dictionary }) => {
     `}
     >
       {homeHeroSliderData.map((data, index) => {
-        const sectionTitle = data.titleUk.toUpperCase();
+        const sectionTitle = lang === i18n.locales[0] ? data.titleUk.toUpperCase() : data.titleEn.toUpperCase();
         const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
         return (
           <div
