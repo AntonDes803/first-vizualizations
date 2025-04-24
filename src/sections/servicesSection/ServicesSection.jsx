@@ -5,6 +5,7 @@ import CustomLink from '@/components/CustomLink/CustomLink';
 import { servicesHref } from '@/data/navLinksData';
 import Image from 'next/image';
 import CallBtn from '@/components/buttons/CallBtn/CallBtn';
+import { i18n } from '@/dictionaries/i18n.config';
 
 const ServicesSection = ({ lang, dictionary }) => {
   const sectionTitle = dictionary.title.toUpperCase();
@@ -34,8 +35,8 @@ const ServicesSection = ({ lang, dictionary }) => {
                 />
               </figure>
               <div className={styles.servicesItem}>
-                <h3 className={styles.servicesTitle}>{data.categoryUk}</h3>
-                <p className={styles.servicesDesc}>{data.cardTextUk}</p>
+                <h3 className={styles.servicesTitle}>{lang === i18n ? data.categoryUk : data.categoryEn}</h3>
+                <p className={styles.servicesDesc}>{lang === i18n ? data.cardTextUk : data.cardTextEn}</p>
                 <div className={styles.content}>
                   <p className={`${styles.servicesProjectsCount}`}>
                     {data.projectsCount}{' '}
