@@ -6,19 +6,19 @@ export const homeHeroSliderData = [
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру квартир",
-    titleEn: "",
+    titleEn: "Apartment interior design",
     image: "/images/dev/homePage/home-slider-design-apartments.webp",
   },
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру будинків",
-    titleEn: "",
+    titleEn: "House interior design",
     image: "/images/dev/homePage/home-slider-design-houses.webp",
   },
   {
     path: portfolioHref,
     titleUk: "Дизайн інтер’єру комерційних приміщень",
-    titleEn: "",
+    titleEn: "Commercial interior design",
     image: "/images/dev/homePage/home-slider-design-commercial-premises.webp",
   },
 ];
