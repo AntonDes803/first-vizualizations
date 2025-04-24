@@ -35,8 +35,8 @@ const ServicesSection = ({ lang, dictionary }) => {
                 />
               </figure>
               <div className={styles.servicesItem}>
-                <h3 className={styles.servicesTitle}>{lang === i18n ? data.categoryUk : data.categoryEn}</h3>
-                <p className={styles.servicesDesc}>{lang === i18n ? data.cardTextUk : data.cardTextEn}</p>
+                <h3 className={styles.servicesTitle}>{lang === i18n.locales[0] ? data.categoryUk : data.categoryEn}</h3>
+                <p className={styles.servicesDesc}>{lang === i18n.locales[0] ? data.cardTextUk : data.cardTextEn}</p>
                 <div className={styles.content}>
                   <p className={`${styles.servicesProjectsCount}`}>
                     {data.projectsCount}{' '}
