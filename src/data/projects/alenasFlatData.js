@@ -52,7 +52,7 @@ export const alenasFlatData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [{ src: "", altUk: "", altEn: "" }],
+      images: [],
     },
     {
       type: "visualization",

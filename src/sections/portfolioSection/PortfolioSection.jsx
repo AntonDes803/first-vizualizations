@@ -81,7 +81,6 @@
 
 // export default PortfolioSection;
 
-
 // todo code with filter
 
 // import Image from "next/image";
@@ -94,13 +93,10 @@
 import FilterPortfolio from "@/components/FilterPortfolio/FilterPortfolio";
 
 const PortfolioSection = ({ lang, dictionary }) => {
-
-  
-
   return (
     <section className="section" id="portfolioSection">
       <div className="container">
-        <FilterPortfolio lang={lang} dictionary={dictionary}/>
+        <FilterPortfolio lang={lang} dictionary={dictionary} />
       </div>
     </section>
   );

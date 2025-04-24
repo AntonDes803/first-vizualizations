@@ -1,0 +1,57 @@
+@use "@/app/variables";
+
+.title {
+  @include variables.title-h3;
+  & {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h2;
+  }
+}
+
+.textList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    flex-direction: row;
+    row-gap: 0px;
+    column-gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    column-gap: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.textItem {
+  @media screen and (min-width: variables.$tablet) {
+    flex: 1;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 320/204;
+
+  @media screen and (min-width: variables.$tablet) {
+    aspect-ratio: 704/449;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    width: 1200px;
+    height: 765px;
+  }
+}
+
+.img {
+  display: block;
+  object-fit: cover;
+}

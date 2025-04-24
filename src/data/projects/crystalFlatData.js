@@ -37,7 +37,6 @@ export const crystalFlatData = {
           altUk: "План та облаштування квартири",
           altEn: "Plan and arrangement of the apartment",
         },
-        { src: "", altUk: "", altEn: "" },
       ],
     },
     {
@@ -46,7 +45,7 @@ export const crystalFlatData = {
       titleEn: "",
       textsUk: ["", ""],
       textsEn: ["", ""],
-      images: [{ src: "", altUk: "", altEn: "" }],
+      images: [],
     },
     {
       type: "visualization",

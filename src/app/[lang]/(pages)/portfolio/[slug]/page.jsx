@@ -45,7 +45,7 @@ const PortfolioIdPage = async ({ params }) => {
       <PortfolioIdSolutionSection
         lang={lang}
         dictionary={portfolioIdSolutionSection}
-        data={projectIdData}
+        data={projectIdData.solutions}
       />
       <HomeFaqSection
         lang={lang}
