@@ -5,9 +5,11 @@ export const centralPremiumData = {
   categoryUk: apartmentsCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
   categoryEn: apartmentsCategoryData.categoryEn,
   mainImage:
-    "/images/projects/central-premium/common/design-central-premium-main-01.webp", // она же идет на портфолиоАйдиХеро
+    "/images/projects/central-premium/common/design-central-premium-living-room-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Центральний ЖК “Premium” Relaxation",
   altEn: "Central residential complex “Premium” Relaxation",
+  titleUk: "Дизайн квартири в Центральному ЖК “Premium” Relaxation",
+  titleEn: "Design of an apartment in the Central residential complex “Premium” Relaxation",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "Центральний ЖК “Premium”", // Центральний ЖК “Premium”

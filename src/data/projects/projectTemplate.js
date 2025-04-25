@@ -7,6 +7,8 @@ export const projectTemplate = {
   mainImage: "", // она же идет на портфолиоАйдиХеро
   altUk: "",
   altEn: "",
+  titleUk: "", // Дизайн ресторану Eat Fish
+  titleEn: "",
   typeUk: "", // Квартира Будинок Комерція Архітектура
   typeEn: "",
   locationUk: "", // Центральний ЖК “Premium”

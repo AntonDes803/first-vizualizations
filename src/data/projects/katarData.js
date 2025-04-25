@@ -7,6 +7,8 @@ export const katarData = {
   mainImage: "/images/projects/katar/hall/design-katar-hall-03.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Візуалізація будинку",
   altEn: "Visualization of the house",
+  titleUk: "Візуалізація дизайну будинку в елегантному стилі",
+  titleEn: "Visualization of home design in an elegant style",
   typeUk: "Будинок", // Квартира Будинок Комерція Архітектура
   typeEn: "House",
   locationUk: "", // Центральний ЖК “Premium”

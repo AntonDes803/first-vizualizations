@@ -7,6 +7,8 @@ export const kidsBedroomPurpleData = {
   mainImage: "/images/projects/kids-bedroom-purple/kids-bedroom-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Візуалізація дизайну дитячої кімнати",
   altEn: "Visualization of the children's room design",
+  titleUk: "Візуалізація дизайну дитячої кімнати в сучасному стилі",
+  titleEn: "Visualization of the design of a children's room in a modern style",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "", // Центральний ЖК “Premium”

@@ -8,6 +8,8 @@ export const alenasFlatData = {
     "/images/projects/alenas-flat/common/design-alenas-flat-living-room-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири ЖК Парус “Balance”",
   altEn: "Design of the apartment in Parus “Balance”",
+  titleUk: "Дизайн квартири в ЖК Парус “Balance”",
+  titleEn: "Apartment design in the residential complex Parus “Balance”",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "ЖК Парус “Balance”", // Центральний ЖК “Premium”

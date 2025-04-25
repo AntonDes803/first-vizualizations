@@ -4,9 +4,11 @@ export const beautyData = {
   slug: "beauty-salon-central-premium",
   categoryUk: businessCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
   categoryEn: businessCategoryData.categoryEn,
-  mainImage: "/images/projects/beauty/common/design-beauty-01.webp", // она же идет на портфолиоАйдиХеро
+  mainImage: "/images/projects/beauty/common/design-beauty-salon-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Салон краси ELEGANTE STYLE в ЖК “Premium”",
   altEn: "Beauty salon ELEGANTE STYLE in the residential complex “Premium”",
+  titleUk: "Дизайн салону краси ELEGANTE STYLE в ЖК “Premium”",
+  titleEn: "Design of the beauty salon ELEGANTE STYLE in the residential complex “Premium”",
   typeUk: "Комерція", // Квартира Будинок Комерція Архітектура
   typeEn: "Business",
   locationUk: "Центральний ЖК “Premium”", // Центральний ЖК “Premium”

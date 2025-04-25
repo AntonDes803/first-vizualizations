@@ -7,6 +7,8 @@ export const crystalFlatData = {
   mainImage: "/images/projects/crystal-flat/common/design-crystal-flat-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири ЖК “Crystal Flat”",
   altEn: "Design of the apartment in “Crystal Flat”",
+  titleUk: "Дизайн квартири в ЖК “Crystal Flat”",
+  titleEn: "Apartment design in Crystal Flat",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "м. Київ", // Центральний ЖК “Premium”
