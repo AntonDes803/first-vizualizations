@@ -3,6 +3,7 @@ import PortfolioIdSolutionsTwoPhotosBlock from "@/components/PortfolioIdSolution
 import OrderButton from "@/components/buttons/OrderButton/OrderButton";
 import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./PortfolioIdSolutionSection.module.scss";
+import PortfolioIdSolutionsVisualizationBlock from "../../components/PortfolioIdSolutionsVisualizationBlock/PortfolioIdSolutionsVisualizationBlock";
 
 const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
   const floorPlanData = data[0];
@@ -42,13 +43,11 @@ const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
           />
         )}
 
-        <div className={styles.visualizationBlock}>
-          <h2 className={styles.visualizationBlockTitle}>
-            {lang === i18n.locales[0]
-              ? visualizationData.titleUk.toUpperCase()
-              : visualizationData.titleEn.toUpperCase()}
-          </h2>
-        </div>
+        <PortfolioIdSolutionsVisualizationBlock
+          lang={lang}
+          customClass={styles.visualizationBlock}
+          data={visualizationData}
+        />
 
         <OrderButton customClass="" text={dictionary.orderBtnText} />
       </div>
