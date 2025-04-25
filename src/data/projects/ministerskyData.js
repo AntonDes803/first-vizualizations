@@ -8,6 +8,8 @@ export const ministerskyData = {
     "/images/projects/ministersky/common/design-ministersky-living-room-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири в ЖК “Міністерський”",
   altEn: "Apartment design in the residential complex “Ministersky”",
+  titleUk: "Дизайн квартири в ЖК “Міністерський”",
+  titleEn: "Apartment design in the residential complex “Ministersky”",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "м. Київ", // Центральний ЖК “Premium”

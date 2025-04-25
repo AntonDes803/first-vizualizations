@@ -11,7 +11,7 @@ const PortfolioIdHeroSection = ({ lang, dictionary, data }) => {
     >
       <div className={`container ${styles.container}`}>
         <h1 className={styles.title}>
-          {lang === i18n.locales[0] ? data.locationUk : data.locationEn}
+          {lang === i18n.locales[0] ? data.titleUk : data.titleEn}
         </h1>
       </div>
     </section>

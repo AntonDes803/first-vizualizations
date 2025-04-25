@@ -7,6 +7,8 @@ export const svitloPark = {
   mainImage: "/images/projects/svitlo-park/common/design-svitlo-park-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Вітальня ЖК “SVITLO PARK”",
   altEn: "Living room of the residential complex “SVITLO PARK”",
+  titleUk: "Дизайн облаштування квартири в ЖК “SVITLO PARK”",
+  titleEn: "Design of apartment arrangement in the residential complex “SVITLO PARK”",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
   locationUk: "ЖК “SVITLO PARK”", // Центральний ЖК “Premium”
