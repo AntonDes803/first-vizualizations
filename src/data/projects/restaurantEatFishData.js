@@ -8,6 +8,8 @@ export const restaurantEatFishData = {
     "/images/projects/restaurant-eat-fish/common/design-restaurant-fish-front-view-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн Ресторану “Eat Fish” в Київській області",
   altEn: "Design of Eat Fish Restaurant in Kyiv region",
+  titleUk: "Дизайн проєкту ресторану Eat Fish",
+  titleEn: "Design of the Eat Fish restaurant project",
   typeUk: "Комерція", // Квартира Будинок Комерція Архітектура
   typeEn: "Business",
   locationUk: "Київська область, м. Чабани", // Центральний ЖК “Premium”

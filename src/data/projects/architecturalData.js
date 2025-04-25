@@ -8,6 +8,8 @@ export const architecturalData = {
     "/images/projects/architectural/architectural-design-house-forest-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Архітектурний дизайн",
   altEn: "Architectural design",
+  titleUk: "Візуалізація архітектурного дизайну",
+  titleEn: "Architectural design visualization",
   typeUk: "Архітектура", // Квартира Будинок Комерція Архітектура
   typeEn: "Architecture",
   locationUk: "Україна", // Центральний ЖК “Premium”

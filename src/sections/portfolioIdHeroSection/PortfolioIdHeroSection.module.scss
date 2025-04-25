@@ -1,17 +1,34 @@
-@use "@/app/variables";
+@use '@/app/variables';
 
 .section {
-  padding-top: 112px;
+  width: 100%;
+  height: 100dvh;
+  background-size: cover;
+  background-position: center;
+}
 
+.container {
+  @include variables.heroSectionsPadding;
+  & {
+    height: 100%;
+  }
   @media screen and (min-width: variables.$tablet) {
-    padding-top: 148px;
-    //если будет стрелка вниз
-    padding-bottom: 80px;
+    padding: 148px 32px 48px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    padding: 132px 0px 48px;
+  }
+}
+
+.title {
+  @include variables.title-h3;
+  & {
+    color: variables.$secondaryTextColor;
   }
 
+  @media screen and (min-width: variables.$tablet) {
+    @include variables.title-h2;
+  }
   @media screen and (min-width: variables.$desktop) {
-    padding-top: 132px;
-    //если будет стрелка вниз
-    padding-bottom: 48px;
   }
 }

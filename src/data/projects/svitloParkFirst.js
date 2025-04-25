@@ -4,9 +4,11 @@ export const svitloParkFirst = {
     slug: "svitlo-park-first",
     categoryUk: apartmentsCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
     categoryEn: apartmentsCategoryData.categoryEn,
-    mainImage: "/images/projects/svitlo-park-first/common/design-svitlo-park-first-01.webp", // она же идет на портфолиоАйдиХеро
+    mainImage: "/images/projects/svitlo-park-first/common/design-svitlo-park-first-02.webp", // она же идет на портфолиоАйдиХеро
     altUk: "ЖК “SVITLO PARK”",
     altEn: "RESIDENTIAL COMPLEX “SVITLO PARK”",
+    titleUk: "Дизайн перепланування квартири в ЖК “SVITLO PARK”",
+    titleEn: "Design of apartment redevelopment in the residential complex “SVITLO PARK”",
     typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
     typeEn: "Apartment",
     locationUk: "ЖК “SVITLO PARK”", // Центральний ЖК “Premium”

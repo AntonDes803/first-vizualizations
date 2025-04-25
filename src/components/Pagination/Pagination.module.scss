@@ -1,0 +1,62 @@
+@use "@/app/variables";
+
+.pagination {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  gap: 8px;
+}
+
+.prev {
+  cursor: pointer;
+  color: variables.$mainTextColor;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  border: none;
+  padding: 1px 5px;
+}
+
+.arrowIcon {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: variables.$mainTextColor;
+  rotate: 90deg;
+}
+
+.arrowIconNext {
+  width: 20px;
+  height: 20px;
+
+  fill: none;
+  stroke: variables.$mainTextColor;
+  rotate: 270deg;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.page {
+  @include variables.bodyText-Regular;
+
+  & {
+    cursor: pointer;
+    color: variables.$mainTextColor;
+    background-color: transparent;
+    border: none;
+    padding: 1px 5px;
+  }
+}
+
+.active {
+  color: #ba181b;
+  border-bottom: 1px solid #ba181b;
+}
