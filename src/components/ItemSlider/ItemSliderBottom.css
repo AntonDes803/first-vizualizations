@@ -1,14 +1,11 @@
 .ItemSliderBottom {
   width: 100%;
   aspect-ratio: 320 / 92;
-  /* height: 25.6vw; */
   margin-left: 0;
   margin-right: 0;
 }
 
 .ItemSliderBottom .swiper-slide {
-  /* height: 92px;
-  height: 100%; */
   overflow: hidden;
 }
 
@@ -19,7 +16,6 @@
 
 @media screen and (min-width: 768px) {
   .ItemSliderBottom {
-    /* height: 12.8vw; */
     aspect-ratio: 704 / 140;
   }
 }
@@ -27,8 +23,6 @@
 @media screen and (min-width: 1440px) {
   .ItemSliderBottom {
     width: 1200px;
-    /* height: 13.5vw;
-    max-height: 259px; */
     height: 180px;
   }
 }

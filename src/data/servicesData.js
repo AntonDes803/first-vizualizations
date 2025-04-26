@@ -1,9 +1,26 @@
+import { arrOfProjects } from "./projects/arrOfProjects";
 import {
   apartmentsCategoryData,
-  architectureCategoryData,
-  businessCategoryData,
   housesCategoryData,
+  businessCategoryData,
+  architectureCategoryData,
 } from "./projectCategories";
+
+const apartmentProjectsCount = arrOfProjects.filter(
+  (item) => item.categoryEn === apartmentsCategoryData.categoryEn
+).length;
+
+const houseProjectsCount = arrOfProjects.filter(
+  (item) => item.categoryEn === housesCategoryData.categoryEn
+).length;
+
+const businessProjectsCount = arrOfProjects.filter(
+  (item) => item.categoryEn === businessCategoryData.categoryEn
+).length;
+
+const architectureProjectsCount = arrOfProjects.filter(
+  (item) => item.categoryEn === architectureCategoryData.categoryEn
+).length;
 
 export const servicesData = [
   {
@@ -12,16 +29,19 @@ export const servicesData = [
     categoryEn: "Apartment interior design",
     cardTextUk:
       "Створюємо комфортні, стильні та функціональні інтер’єри для квартир будь-якої площі.",
-    cardTextEn: "We create comfortable, stylish and functional interiors for apartments of any size.",
-    projectsCount: "45",
+    cardTextEn:
+      "We create comfortable, stylish and functional interiors for apartments of any size.",
+    projectsCount: apartmentProjectsCount,
     titleUk: "Особливості розробки дизайну квартири",
     titleEn: "Features of apartment design",
     text1Uk:
       "Продуманий дизайн інтер’єру створює гармонійний простір, який відображає ваш стиль життя. Ми враховуємо кожну деталь, поєднуючи естетику, комфорт та функціональність.",
-    text1En: "Thoughtful interior design creates a harmonious space that reflects your lifestyle. We take into account every detail, combining aesthetics, comfort and functionality.",
+    text1En:
+      "Thoughtful interior design creates a harmonious space that reflects your lifestyle. We take into account every detail, combining aesthetics, comfort and functionality.",
     text2Uk:
       "Наш підхід передбачає ретельне планування, зонування та використання якісних матеріалів. Завдяки цьому ви отримуєте не просто красивий інтер’єр, а продумане рішення для комфортного життя.",
-    text2En: "Our approach involves careful planning, zoning, and the use of high-quality materials. Thanks to this, you get not just a beautiful interior, but a thoughtful solution for a comfortable life.",
+    text2En:
+      "Our approach involves careful planning, zoning, and the use of high-quality materials. Thanks to this, you get not just a beautiful interior, but a thoughtful solution for a comfortable life.",
     images: [
       "/images/dev/servicesPage/servicesInteriorDesignApartments/service-interior-design-apartments-hero.webp",
       "/images/dev/servicesPage/servicesInteriorDesignApartments/service-interior-design-apartments-second-img.webp",
@@ -35,8 +55,9 @@ export const servicesData = [
     categoryEn: "House interior design",
     cardTextUk:
       "Розробляємо концепції, що враховують архітектуру, ландшафт і особливості вашого будинку.",
-    cardTextEn: "We develop concepts that take into account the architecture, landscape and features of your home.",
-    projectsCount: "45",
+    cardTextEn:
+      "We develop concepts that take into account the architecture, landscape and features of your home.",
+    projectsCount: houseProjectsCount,
     titleUk: "ОСОБЛИВОСТІ РОЗРОБКИ ДИЗАЙНУ БУДИНКУ",
     titleEn: "FEATURES OF HOUSE DESIGN DEVELOPMENT",
     text1Uk: "",
@@ -56,8 +77,9 @@ export const servicesData = [
     categoryEn: "Commercial interior design",
     cardTextUk:
       "Розробка унікальних рішень для бізнесу: магазини, офіси, ресторани, готелі.",
-    cardTextEn: "Development of unique solutions for business: shops, offices, restaurants, hotels.",
-    projectsCount: "45",
+    cardTextEn:
+      "Development of unique solutions for business: shops, offices, restaurants, hotels.",
+    projectsCount: businessProjectsCount,
     titleUk: "ОСОБЛИВОСТІ РОЗРОБКИ ДИЗАЙНУ КОМЕРЦІЙНИХ ПРИМІЩЕНЬ",
     titleEn: "PECULIARITIES OF COMMERCIAL PREMISES DESIGN",
     text1Uk: "",
@@ -77,8 +99,9 @@ export const servicesData = [
     categoryEn: "Architectural design",
     cardTextUk:
       "Комплексне створення будівель: від ескізу до робочої документації.",
-    cardTextEn: "Complex building design: from sketch to working documentation.",
-    projectsCount: "45",
+    cardTextEn:
+      "Complex building design: from sketch to working documentation.",
+    projectsCount: architectureProjectsCount,
     titleUk: "ВІД ІДЕЇ — ДО ФУНДАМЕНТУ",
     titleEn: "FROM IDEA TO FOUNDATION",
     text1Uk: "",

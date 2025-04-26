@@ -41,6 +41,11 @@
   width: 100%;
   aspect-ratio: 320/204;
 
+  @media screen and (orientation: landscape) {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
   @media screen and (min-width: variables.$tablet) {
     aspect-ratio: 704/449;
   }
