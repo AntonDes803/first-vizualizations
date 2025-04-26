@@ -48,7 +48,7 @@ const HeaderNav = ({ lang }) => {
 
         // // заканчивается проверка
 
-        const isServiceLink = el.href === "/services";
+        const isServiceItem = el.titleEn === "Services";
 
         return (
           <li key={i}>
@@ -61,15 +61,27 @@ const HeaderNav = ({ lang }) => {
                 e.target.classList.remove(`${styles.hoverLink}`);
               }}
             >
-              <Link
-                href={`${path}${el.href}`}
-                // className={pageLinkClassName()} // from eye-detect
-                onClick={() => {
-                  !isServiceLink && setMobileMenuContent(false);
-                }}
-              >
-                {lang === i18n.locales[0] ? el.titleUk : el.titleEn}
-              </Link>
+              {/* if item services - open or close subMenu. if another - close whole BurgerMenu */}
+              {isServiceItem ? (
+                <span
+                  // className={pageLinkClassName()} // from eye-detect
+                  onClick={() => {
+                    setSubMenu(!subMenu);
+                  }}
+                >
+                  {lang === i18n.locales[0] ? el.titleUk : el.titleEn}
+                </span>
+              ) : (
+                <Link
+                  href={`${path}${el.href}`}
+                  // className={pageLinkClassName()} // from eye-detect
+                  onClick={() => {
+                    setMobileMenuContent(false);
+                  }}
+                >
+                  {lang === i18n.locales[0] ? el.titleUk : el.titleEn}
+                </Link>
+              )}
 
               {el.serviceId && (
                 <svg
@@ -113,7 +125,12 @@ const HeaderNav = ({ lang }) => {
                       {/* ось іпричина помилки */}
                     </svg>
 
-                    <Link href={`${path}${el.href}${item.href}`}>
+                    <Link
+                      href={`${path}${item.href}`}
+                      onClick={() => {
+                        setMobileMenuContent(false);
+                      }}
+                    >
                       {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
                     </Link>
                   </li>

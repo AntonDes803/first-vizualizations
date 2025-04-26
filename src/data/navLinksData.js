@@ -7,28 +7,32 @@ export const navLinksData = [
   {
     titleUk: "Послуги",
     titleEn: "Services",
-    href: "/services",
 
     serviceId: [
       {
+        titleUk: "Усі сервіси",
+        titleEn: "All services",
+        href: "/services",
+      },
+      {
         titleUk: "Комерційний дизайн",
         titleEn: "Commercial design",
-        href: "/commercial-design",
+        href: "/services/commercial-design",
       },
       {
         titleUk: "Дизайн будинків",
         titleEn: "House design",
-        href: "/house-design",
+        href: "/services/house-design",
       },
       {
         titleUk: "Дизайн квартир",
         titleEn: "Apartment design",
-        href: "/apartment-design",
+        href: "/services/apartment-design",
       },
       {
         titleUk: "Архітектурне проєктування",
         titleEn: "Architectural design",
-        href: "/architectural-design",
+        href: "/services/architectural-design",
       },
     ],
   },
@@ -76,16 +80,20 @@ export const portfolioHref = navLinksData.find(
 
 export const commercialDesignHref = navLinksData
   .find((el) => el.titleEn === "Services")
-  .serviceId.find((item) => item.titleEn === "Commercial design").href;
+  .serviceId.find((item) => item.titleEn === "Commercial design")
+  .href.slice(9);
 
 export const houseDesignHref = navLinksData
   .find((el) => el.titleEn === "Services")
-  .serviceId.find((item) => item.titleEn === "House design").href;
+  .serviceId.find((item) => item.titleEn === "House design")
+  .href.slice(9);
 
 export const apartmentDesignHref = navLinksData
   .find((el) => el.titleEn === "Services")
-  .serviceId.find((item) => item.titleEn === "Apartment design").href;
+  .serviceId.find((item) => item.titleEn === "Apartment design")
+  .href.slice(9);
 
 export const architecturalDesignHref = navLinksData
   .find((el) => el.titleEn === "Services")
-  .serviceId.find((item) => item.titleEn === "Architectural design").href;
+  .serviceId.find((item) => item.titleEn === "Architectural design")
+  .href.slice(9);
