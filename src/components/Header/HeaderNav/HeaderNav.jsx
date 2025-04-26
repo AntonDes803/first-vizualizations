@@ -77,6 +77,7 @@ const HeaderNav = ({ lang }) => {
                   // className={pageLinkClassName()} // from eye-detect
                   onClick={() => {
                     setMobileMenuContent(false);
+                    setSubMenu(!subMenu);
                   }}
                 >
                   {lang === i18n.locales[0] ? el.titleUk : el.titleEn}
@@ -129,6 +130,7 @@ const HeaderNav = ({ lang }) => {
                       href={`${path}${item.href}`}
                       onClick={() => {
                         setMobileMenuContent(false);
+                        setSubMenu(!subMenu);
                       }}
                     >
                       {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
