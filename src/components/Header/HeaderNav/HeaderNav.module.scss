@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 14px;
-  margin-bottom: 14px;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 .titleWrapp {
@@ -29,10 +29,11 @@
   height: 24px;
   stroke: variables.$mainTextColor;
   fill: transparent;
+  rotate: 270deg;
 }
 
 .arrowStylesClicked {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .subMenu {

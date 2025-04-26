@@ -57,7 +57,7 @@ const BurgerMenu = ({ lang }) => {
             }}
           /> */}
 
-          <div>
+          <div className={styles.langSwitcherAndSocLinksWrapper}>
             <LangSwitcher lang={lang} />
 
             <SocialLinks dark />
