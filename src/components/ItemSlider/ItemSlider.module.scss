@@ -14,11 +14,8 @@
   width: 100%;
   min-width: 280px;
 
-  // @media screen and (min-width: variables.$tablet) {
-  //   margin-bottom: 0px;
-  // }
-
-  // @media screen and (orientation: landscape) {
-  //   flex: 1;
-  // }
+  @media screen and (orientation: landscape) {
+    max-width: 550px;
+    margin: 0 auto;
+  }
 }

@@ -109,8 +109,8 @@
     "title": "3d visualization of each design",
     "description-1": "We create realistic 3D visualizations that help businesses, designers, and brands stand out. From concept to final rendering, every detail is handled with precision and creativity.",
     "description-2": " Using advanced technologies, we turn ideas into high-quality visual content. Our solutions are suitable for architecture, product design, advertising, and game development. Entrust us with your project and we'll help you make it impressive.",
-    "projectsCountText": "implemented projects",
-    "projectsCountTextMobile": "projects",
+    "projectsCountText": "Implemented projects: ",
+    "projectsCountTextMobile": "Projects: ",
     "cardLinkText": "LEARN MORE",
     "orderBtnText": "ORDER A PROJECT"
   },
