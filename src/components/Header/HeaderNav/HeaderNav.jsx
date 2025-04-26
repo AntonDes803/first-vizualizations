@@ -8,7 +8,7 @@ import { navLinksData } from "@/data/navLinksData";
 import styles from "./HeaderNav.module.scss";
 
 const HeaderNav = ({ lang }) => {
-  const { setMobileMenuContent } = useContext(SiteContext);
+  const { setMobileMenu } = useContext(SiteContext);
 
   const [subMenu, setSubMenu] = useState(false);
 
@@ -76,7 +76,7 @@ const HeaderNav = ({ lang }) => {
                   href={`${path}${el.href}`}
                   // className={pageLinkClassName()} // from eye-detect
                   onClick={() => {
-                    setMobileMenuContent(false);
+                    setMobileMenu(false);
                     setSubMenu(!subMenu);
                   }}
                 >
@@ -129,7 +129,7 @@ const HeaderNav = ({ lang }) => {
                     <Link
                       href={`${path}${item.href}`}
                       onClick={() => {
-                        setMobileMenuContent(false);
+                        setMobileMenu(false);
                         setSubMenu(!subMenu);
                       }}
                     >
