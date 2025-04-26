@@ -66,9 +66,9 @@ export const headerServices = navLinksData.find(
   (el) => el.href === "/services"
 );
 
-export const servicesHref = navLinksData.find(
-  (el) => el.titleEn === "Services"
-).href;
+export const servicesHref = navLinksData
+  .find((el) => el.titleEn === "Services")
+  .serviceId.find((item) => item.titleEn === "All services").href;
 
 export const aboutUsHref = navLinksData.find(
   (el) => el.titleEn === "About us"
