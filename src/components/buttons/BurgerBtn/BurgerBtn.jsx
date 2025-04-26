@@ -14,13 +14,13 @@ const BurgerBtn = () => {
 
       setTimeout(() => {
         setMobileMenu(false);
-      }, 500);
+      }, 200);
     } else {
       setMobileMenu(true);
 
       setTimeout(() => {
         setMobileMenuContent(true);
-      }, 500);
+      }, 200);
     }
   };
 
