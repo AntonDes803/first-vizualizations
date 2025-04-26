@@ -1,12 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 // import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { SiteContext } from "@/context/SiteContext";
 import { i18n } from "@/dictionaries/i18n.config";
-import { navLinksData as data } from "@/data/navLinksData";
+import { navLinksData } from "@/data/navLinksData";
 import styles from "./HeaderNav.module.scss";
 
 const HeaderNav = ({ lang }) => {
+  const { setMobileMenuContent } = useContext(SiteContext);
+
   const [subMenu, setSubMenu] = useState(false);
 
   // const pathname = usePathname();
@@ -19,7 +22,7 @@ const HeaderNav = ({ lang }) => {
   return (
     // а чого тут ul ? не повинен бути nav ?
     <ul className={styles.headerNavigation}>
-      {data.map((el, i) => {
+      {navLinksData.map((el, i) => {
         // //  начинается проверка для отображения активной страниці (from eye-detect)
         // let checkedPath = `${path}${el.href}`;
         // // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
@@ -45,6 +48,8 @@ const HeaderNav = ({ lang }) => {
 
         // // заканчивается проверка
 
+        const isServiceLink = el.href === "/services";
+
         return (
           <li key={i}>
             <div
@@ -59,6 +64,9 @@ const HeaderNav = ({ lang }) => {
               <Link
                 href={`${path}${el.href}`}
                 // className={pageLinkClassName()} // from eye-detect
+                onClick={() => {
+                  !isServiceLink && setMobileMenuContent(false);
+                }}
               >
                 {lang === i18n.locales[0] ? el.titleUk : el.titleEn}
               </Link>
@@ -74,7 +82,7 @@ const HeaderNav = ({ lang }) => {
                     setSubMenu(!subMenu);
                   }}
                 >
-                  <use href="/sprite.svg#icon-arrow_right"></use>
+                  <use href="/sprite.svg#icon-schevron_bottom"></use>
                 </svg>
               )}
             </div>
