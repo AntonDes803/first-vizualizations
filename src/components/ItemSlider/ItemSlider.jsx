@@ -30,10 +30,14 @@ const ItemSlider = ({ lang, customClass, data }) => {
       data.images.map((el, ind) => {
         const imgLoading = ind === 0 ? "eager" : "lazy";
         const imgPriority = ind === 0 ? true : false;
-        const imgSizes =
+        // const imgSizes =
+        //   ind === 0
+        //     ? "(max-width: 767px) 100vw, (max-width: 1440px) 50vw, 33vw"
+        //     : "(max-width: 767px) 50vw,  17vw";
+            const imgSizes =
           ind === 0
-            ? "(max-width: 767px) 100vw, (max-width: 1440px) 50vw, 33vw"
-            : "(max-width: 767px) 50vw,  17vw";
+            ? "(max-width: 767px) 100vw, (max-width: 1440px) 50vw, 1200px"
+            : "(max-width: 767px) 50vw,  1200px";
         return (
           <SwiperSlide key={ind}>
             <Image

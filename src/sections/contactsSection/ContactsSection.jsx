@@ -62,7 +62,8 @@ const ContactsSection = ({ lang, dictionary }) => {
             className={styles.img}
             src="/images/dev/contactsPage/contacts-page-img.webp"
             alt={dictionary.imgAlt}
-            sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+            // sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+            sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 1200px"
             fill={true}
             priority
           />
