@@ -32,7 +32,8 @@ const PortfolioIdSolutionsOnePhotoBlock = ({ lang, customClass, data }) => {
               ? data.images[0].altUk
               : data.images[0].altEn
           }
-          sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+          // sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+          sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 1200px"
           fill={true}
         />
       </div>

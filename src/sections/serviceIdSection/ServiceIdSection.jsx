@@ -27,7 +27,8 @@ const ServiceIdSection = ({ lang, dictionary, data }) => {
               src={data.images[1]}
               alt={lang === i18n.locales[0] ? data.titleUk : data.titleEn}
               fill={true}
-              sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 512px"
+              // sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 512px"
+              sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 1200px"
             />
           </figure>
         </li>
@@ -38,7 +39,8 @@ const ServiceIdSection = ({ lang, dictionary, data }) => {
               src={data.images[2]}
               alt={data.titleUk}
               fill={true}
-              sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 512px"
+              // sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 512px"
+              sizes="(max-width: 767px) 320px, (max-width: 1439px) 343px, 1200px"
             />
           </figure>
         </li>
