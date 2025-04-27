@@ -15,7 +15,12 @@
   min-width: 280px;
 
   @media screen and (orientation: landscape) {
-    max-width: 550px;
+    max-width: 500px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    max-width: 100%;
+    margin: 0;
   }
 }
