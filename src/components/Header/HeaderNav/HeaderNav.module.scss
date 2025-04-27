@@ -1,22 +1,54 @@
 @use "@/app/variables";
 
-.headerNavigation {
+.navBlock {
+  @media screen and (min-width: variables.$tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.navLinks {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
   margin-bottom: 12px;
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 16px;
+  }
 }
 
 .titleWrapp {
+  padding: 2px 4px 2px 2px;
   display: flex;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   z-index: 200;
 
-  &:hover svg {
-    transform: rotate(90deg);
+  // &:hover svg {
+  //   transform: rotate(0deg);
+  // }
+
+  @media screen and (min-width: variables.$tablet) {
+    gap: 0px;
+  }
+}
+
+.serviceTitle {
+  @media screen and (min-width: variables.$tablet) {
+    padding: 2px 4px 2px 2px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: variables.$tablet) {
+    margin-bottom: 16px;
   }
 }
 
@@ -29,43 +61,57 @@
   height: 24px;
   stroke: variables.$mainTextColor;
   fill: transparent;
-  rotate: 270deg;
+  rotate: -90deg;
+
+  @media screen and (min-width: variables.$tablet) {
+    display: none;
+  }
 }
 
 .arrowStylesClicked {
-  transform: rotate(0deg);
+  rotate: 0deg;
 }
 
 .subMenu {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
+  gap: 8px;
+  // padding-left: 12px;
+  // padding-right: 12px;
 
   & li {
+    padding: 2px 4px 2px 2px;
     display: flex;
     align-items: center;
+    column-gap: 4px;
   }
 
   & svg {
     width: 24px;
     height: 24px;
   }
+
+  @media screen and (min-width: variables.$desktop) {
+    gap: 16px;
+  }
 }
 
 .subMenuVisible {
   padding-top: 12px;
-  padding-bottom: 12px;
+  // padding-bottom: 12px;
   // height: 152px;
-  max-height: 300px;
+  // max-height: 300px;
 
   opacity: 1;
 
   // @media screen and (max-width: 444px) {
   //   height: 200px;
   // }
+
+  @media screen and (min-width: variables.$tablet) {
+    padding: 0px 0px 0px 4px;
+  }
 }
 
 .subMenuHidden {

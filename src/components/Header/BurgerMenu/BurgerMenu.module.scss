@@ -12,7 +12,8 @@
   width: 100%;
   height: fit-content;
   background-color: variables.$mainBgColor;
-  padding: 56px 56px 100px;
+  // padding: 56px 56px 100px;
+  padding: 56px;
 
   // @media screen and (max-width: 359px) {
   //   padding-left: 72px;
@@ -48,6 +49,19 @@
     align-items: flex-start;
   }
 }
+.customHeaderNav {
+  @media screen and (min-width: variables.$tablet) {
+    flex: 2;
+  }
+
+  @media screen and (min-width: variables.$laptop) {
+    flex: 1.5;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    flex: 1;
+  }
+}
 
 .langSwitcherAndSocLinksWrapper {
   width: 100%;
@@ -57,6 +71,7 @@
   row-gap: 68px;
 
   @media screen and (min-width: variables.$tablet) {
+    flex: 1;
     width: fit-content;
     align-items: flex-end;
     row-gap: 24px;
