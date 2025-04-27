@@ -30,7 +30,8 @@ const PortfolioIdSolutionsTwoPhotosBlock = ({ lang, customClass, data }) => {
               className={styles.img}
               src={item.src}
               alt={lang === i18n.locales[0] ? item.altUk : item.altEn}
-              sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+              // sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 486px"
+              sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 1200px"
               fill={true}
             />
           </li>

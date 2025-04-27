@@ -31,7 +31,8 @@ const ServicesSection = ({ lang, dictionary }) => {
                   src={data.imageMain}
                   alt={data.categoryUk}
                   fill={true}
-                  sizes="(max-width: 767px) 320px, (max-width: 1439px) 344px, 588px"
+                  // sizes="(max-width: 767px) 320px, (max-width: 1439px) 344px, 588px"
+                  sizes="(max-width: 767px) 320px, (max-width: 1439px) 344px, 1200px"
                 />
               </figure>
               <div className={styles.servicesItem}>
