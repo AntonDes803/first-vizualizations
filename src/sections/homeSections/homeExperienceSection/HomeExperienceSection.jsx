@@ -18,7 +18,8 @@ const HomeExperienceSection = ({ lang, dictionary }) => {
             className={styles.imgHomeExperience}
             src="/images/dev/homePage/home-page-work-experience-img.webp"
             alt={dictionary.imgAlt}
-            sizes="(max-width: 767px ) 95vw, (max-width: 1439px ) 45vw, 588px"
+            // sizes="(max-width: 767px ) 95vw, (max-width: 1439px ) 45vw, 588px"
+            sizes="(max-width: 767px ) 95vw, (max-width: 1439px ) 45vw, 1200px"
             fill={true}
           />
         </div>
