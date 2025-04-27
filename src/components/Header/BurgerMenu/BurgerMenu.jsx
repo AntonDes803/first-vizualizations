@@ -33,33 +33,10 @@ const BurgerMenu = ({ lang }) => {
         }
       >
         <div className={`container ${styles.container}`}>
-          <HeaderNav lang={lang} />
-
-          {/* <Navigation
-            className={styles.headerNavigation}
-            data={navLinksData}
-            arrowStyles={{
-              usual: styles.arrowStyles,
-              isClicked: styles.arrowStylesClicked,
-            }}
-            titleWrapp={styles.titleWrapp}
-            scvHref="/sprite.svg#icon-arrow_right"
-            subMenuStyles={{
-              usual: styles.subMenu,
-              visible: styles.subMenuVisible,
-              hidden: styles.subMenuHidden,
-            }}
-            onMouseOver={(e) => {
-              e.target.classList.add(`${styles.hoverLink}`);
-            }}
-            onMouseOut={(e) => {
-              e.target.classList.remove(`${styles.hoverLink}`);
-            }}
-          /> */}
+          <HeaderNav lang={lang} customClass={styles.customHeaderNav} />
 
           <div className={styles.langSwitcherAndSocLinksWrapper}>
             <LangSwitcher lang={lang} />
-
             <SocialLinks dark />
           </div>
         </div>

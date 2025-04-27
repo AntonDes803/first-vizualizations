@@ -1,20 +1,19 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 
-
 export function useWindowResize() {
-  const [isMobile, setMobile] = useState(false);
-  const [isTablet, setTablet] = useState(false);
-  const [isLaptop, setLaptop] = useState(false);
-  const [isDesktop, setDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+  const [isLaptop, setIsLaptop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
 
   const handleResizeMobile = useCallback(() => {
     if (window.innerWidth < 768) {
-      setMobile(true);
+      setIsMobile(true);
     } else {
-      setMobile(false);
+      setIsMobile(false);
     }
-  }, [setMobile]);
+  }, [setIsMobile]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResizeMobile);
@@ -26,11 +25,11 @@ export function useWindowResize() {
 
   const handleResizeTablet = useCallback(() => {
     if (window.innerWidth >= 768 && window.innerWidth < 1024) {
-      setTablet(true);
+      setIsTablet(true);
     } else {
-      setTablet(false);
+      setIsTablet(false);
     }
-  }, [setTablet]);
+  }, [setIsTablet]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResizeTablet);
@@ -42,11 +41,11 @@ export function useWindowResize() {
 
   const handleResizeLaptop = useCallback(() => {
     if (window.innerWidth >= 1024 && window.innerWidth < 1440) {
-      setLaptop(true);
+      setIsLaptop(true);
     } else {
-      setLaptop(false);
+      setIsLaptop(false);
     }
-  }, [setLaptop]);
+  }, [setIsLaptop]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResizeLaptop);
@@ -58,11 +57,11 @@ export function useWindowResize() {
 
   const handleResizeDesktop = useCallback(() => {
     if (window.innerWidth >= 1440) {
-      setDesktop(true);
+      setIsDesktop(true);
     } else {
-      setDesktop(false);
+      setIsDesktop(false);
     }
-  }, [setDesktop]);
+  }, [setIsDesktop]);
 
   useEffect(() => {
     window.addEventListener("resize", handleResizeDesktop);
