@@ -1,0 +1,187 @@
+@use "@/app/variables";
+
+.container {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    padding: 40px 18px 18px;
+    background-color: variables.$mainBgColor;
+
+    @media screen and (min-width: variables.$tablet) {
+        padding: 32px;
+        width: 465px;
+        height: 462px;
+    }
+
+    @media screen and (min-width: variables.$desktop) {
+        padding: 40px;
+        width: 534px;
+        height: 586px;
+    }
+}
+
+.closeBtn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    border: none;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.iconBtnClose {
+    position: absolute;
+    top: -35px;
+    right: -15px;
+    width: 24px;
+    height: 24px;
+    @media screen and (min-width: variables.$tablet) {
+        top: -25px;
+        right: -14px;
+    }
+}
+
+.iconSnowflake {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 7px;
+    height: 7px;
+}
+
+.formTitle {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        font-size: 26px;
+    }
+}
+
+.inputGroup {
+    position: relative;
+    height: 72px;
+    @media screen and (min-width: variables.$desktop) {
+        height: 92px;
+    }
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid variables.$mainTextColor;
+}
+
+.error {
+    position: absolute;
+    bottom: 7px;
+    right: 0;
+    color: variables.$alertError;
+    font-size: 14px;
+    font-weight: 400;
+    @media screen and (min-width: variables.$desktop) {
+        font-size: 16px;
+    }
+}
+
+.errorColor {
+    border-bottom: 1px solid variables.$alertError;
+}
+
+.submitBtn {
+    @include variables.bodyText-Regular;
+
+    & {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 28px;
+        border: solid 1px variables.$hoverBtnBgColor;
+        border-radius: 2px;
+        color: variables.$mainTextColor;
+        background-color: variables.$mainBgColor;
+
+        &:hover,
+        &:active {
+            background-color: variables.$hoverBtnBgColor;
+            color: variables.$secondaryTextColor;
+        }
+    }
+
+    @media screen and (min-width: variables.$tablet) {
+        width: fit-content;
+        min-width: 224px;
+        padding: 8px 32px;
+    }
+
+    @media screen and (min-width: variables.$desktop) {
+        min-width: 384px;
+        padding: 12px 56px;
+    }
+}
+
+// ----------------------  styles for checkboxes  --------------------------
+
+.subTitle {
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.checkboxList {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 15px;
+    width: 164px;
+    @media screen and (min-width: variables.$desktop) {
+        margin: 0 auto 40px;
+    }
+}
+
+.socSvg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    @media screen and (min-width: variables.$tablet) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.boxChecked,
+.boxNoChecked {
+    display: none;
+}
+
+.item:has(.boxChecked) .socSvg {
+    fill: variables.$hoverBtnBgColor;
+    transform: scale(1.1);
+}
+
+.item:has(.boxNoChecked) .socSvg {
+    fill: variables.$mainTextColor;
+    transform: scale(1);
+}
+
+.instagram:has(.boxChecked) .socSvg {
+    fill: none;
+    stroke: variables.$hoverBtnBgColor;
+    transform: scale(1.1);
+}
+
+.instagram:has(.boxNoChecked) .socSvg {
+    fill: none;
+    stroke: variables.$mainTextColor;
+    transform: scale(1);
+}

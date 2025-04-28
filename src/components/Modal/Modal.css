@@ -18,7 +18,7 @@
     background-color: rgba(0, 0, 0, 0.75);
     overflow: hidden;
     overflow-y: auto;
-    z-index: 10;
+    z-index: 102;
 
     @media screen and (max-height: 550px) {
         -webkit-box-align: start;
