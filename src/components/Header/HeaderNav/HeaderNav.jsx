@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useState } from "react";
-// import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { SiteContext } from "@/context/SiteContext";
 import { i18n } from "@/dictionaries/i18n.config";
@@ -13,7 +13,7 @@ const HeaderNav = ({ lang, customClass }) => {
 
   const [subMenu, setSubMenu] = useState(false);
 
-  // const pathname = usePathname();
+  const pathname = usePathname();
 
   const { isMobile } = useWindowResize();
 
@@ -36,43 +36,45 @@ const HeaderNav = ({ lang, customClass }) => {
       {isMobile && (
         <ul className={styles.navLinks}>
           {navLinksData.map((el, i) => {
-            // //  начинается проверка для отображения активной страниці (from eye-detect)
-            // let checkedPath = `${path}${el.href}`;
-            // // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
-            // const resultPath =
-            //   checkedPath === `/${i18n.locales[1]}/`
-            //     ? checkedPath.slice(0, -1)
-            //     : checkedPath;
-            // // console.log("resultPath", resultPath);
+            //  начинается проверка для отображения активной страниці (from eye-detect)
+            let checkedPath = `${path}${el.href}`;
+            // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
+            const resultPath =
+              checkedPath === `/${i18n.locales[1]}/`
+                ? checkedPath.slice(0, -1)
+                : checkedPath;
+            // console.log("resultPath", resultPath);
 
             // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
 
-            // const pageLinkClassName = () => {
-            //   // if (pathname === el.href && isInHeader) {
-            //   // if (pathname === `${path}${el.href}` && isInHeader) {
-            //   // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
-            //   if (pathname.endsWith(resultPath) && isInHeader) {
-            //     return `${styles.activeLink}`; // нужно доваить и скорректировать
-            //   } else {
-            //     return `${linkStyles}`; // нужно добавить и скорректировать
-            //   }
-            // };
+            const pageLinkClassName = (linkStyles = null) => {
+              // if (pathname === el.href && isInHeader) {
+              // if (pathname === `${path}${el.href}` && isInHeader) {
+              // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
+              if (pathname.endsWith(resultPath)) {
+                return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+              } else {
+                return linkStyles; // нужно добавить и скорректировать
+              }
+            };
             // console.log("pageLinkClassName", pageLinkClassName());
 
-            // // заканчивается проверка
+            // заканчивается проверка
 
             const isServiceItem = el.titleEn === "Services";
 
             return (
               <li key={i}>
                 <div
-                  className={styles.titleWrapp}
-                  onMouseOver={(e) => {
-                    e.target.classList.add(`${styles.hoverLink}`);
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.classList.remove(`${styles.hoverLink}`);
-                  }}
+                  // className={styles.titleWrapp}
+                  className={pageLinkClassName(styles.titleWrapp)}
+
+                  // onMouseOver={(e) => {
+                  //   e.target.classList.add(`${styles.hoverLink}`);
+                  // }}
+                  // onMouseOut={(e) => {
+                  //   e.target.classList.remove(`${styles.hoverLink}`);
+                  // }}
                 >
                   {/* if item services - open or close subMenu. if another - close whole BurgerMenu */}
                   {isServiceItem ? (
@@ -121,37 +123,64 @@ const HeaderNav = ({ lang, customClass }) => {
                         : `${styles.subMenu} ${styles.subMenuHidden}`
                     }
                   >
-                    {el.serviceId.map((item, i) => (
-                      <li
-                        key={i}
-                        onMouseOver={(e) => {
-                          e.target.classList.add(`${styles.hoverLink}`);
-                        }}
-                        onMouseOut={(e) => {
-                          e.target.classList.remove(`${styles.hoverLink}`);
-                        }}
-                      >
-                        <svg>
-                          {/* так було */}
-                          {/* <use href="sprite.svg#icon-dot"></use> */}
-                          {/* а так має бути */}
-                          <use href="/sprite.svg#icon-dot"></use>
-                          {/* ось іпричина помилки */}
-                        </svg>
+                    {el.serviceId.map((item, i) => {
+                      //  начинается проверка для отображения активной страниці (from eye-detect)
+                      let resultPath = item.href;
+                      // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
+                      // const resultPath =
+                      //   checkedPath === `/${i18n.locales[1]}/`
+                      //     ? checkedPath.slice(0, -1)
+                      //     : checkedPath;
+                      // console.log("resultPath", resultPath);
 
-                        <Link
-                          href={`${path}${item.href}`}
-                          onClick={() => {
-                            setMobileMenu(false);
-                            setSubMenu(!subMenu);
-                          }}
+                      // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
+
+                      const pageLinkClassName = (linkStyles = null) => {
+                        // if (pathname === el.href && isInHeader) {
+                        // if (pathname === `${path}${el.href}` && isInHeader) {
+                        // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
+                        if (pathname.endsWith(resultPath)) {
+                          return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                        } else {
+                          return linkStyles; // нужно добавить и скорректировать
+                        }
+                      };
+                      // console.log("pageLinkClassName", pageLinkClassName());
+
+                      // заканчивается проверка
+                      return (
+                        <li
+                          key={i}
+                          className={pageLinkClassName(styles.subMenuItem)}
+                          // onMouseOver={(e) => {
+                          //   e.target.classList.add(`${styles.hoverLink}`);
+                          // }}
+                          // onMouseOut={(e) => {
+                          //   e.target.classList.remove(`${styles.hoverLink}`);
+                          // }}
                         >
-                          {lang === i18n.locales[0]
-                            ? item.titleUk
-                            : item.titleEn}
-                        </Link>
-                      </li>
-                    ))}
+                          <svg>
+                            {/* так було */}
+                            {/* <use href="sprite.svg#icon-dot"></use> */}
+                            {/* а так має бути */}
+                            <use href="/sprite.svg#icon-dot"></use>
+                            {/* ось іпричина помилки */}
+                          </svg>
+
+                          <Link
+                            href={`${path}${item.href}`}
+                            onClick={() => {
+                              setMobileMenu(false);
+                              setSubMenu(!subMenu);
+                            }}
+                          >
+                            {lang === i18n.locales[0]
+                              ? item.titleUk
+                              : item.titleEn}
+                          </Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 )}
               </li>
@@ -164,41 +193,41 @@ const HeaderNav = ({ lang, customClass }) => {
         <>
           <ul className={styles.navLinks}>
             {navLinksWithoutServices.map((el, i) => {
-              // //  начинается проверка для отображения активной страниці (from eye-detect)
-              // let checkedPath = `${path}${el.href}`;
-              // // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
-              // const resultPath =
-              //   checkedPath === `/${i18n.locales[1]}/`
-              //     ? checkedPath.slice(0, -1)
-              //     : checkedPath;
-              // // console.log("resultPath", resultPath);
+              //  начинается проверка для отображения активной страниці (from eye-detect)
+              let checkedPath = `${path}${el.href}`;
+              // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
+              const resultPath =
+                checkedPath === `/${i18n.locales[1]}/`
+                  ? checkedPath.slice(0, -1)
+                  : checkedPath;
+              // console.log("resultPath", resultPath);
 
               // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
 
-              // const pageLinkClassName = () => {
-              //   // if (pathname === el.href && isInHeader) {
-              //   // if (pathname === `${path}${el.href}` && isInHeader) {
-              //   // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
-              //   if (pathname.endsWith(resultPath) && isInHeader) {
-              //     return `${styles.activeLink}`; // нужно доваить и скорректировать
-              //   } else {
-              //     return `${linkStyles}`; // нужно добавить и скорректировать
-              //   }
-              // };
+              const pageLinkClassName = (linkStyles = null) => {
+                // if (pathname === el.href && isInHeader) {
+                // if (pathname === `${path}${el.href}` && isInHeader) {
+                // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
+                if (pathname.endsWith(resultPath)) {
+                  return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                } else {
+                  return linkStyles; // нужно добавить и скорректировать
+                }
+              };
               // console.log("pageLinkClassName", pageLinkClassName());
 
-              // // заканчивается проверка
-
+              // заканчивается проверка
               return (
                 <li key={i}>
                   <div
-                    className={styles.titleWrapp}
-                    onMouseOver={(e) => {
-                      e.target.classList.add(`${styles.hoverLink}`);
-                    }}
-                    onMouseOut={(e) => {
-                      e.target.classList.remove(`${styles.hoverLink}`);
-                    }}
+                    // className={styles.titleWrapp}
+                    className={pageLinkClassName(styles.titleWrapp)}
+                    // onMouseOver={(e) => {
+                    //   e.target.classList.add(`${styles.hoverLink}`);
+                    // }}
+                    // onMouseOut={(e) => {
+                    //   e.target.classList.remove(`${styles.hoverLink}`);
+                    // }}
                   >
                     <Link
                       href={`${path}${el.href}`}
@@ -230,35 +259,64 @@ const HeaderNav = ({ lang, customClass }) => {
               // }
               className={`${styles.subMenu} ${styles.subMenuVisible}`}
             >
-              {servicesNavLinks.serviceId.map((item, i) => (
-                <li
-                  key={i}
-                  onMouseOver={(e) => {
-                    e.target.classList.add(`${styles.hoverLink}`);
-                  }}
-                  onMouseOut={(e) => {
-                    e.target.classList.remove(`${styles.hoverLink}`);
-                  }}
-                >
-                  <svg>
-                    {/* так було */}
-                    {/* <use href="sprite.svg#icon-dot"></use> */}
-                    {/* а так має бути */}
-                    <use href="/sprite.svg#icon-dot"></use>
-                    {/* ось іпричина помилки */}
-                  </svg>
+              {servicesNavLinks.serviceId.map((item, i) => {
+                //  начинается проверка для отображения активной страниці (from eye-detect)
+                let resultPath = item.href;
+                // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
+                // const resultPath =
+                //   checkedPath === `/${i18n.locales[1]}/`
+                //     ? checkedPath.slice(0, -1)
+                //     : checkedPath;
+                // console.log("resultPath", resultPath);
 
-                  <Link
-                    href={`${path}${item.href}`}
-                    onClick={() => {
-                      setMobileMenu(false);
-                      setSubMenu(!subMenu);
-                    }}
+                // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
+
+                const pageLinkClassName = (linkStyles = null) => {
+                  // if (pathname === el.href && isInHeader) {
+                  // if (pathname === `${path}${el.href}` && isInHeader) {
+                  // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
+                  if (pathname.endsWith(resultPath)) {
+                    return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                  } else {
+                    return linkStyles; // нужно добавить и скорректировать
+                  }
+                };
+                // console.log("pageLinkClassName", pageLinkClassName());
+
+                // заканчивается проверка
+                return (
+                  <li
+                    key={i}
+                    // className={styles.subMenuItem}
+                    className={pageLinkClassName(styles.subMenuItem)}
+
+                    // onMouseOver={(e) => {
+                    //   e.target.classList.add(`${styles.hoverLink}`);
+                    // }}
+                    // onMouseOut={(e) => {
+                    //   e.target.classList.remove(`${styles.hoverLink}`);
+                    // }}
                   >
-                    {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
-                  </Link>
-                </li>
-              ))}
+                    <svg>
+                      {/* так було */}
+                      {/* <use href="sprite.svg#icon-dot"></use> */}
+                      {/* а так має бути */}
+                      <use href="/sprite.svg#icon-dot"></use>
+                      {/* ось іпричина помилки */}
+                    </svg>
+
+                    <Link
+                      href={`${path}${item.href}`}
+                      onClick={() => {
+                        setMobileMenu(false);
+                        setSubMenu(!subMenu);
+                      }}
+                    >
+                      {lang === i18n.locales[0] ? item.titleUk : item.titleEn}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </>
