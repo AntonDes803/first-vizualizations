@@ -1,10 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./Logo.module.scss";
 
-const Logo = (className) => {
+const Logo = ({ lang, customClass }) => {
+  // если язык по умолчанию (т.е. i18n.defaultLocale), то убираем его из url (в нашем случае uk))
+  const isDefaultLang = lang === i18n.defaultLocale;
+  const path = isDefaultLang ? "" : `/${lang}`;
+
   return (
-    <figure className={`${className} ${styles.logo}`}>
+    // <figure className={`${styles.logo} ${customClass}`}>
+    <Link className={`${styles.logo} ${customClass}`} href={`${path}/`}>
       <Image
         src="/svg/logo.svg"
         alt="MALOV&PARTNERS"
@@ -12,7 +18,8 @@ const Logo = (className) => {
         sizes="33vw"
         priority={true}
       />
-    </figure>
+    </Link>
+    // {/* </figure> */}
   );
 };
 

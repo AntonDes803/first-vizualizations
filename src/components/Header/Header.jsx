@@ -44,7 +44,7 @@ const Header = ({ lang, dictionary }) => {
       }
     >
       <div className={`container ${styles.container}`}>
-        <Logo />
+        <Logo lang={lang} customClass="" />
 
         <div className={styles.rightSide}>
           <PhoneLink className={styles.phone} />

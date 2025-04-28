@@ -28,8 +28,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  cursor: pointer;
   z-index: 200;
+  border: solid 1px transparent;
+  cursor: pointer;
 
   @media screen and (min-width: variables.$tablet) {
     gap: 0px;
@@ -121,6 +122,7 @@
   display: flex;
   align-items: center;
   column-gap: 4px;
+  border: solid 1px transparent;
 
   @media screen and (min-width: variables.$laptop) {
     &:hover,
