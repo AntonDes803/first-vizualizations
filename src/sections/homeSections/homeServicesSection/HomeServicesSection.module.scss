@@ -57,18 +57,14 @@
 }
 
 .cardList {
-    // display: grid;
-    // grid-template-columns: 1fr;
-
     display: flex;
     flex-direction: column;
     row-gap: 12px;
     @media screen and (min-width: variables.$tablet) {
-        // grid-template-columns: repeat(2);
         flex-wrap: wrap;
         flex-direction: row;
-        row-gap: 0;
-        column-gap: 12px;
+        row-gap: 16px;
+        column-gap: 16px;
     }
 
     @media screen and (min-width: variables.$desktop) {
