@@ -427,5 +427,9 @@
 <path fill="none" stroke="#ba181b" style="stroke: var(--color3, #ba181b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.8889" d="M15.245 8.755l1.23 0.134 0.775-0.965 0.775 0.965 1.23-0.134-0.134 1.23 0.965 0.775-0.965 0.775 0.134 1.23-1.23-0.133-0.775 0.964-0.775-0.964-1.23 0.133 0.133-1.23-0.965-0.775 0.965-0.775-0.133-1.23z"></path>
 </symbol>
 
+<symbol id="icon-snowflake" viewBox="0 0 32 32">
+<path fill="none" stroke="#ba181b" style="stroke: var(--color1, #ba181b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M15.407 16.889l11.852-6.667M15.407 16.889v13.333M15.407 16.889l-11.852-6.667M15.407 16.889l11.852 6.667M15.407 16.889v-13.333M15.407 16.889l-11.852 6.667"></path>
+</symbol>
+
 </defs>
 </svg>
