@@ -25,61 +25,42 @@ const HeaderNav = ({ lang, customClass }) => {
     (item) => item.titleEn === "Services"
   );
 
-  // если язык по умолчанию, то убираем его из url (в нашем случае uk))
+  // если язык по умолчанию, то убираем его из url (в нашем случае uk)). Сделано для корректных адресов для ссылок в зависимости от текущего языка
   const isDefaultLang = lang === i18n.defaultLocale;
   const path = isDefaultLang ? "" : `/${lang}`;
-  // console.log("path", path);
 
   return (
     <nav className={`${styles.navBlock} ${customClass}`}>
-      {/* а чого тут ul ? не повинен бути nav ? */}
       {isMobile && (
         <ul className={styles.navLinks}>
           {navLinksData.map((el, i) => {
-            //  начинается проверка для отображения активной страниці (from eye-detect)
+            //  начинается проверка для отображения стилей активной страницы
             let checkedPath = `${path}${el.href}`;
             // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
             const resultPath =
               checkedPath === `/${i18n.locales[1]}/`
                 ? checkedPath.slice(0, -1)
                 : checkedPath;
-            // console.log("resultPath", resultPath);
 
-            // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
-
+            // функция создания стилей для елемента (linkStyles - базовые стили)
             const pageLinkClassName = (linkStyles = null) => {
-              // if (pathname === el.href && isInHeader) {
-              // if (pathname === `${path}${el.href}` && isInHeader) {
-              // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
               if (pathname.endsWith(resultPath)) {
-                return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                return `${linkStyles} ${styles.activeLink}`;
               } else {
-                return linkStyles; // нужно добавить и скорректировать
+                return linkStyles;
               }
             };
-            // console.log("pageLinkClassName", pageLinkClassName());
-
             // заканчивается проверка
 
             const isServiceItem = el.titleEn === "Services";
 
             return (
               <li key={i}>
-                <div
-                  // className={styles.titleWrapp}
-                  className={pageLinkClassName(styles.titleWrapp)}
+                <div className={pageLinkClassName(styles.titleWrapp)}>
+                  {/* при клике на services - открывается или закрывается подменю. при клике на ссылки других страниц - закрітие БургерМеню и переход на другую страницу */}
 
-                  // onMouseOver={(e) => {
-                  //   e.target.classList.add(`${styles.hoverLink}`);
-                  // }}
-                  // onMouseOut={(e) => {
-                  //   e.target.classList.remove(`${styles.hoverLink}`);
-                  // }}
-                >
-                  {/* if item services - open or close subMenu. if another - close whole BurgerMenu */}
                   {isServiceItem ? (
                     <span
-                      // className={pageLinkClassName()} // from eye-detect
                       onClick={() => {
                         setSubMenu(!subMenu);
                       }}
@@ -89,7 +70,6 @@ const HeaderNav = ({ lang, customClass }) => {
                   ) : (
                     <Link
                       href={`${path}${el.href}`}
-                      // className={pageLinkClassName()} // from eye-detect
                       onClick={() => {
                         setMobileMenu(false);
                         setSubMenu(!subMenu);
@@ -124,47 +104,26 @@ const HeaderNav = ({ lang, customClass }) => {
                     }
                   >
                     {el.serviceId.map((item, i) => {
-                      //  начинается проверка для отображения активной страниці (from eye-detect)
+                      //  начинается проверка для отображения активной страницы
                       let resultPath = item.href;
-                      // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
-                      // const resultPath =
-                      //   checkedPath === `/${i18n.locales[1]}/`
-                      //     ? checkedPath.slice(0, -1)
-                      //     : checkedPath;
-                      // console.log("resultPath", resultPath);
 
-                      // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
-
+                      // функция создания стилей для елемента (linkStyles - базовые стили)
                       const pageLinkClassName = (linkStyles = null) => {
-                        // if (pathname === el.href && isInHeader) {
-                        // if (pathname === `${path}${el.href}` && isInHeader) {
-                        // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
                         if (pathname.endsWith(resultPath)) {
-                          return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                          return `${linkStyles} ${styles.activeLink}`;
                         } else {
-                          return linkStyles; // нужно добавить и скорректировать
+                          return linkStyles;
                         }
                       };
-                      // console.log("pageLinkClassName", pageLinkClassName());
-
                       // заканчивается проверка
+
                       return (
                         <li
                           key={i}
                           className={pageLinkClassName(styles.subMenuItem)}
-                          // onMouseOver={(e) => {
-                          //   e.target.classList.add(`${styles.hoverLink}`);
-                          // }}
-                          // onMouseOut={(e) => {
-                          //   e.target.classList.remove(`${styles.hoverLink}`);
-                          // }}
                         >
                           <svg>
-                            {/* так було */}
-                            {/* <use href="sprite.svg#icon-dot"></use> */}
-                            {/* а так має бути */}
                             <use href="/sprite.svg#icon-dot"></use>
-                            {/* ось іпричина помилки */}
                           </svg>
 
                           <Link
@@ -193,45 +152,29 @@ const HeaderNav = ({ lang, customClass }) => {
         <>
           <ul className={styles.navLinks}>
             {navLinksWithoutServices.map((el, i) => {
-              //  начинается проверка для отображения активной страниці (from eye-detect)
+              //  начинается проверка для отображения стилей активной страницы
               let checkedPath = `${path}${el.href}`;
               // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
               const resultPath =
                 checkedPath === `/${i18n.locales[1]}/`
                   ? checkedPath.slice(0, -1)
                   : checkedPath;
-              // console.log("resultPath", resultPath);
 
-              // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
-
+              // функция создания стилей для елемента (linkStyles - базовые стили)
               const pageLinkClassName = (linkStyles = null) => {
-                // if (pathname === el.href && isInHeader) {
-                // if (pathname === `${path}${el.href}` && isInHeader) {
-                // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
                 if (pathname.endsWith(resultPath)) {
-                  return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                  return `${linkStyles} ${styles.activeLink}`;
                 } else {
-                  return linkStyles; // нужно добавить и скорректировать
+                  return linkStyles;
                 }
               };
-              // console.log("pageLinkClassName", pageLinkClassName());
-
               // заканчивается проверка
+
               return (
                 <li key={i}>
-                  <div
-                    // className={styles.titleWrapp}
-                    className={pageLinkClassName(styles.titleWrapp)}
-                    // onMouseOver={(e) => {
-                    //   e.target.classList.add(`${styles.hoverLink}`);
-                    // }}
-                    // onMouseOut={(e) => {
-                    //   e.target.classList.remove(`${styles.hoverLink}`);
-                    // }}
-                  >
+                  <div className={pageLinkClassName(styles.titleWrapp)}>
                     <Link
                       href={`${path}${el.href}`}
-                      // className={pageLinkClassName()} // from eye-detect
                       onClick={() => {
                         setMobileMenu(false);
                         setSubMenu(!subMenu);
@@ -251,58 +194,25 @@ const HeaderNav = ({ lang, customClass }) => {
                 ? servicesNavLinks.titleUk
                 : servicesNavLinks.titleEn}
             </span>
-            <ul
-              // className={
-              //   subMenu
-              //     ? `${styles.subMenu} ${styles.subMenuVisible}`
-              //     : `${styles.subMenu} ${styles.subMenuHidden}`
-              // }
-              className={`${styles.subMenu} ${styles.subMenuVisible}`}
-            >
+            <ul className={`${styles.subMenu} ${styles.subMenuVisible}`}>
               {servicesNavLinks.serviceId.map((item, i) => {
-                //  начинается проверка для отображения активной страниці (from eye-detect)
+                //  начинается проверка для отображения активной страницы
                 let resultPath = item.href;
-                // дополнительная проверка для английского языка для отображнения activeLink на home (с url "/en/" убираем последний "/" для корректного сравнения с pathname)
-                // const resultPath =
-                //   checkedPath === `/${i18n.locales[1]}/`
-                //     ? checkedPath.slice(0, -1)
-                //     : checkedPath;
-                // console.log("resultPath", resultPath);
 
-                // const isInHeader = true; // в eye-detect приходило как props с родительского компонента;  здесь просто задал, чтоб не біло ошибок
-
+                // функция создания стилей для елемента (linkStyles - базовые стили)
                 const pageLinkClassName = (linkStyles = null) => {
-                  // if (pathname === el.href && isInHeader) {
-                  // if (pathname === `${path}${el.href}` && isInHeader) {
-                  // if (pathname.endsWith(`${path}${el.href}`) && isInHeader) {
                   if (pathname.endsWith(resultPath)) {
-                    return `${linkStyles} ${styles.activeLink}`; // нужно добавить и скорректировать
+                    return `${linkStyles} ${styles.activeLink}`;
                   } else {
-                    return linkStyles; // нужно добавить и скорректировать
+                    return linkStyles;
                   }
                 };
-                // console.log("pageLinkClassName", pageLinkClassName());
-
                 // заканчивается проверка
-                return (
-                  <li
-                    key={i}
-                    // className={styles.subMenuItem}
-                    className={pageLinkClassName(styles.subMenuItem)}
 
-                    // onMouseOver={(e) => {
-                    //   e.target.classList.add(`${styles.hoverLink}`);
-                    // }}
-                    // onMouseOut={(e) => {
-                    //   e.target.classList.remove(`${styles.hoverLink}`);
-                    // }}
-                  >
+                return (
+                  <li key={i} className={pageLinkClassName(styles.subMenuItem)}>
                     <svg>
-                      {/* так було */}
-                      {/* <use href="sprite.svg#icon-dot"></use> */}
-                      {/* а так має бути */}
                       <use href="/sprite.svg#icon-dot"></use>
-                      {/* ось іпричина помилки */}
                     </svg>
 
                     <Link

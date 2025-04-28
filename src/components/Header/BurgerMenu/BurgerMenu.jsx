@@ -37,7 +37,7 @@ const BurgerMenu = ({ lang }) => {
 
           <div className={styles.langSwitcherAndSocLinksWrapper}>
             <LangSwitcher lang={lang} />
-            <SocialLinks dark />
+            <SocialLinks customClass="" dark />
           </div>
         </div>
       </div>

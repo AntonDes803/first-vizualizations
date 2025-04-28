@@ -45,6 +45,7 @@
 }
 
 .serviceTitle {
+  
   @media screen and (min-width: variables.$tablet) {
     padding: 2px 4px 2px 2px;
     display: block;
@@ -85,6 +86,7 @@
   & svg {
     width: 24px;
     height: 24px;
+    fill: variables.$secondaryTextColor;
   }
 
   @media screen and (min-width: variables.$desktop) {
