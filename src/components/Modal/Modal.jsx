@@ -3,10 +3,11 @@
 import { useContext } from "react";
 import Modal from "react-modal";
 import { SiteContext } from "@/context/SiteContext";
-// import ContactForm from "@/components/ContactForm/ContactForm";
+import OrderForm from "../OrderForm/OrderForm";
+
 import "./Modal.css";
 
-const ModalR = () => {
+const ModalR = ({ dictionary }) => {
     const { isModalOpen, closeModal } = useContext(SiteContext);
 
     return (
@@ -18,9 +19,7 @@ const ModalR = () => {
             onRequestClose={closeModal}
             ariaHideApp={false}
         >
-            {/* <ContactForm /> */}
-
-            <div>Here will be form </div>
+            <OrderForm dictionary={dictionary} />
         </Modal>
     );
 };
