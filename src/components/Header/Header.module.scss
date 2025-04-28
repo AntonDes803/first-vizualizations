@@ -49,6 +49,11 @@
     stroke: variables.$secondaryTextColor;
   }
 
+  &:hover svg,
+  &:focus svg {
+    stroke: variables.$hoverBtnBgColor;
+  }
+
   & span {
     display: none;
   }
@@ -62,6 +67,11 @@
 
       @include variables.bodyText-Regular;
     }
+
+    &:hover span,
+    &:focus span {
+      color: variables.$hoverBtnBgColor;
+    }
   }
 
   @media screen and (min-width: variables.$desktop) {
@@ -72,9 +82,9 @@
       height: 32px;
     }
 
-    & span {
-      display: inline-block;
-      color: variables.$secondaryTextColor;
-    }
+    // & span {
+    //   display: inline-block;
+    //   color: variables.$secondaryTextColor;
+    // }
   }
 }
