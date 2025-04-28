@@ -11,6 +11,9 @@
   @include variables.heroSectionsPadding;
   & {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   @media screen and (min-width: variables.$tablet) {
     padding: 148px 32px 48px;

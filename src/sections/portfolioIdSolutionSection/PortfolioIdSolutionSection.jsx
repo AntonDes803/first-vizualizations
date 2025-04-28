@@ -1,9 +1,9 @@
-import PortfolioIdSolutionsOnePhotoBlock from "@/components/PortfolioIdSolutionsOnePhotoBlock/PortfolioIdSolutionsOnePhotoBlock";
-import PortfolioIdSolutionsTwoPhotosBlock from "@/components/PortfolioIdSolutionsTwoPhotosBlock/PortfolioIdSolutionsTwoPhotosBlock";
-import OrderButton from "@/components/buttons/OrderButton/OrderButton";
-import { i18n } from "@/dictionaries/i18n.config";
-import styles from "./PortfolioIdSolutionSection.module.scss";
-import PortfolioIdSolutionsVisualizationBlock from "../../components/PortfolioIdSolutionsVisualizationBlock/PortfolioIdSolutionsVisualizationBlock";
+import PortfolioIdSolutionsOnePhotoBlock from '@/components/PortfolioIdSolutionsOnePhotoBlock/PortfolioIdSolutionsOnePhotoBlock';
+import PortfolioIdSolutionsTwoPhotosBlock from '@/components/PortfolioIdSolutionsTwoPhotosBlock/PortfolioIdSolutionsTwoPhotosBlock';
+import OrderButton from '@/components/buttons/OrderButton/OrderButton';
+import { i18n } from '@/dictionaries/i18n.config';
+import styles from './PortfolioIdSolutionSection.module.scss';
+import PortfolioIdSolutionsVisualizationBlock from '../../components/PortfolioIdSolutionsVisualizationBlock/PortfolioIdSolutionsVisualizationBlock';
 
 const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
   const floorPlanData = data[0];
@@ -11,7 +11,7 @@ const PortfolioIdSolutionSection = ({ lang, dictionary, data }) => {
   const visualizationData = data[2];
 
   return (
-    <section className="section">
+    <section className="section" id="portfolioIdSolution">
       <div className="container">
         {floorPlanData.images.length === 2 && (
           <PortfolioIdSolutionsTwoPhotosBlock

@@ -16,7 +16,7 @@ const HomeHeroSection = ({ lang, dictionary }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % homeHeroSliderData.length);
-    }, 7000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -27,7 +27,10 @@ const HomeHeroSection = ({ lang, dictionary }) => {
     `}
     >
       {homeHeroSliderData.map((data, index) => {
-        const sectionTitle = lang === i18n.locales[0] ? data.titleUk.toUpperCase() : data.titleEn.toUpperCase();
+        const sectionTitle =
+          lang === i18n.locales[0]
+            ? data.titleUk.toUpperCase()
+            : data.titleEn.toUpperCase();
         const titleArray = stringSplittingByDelimiter(sectionTitle, '’');
         return (
           <div
@@ -59,6 +62,17 @@ const HomeHeroSection = ({ lang, dictionary }) => {
                   {String(homeHeroSliderData.length).padStart(2, '0')}
                 </li>
               </ul>
+              <div className={styles.pagination}>
+                {homeHeroSliderData.map((_, index) => (
+                  <span
+                    key={index}
+                    className={`${styles.dot} ${
+                      index === currentIndex ? styles.activeDot : ''
+                    }`}
+                    onClick={() => setCurrentIndex(index)}
+                  ></span>
+                ))}
+              </div>
               <SocialLinks />
             </div>
           </div>
