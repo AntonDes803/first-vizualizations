@@ -123,3 +123,7 @@ ol {
 .ampersandColor {
   color: variables.$hoverBtnBgColor;
 }
+
+#activePageLink {
+  border-bottom: solid 1px variables.$hoverBtnBgColor;
+}

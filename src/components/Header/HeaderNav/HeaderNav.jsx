@@ -41,24 +41,19 @@ const HeaderNav = ({ lang, customClass }) => {
               checkedPath === `/${i18n.locales[1]}/`
                 ? checkedPath.slice(0, -1)
                 : checkedPath;
-
-            // функция создания стилей для елемента (linkStyles - базовые стили)
-            const pageLinkClassName = (linkStyles = null) => {
-              if (pathname.endsWith(resultPath)) {
-                return `${linkStyles} ${styles.activeLink}`;
-              } else {
-                return linkStyles;
-              }
-            };
+            // проверка активна ли страница для отображения соответствующих стилей на ссылке
+            const isActivePage = pathname.endsWith(resultPath);
             // заканчивается проверка
 
             const isServiceItem = el.titleEn === "Services";
 
             return (
               <li key={i}>
-                <div className={pageLinkClassName(styles.titleWrapp)}>
-                  {/* при клике на services - открывается или закрывается подменю. при клике на ссылки других страниц - закрітие БургерМеню и переход на другую страницу */}
-
+                <div
+                  className={styles.titleWrapp}
+                  id={isActivePage ? "activePageLink" : null}
+                >
+                  {/* при клике на services - открывается или закрывается подменю. при клике на ссылки других страниц - закрытие БургерМеню и переход на другую страницу */}
                   {isServiceItem ? (
                     <span
                       onClick={() => {
@@ -104,23 +99,14 @@ const HeaderNav = ({ lang, customClass }) => {
                     }
                   >
                     {el.serviceId.map((item, i) => {
-                      //  начинается проверка для отображения активной страницы
-                      let resultPath = item.href;
-
-                      // функция создания стилей для елемента (linkStyles - базовые стили)
-                      const pageLinkClassName = (linkStyles = null) => {
-                        if (pathname.endsWith(resultPath)) {
-                          return `${linkStyles} ${styles.activeLink}`;
-                        } else {
-                          return linkStyles;
-                        }
-                      };
-                      // заканчивается проверка
+                      // проверка активна ли страница для отображения соответствующих стилей на ссылке
+                      const isActivePage = pathname.endsWith(item.href);
 
                       return (
                         <li
                           key={i}
-                          className={pageLinkClassName(styles.subMenuItem)}
+                          className={styles.subMenuItem}
+                          id={isActivePage ? "activePageLink" : null}
                         >
                           <svg>
                             <use href="/sprite.svg#icon-dot"></use>
@@ -159,20 +145,16 @@ const HeaderNav = ({ lang, customClass }) => {
                 checkedPath === `/${i18n.locales[1]}/`
                   ? checkedPath.slice(0, -1)
                   : checkedPath;
-
-              // функция создания стилей для елемента (linkStyles - базовые стили)
-              const pageLinkClassName = (linkStyles = null) => {
-                if (pathname.endsWith(resultPath)) {
-                  return `${linkStyles} ${styles.activeLink}`;
-                } else {
-                  return linkStyles;
-                }
-              };
+              // проверка активна ли страница для отображения соответствующих стилей на ссылке
+              const isActivePage = pathname.endsWith(resultPath);
               // заканчивается проверка
 
               return (
                 <li key={i}>
-                  <div className={pageLinkClassName(styles.titleWrapp)}>
+                  <div
+                    className={styles.titleWrapp}
+                    id={isActivePage ? "activePageLink" : null}
+                  >
                     <Link
                       href={`${path}${el.href}`}
                       onClick={() => {
@@ -196,21 +178,15 @@ const HeaderNav = ({ lang, customClass }) => {
             </span>
             <ul className={`${styles.subMenu} ${styles.subMenuVisible}`}>
               {servicesNavLinks.serviceId.map((item, i) => {
-                //  начинается проверка для отображения активной страницы
-                let resultPath = item.href;
-
-                // функция создания стилей для елемента (linkStyles - базовые стили)
-                const pageLinkClassName = (linkStyles = null) => {
-                  if (pathname.endsWith(resultPath)) {
-                    return `${linkStyles} ${styles.activeLink}`;
-                  } else {
-                    return linkStyles;
-                  }
-                };
-                // заканчивается проверка
+                // проверка активна ли страница для отображения соответствующих стилей на ссылке
+                const isActivePage = pathname.endsWith(item.href);
 
                 return (
-                  <li key={i} className={pageLinkClassName(styles.subMenuItem)}>
+                  <li
+                    key={i}
+                    className={styles.subMenuItem}
+                    id={isActivePage ? "activePageLink" : null}
+                  >
                     <svg>
                       <use href="/sprite.svg#icon-dot"></use>
                     </svg>
