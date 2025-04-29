@@ -87,3 +87,16 @@
   // title-h3
   @include variables.title-h3;
 }
+
+@media screen and (min-width: variables.$tablet) {
+  .containerSwiper :global(.swiper-slide) {
+    height: auto;
+    display: flex;
+  }
+
+  .containerSwiper :global(.swiper-slide > div) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
