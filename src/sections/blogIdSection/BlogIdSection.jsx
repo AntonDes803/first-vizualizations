@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import BackBtn from "@/components/buttons/BackBtn/BackBtn";
+import BlogCard from "../blogSection/BlogCard";
 import { i18n } from "@/dictionaries/i18n.config";
+import { arrOfBlogs } from "@/data/blog/arrOfBlogs";
+
 import styles from "./BlogIdSection.module.scss";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 const BlogIdSection = ({ lang, dictionary, data }) => {
   const {
@@ -18,6 +25,8 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
     mainTextEn,
     blocks,
   } = data;
+
+  const filteredCards = arrOfBlogs.filter((item) => item.slug !== data.slug);
 
   return (
     <section className={`section ${styles.section}`}>
@@ -76,6 +85,33 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
           </ul>
 
           <span>{creatingData}</span>
+        </div>
+        <div className={styles.containerSwiper}>
+          <h3 className={styles.subTitle}>{dictionary.subTitle}</h3>
+          <Swiper
+            spaceBetween={12}
+            slidesPerView={1}
+            loop={true}
+            navigation
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              1440: {
+                slidesPerView: 3,
+              },
+            }}
+          >
+            {filteredCards.map((item, index) => (
+              <SwiperSlide key={index}>
+                <BlogCard
+                  item={item}
+                  lang={lang}
+                  cardLinkText={dictionary.cardLinkText}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
