@@ -45,7 +45,6 @@
 }
 
 .serviceTitle {
-  
   @media screen and (min-width: variables.$tablet) {
     padding: 2px 4px 2px 2px;
     display: block;
@@ -55,10 +54,6 @@
   @media screen and (min-width: variables.$tablet) {
     margin-bottom: 16px;
   }
-}
-
-.activeLink {
-  border-bottom: solid 1px variables.$hoverBtnBgColor;
 }
 
 .arrowStyles {
