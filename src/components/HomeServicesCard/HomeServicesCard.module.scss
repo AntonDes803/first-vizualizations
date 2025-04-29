@@ -1,59 +1,69 @@
 @use "@/app/variables";
 
 .card {
-    width: 100%;
-    border: solid 1px variables.$secondaryBgColor;
-    @media screen and (min-width: variables.$tablet) {
-        width: calc((100% - 16px) / 2);
-    }
+  width: 100%;
+  border: solid 1px variables.$secondaryBgColor;
+  @media screen and (min-width: variables.$tablet) {
+    width: calc((100% - 16px) / 2);
+  }
 
-    @media screen and (min-width: variables.$desktop) {
-        width: calc((100% - 24px) / 4);
-    }
+  @media screen and (min-width: variables.$desktop) {
+    width: calc((100% - 24px) / 4);
+  }
 }
 
 .subTitleBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 112px;
-    width: 100%;
-    padding: 12px;
-    @media screen and (min-width: variables.$tablet) {
-        height: 120px;
-    }
-    @media screen and (min-width: variables.$desktop) {
-        min-height: 140px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 112px;
+  width: 100%;
+  padding: 12px;
+  @media screen and (min-width: variables.$tablet) {
+    height: 120px;
+  }
+  @media screen and (min-width: variables.$desktop) {
+    min-height: 140px;
+  }
 }
 
 .subTitle {
-    @include variables.bodyText-Bold;
-    & {
-        text-align: left;
-    }
+  @include variables.bodyText-Bold;
+  & {
+    text-align: left;
+  }
 }
 
 .imgWrapper {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 321/220;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 321/220;
 
-    @media screen and (min-width: variables.$tablet) {
-        aspect-ratio: 344/290;
-    }
+  @media screen and (min-width: variables.$tablet) {
+    aspect-ratio: 344/290;
+  }
 
-    @media screen and (min-width: variables.$desktop) {
-        aspect-ratio: 282/353;
-    }
+  @media screen and (min-width: variables.$desktop) {
+    aspect-ratio: 282/353;
+  }
 }
 
 .img {
-    display: block;
-    object-fit: cover;
+  display: block;
+  object-fit: cover;
 }
 
-.orderBtn {
-    min-width: 0;
+// .orderBtn {
+//     min-width: 0;
+//     width: 100%;
+// }
+
+.customOrderBtn {
+  @media screen and (min-width: variables.$tablet) {
     width: 100%;
+  }
+
+  @media screen and (min-width: variables.$desktop) {
+    min-width: 0;
+  }
 }
