@@ -27,7 +27,9 @@ const HomeServicesCard = ({ lang, data, dictionary }) => {
         <OrderButton
           text={dictionary.cardBtnText}
           //   customClass={styles.orderBtn}
-          customClass={styles.customOrderBtn}
+          // customClass={styles.customOrderBtn}
+          customClass=""
+          id={styles.customOrderBtn}
         />
       </div>
     </li>
