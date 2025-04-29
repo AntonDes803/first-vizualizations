@@ -1,129 +1,136 @@
 {
-    "lang": "en",
-    "header": {
-        "topTitle": "Roof"
-    },
-    "aboutUsHeroSection": {
-        "title": "Malov&Partners – design that you can feel",
-        "description": "We create interiors that harmoniously combine style, functionality and your unique wishes"
-    },
-    "aboutUsSection": {
-        "title": "ABOUT US",
-        "description": "Design is not just about beauty. It is a space that understands you. At MALOV&PARTNERS, we turn interiors into places where every detail works for comfort and every square meter is for your benefit. For more than 12 years, we have been creating the design of apartments, houses and commercial premises, combining aesthetics, convenience and your personal desires. From idea to realization, we manage each project with attention to detail so that the result meets your expectations 100%.",
-        "linkText": "OUR SERVICES",
-        "imgAlt": "Photos of our services"
-    },
-    "aboutUsValuesSection": {
-        "title": "Important values for Malov&Partners",
-        "callBtnText": "CONTACT US"
-    },
-    "blogIdSection": {
-        "backBtnText": "BACK",
-        "subTitle": "YOU MAY ALSO BE INTERESTED IN:",
-        "cardLinkText": "READ MORE"
-    },
-    "blogSection": {
-        "title": "Malov&Partners blog",
-        "description": "Get inspired by ideas, learn about design trends, and get useful tips from experts.",
-        "cardLinkText": "READ MORE"
-    },
-    "contactsSection": {
-        "title": "CONTACT US:",
-        "subTitle": "SOCIAL MEDIA:",
-        "orderBtnText": "ORDER A PROJECT",
-        "imgAlt": "Photo"
-    },
-    "homeAfterWorkSection": {
-        "title": "With Malov&Partners you get",
-        "callBtnText": "CONTACT US"
-    },
-    "homeExperienceSection": {
-        "title": "12+ years of work experience",
-        "description": "We create interiors that combine aesthetics, functionality and personality. Our experience helps us to foresee the details you don't even think about, so that the end result is perfect.",
-        "orderBtnText": "ORDER DESIGN",
-        "imgAlt": "Image"
-    },
-    "homeFaqSection": {
-        "title": "FAQ"
-    },
-    "homeHeroSection": {
-        "linkText": "MORE PROJECTS"
-    },
-    "homePortfolioSection": {
-        "title": "Completed projects",
-        "linkText": "OPEN PORTFOLIO",
-        "cardLinkText": "MORE"
-    },
-    "homeServicesSection": {
-        "title": "Malov&Partners services",
-        "description": "An integrated approach to design and implementation. We offer a full range of services to create your ideal space.",
-        "linkText": "ALL SERVICES",
-        "cardBtnText": "ORDER"
-    },
-    "homeStatisticsSection": {},
-    "homeTeamSection": {
-        "title": "About us Malov&Partners",
-        "subTitle": "Design that fits your lifestyle",
-        "text": "At Malov&Partners, we create interiors that harmoniously combine style and practicality. Our approach is attention to detail, individuality in every decision and control at all stages.",
-        "linkText": "MORE ABOUT US",
-        "imgAlt": "Photo description"
-    },
-    "homeWhyMeSection": {
-        "title": "Why choose Malov&Partners",
-        "description": "We don't just create interiors - we create spaces that work for you. Here are six reasons why we are trusted:"
-    },
-    "homeWorkProcessSection": {
-        "title": "Stages of cooperation with us",
-        "callBtnText": "CONTACT US"
-    },
-    "portfolioHeroSection": {
-        "title": "Malov&Partners portfolio",
-        "quote": "“Great design begins with an even greater story”",
-        "quoteAuthor": "Lorinda Mamo"
-    },
-    "portfolioIdHeroSection": {},
-    "portfolioIdSolutionSection": {
-        "orderBtnText": "ORDER A PROJECT"
-    },
-    "portfolioIdVideoSection": {},
-    "portfolioSection": {
-        "area": "Area: ",
-        "measure": "m",
-        "style": "Style: ",
-        "year": " year",
-        "cardLinkText": "OPEN A PROJECT"
-    },
-    "serviceIdHeroSection": {
-        "quote": "“Great design begins with an even greater story”",
-        "quoteAuthor": "Lorinda Mamo"
-    },
-    "serviceIdSection": {
-        "callBtnText": "CONTACT US",
-        "linkText": "TO PORTFOLIO"
-    },
-    "servicesHeroSection": {
-        "title": "Services of Malov&Partners",
-        "description": "We turn your ideas into reality: from concept to full implementation"
-    },
-    "servicesSection": {
-        "title": "3d visualization of each design",
-        "description-1": "We create realistic 3D visualizations that help businesses, designers, and brands stand out. From concept to final rendering, every detail is handled with precision and creativity.",
-        "description-2": " Using advanced technologies, we turn ideas into high-quality visual content. Our solutions are suitable for architecture, product design, advertising, and game development. Entrust us with your project and we'll help you make it impressive.",
-        "projectsCountText": "Implemented projects: ",
-        "projectsCountTextMobile": "Projects: ",
-        "cardLinkText": "LEARN MORE",
-        "orderBtnText": "ORDER A PROJECT"
-    },
-    "footer": {
-        "policy": "Privacy policy"
-    },
-    "form": {
-        "title": "Let's talk about your project!",
-        "subTitle": "Where will you be comfortable communicating?",
-        "orderBtnText": "ORDER A DESIGN"
-    },
-    "successText": {
-        "title": "We have received your request and will contact you shortly!",
-        "btnText": "ОК"
-    }
+  "lang": "en",
+  "header": {
+    "topTitle": "Roof"
+  },
+  "aboutUsHeroSection": {
+    "title": "Malov&Partners – design that you can feel",
+    "description": "We create interiors that harmoniously combine style, functionality and your unique wishes"
+  },
+  "aboutUsSection": {
+    "title": "ABOUT US",
+    "description": "Design is not just about beauty. It is a space that understands you. At MALOV&PARTNERS, we turn interiors into places where every detail works for comfort and every square meter is for your benefit. For more than 12 years, we have been creating the design of apartments, houses and commercial premises, combining aesthetics, convenience and your personal desires. From idea to realization, we manage each project with attention to detail so that the result meets your expectations 100%.",
+    "linkText": "OUR SERVICES",
+    "imgAlt": "Photos of our services"
+  },
+  "aboutUsValuesSection": {
+    "title": "Important values for Malov&Partners",
+    "callBtnText": "CONTACT US"
+  },
+  "blogIdSection": {
+    "backBtnText": "BACK",
+    "subTitle": "YOU MAY ALSO BE INTERESTED IN:",
+    "cardLinkText": "READ MORE"
+  },
+  "blogSection": {
+    "title": "Malov&Partners blog",
+    "description": "Get inspired by ideas, learn about design trends, and get useful tips from experts.",
+    "cardLinkText": "READ MORE"
+  },
+  "contactsSection": {
+    "title": "CONTACT US:",
+    "subTitle": "SOCIAL MEDIA:",
+    "orderBtnText": "ORDER A PROJECT",
+    "imgAlt": "Photo"
+  },
+  "homeAfterWorkSection": {
+    "title": "With Malov&Partners you get",
+    "callBtnText": "CONTACT US"
+  },
+  "homeExperienceSection": {
+    "title": "12+ years of work experience",
+    "description": "We create interiors that combine aesthetics, functionality and personality. Our experience helps us to foresee the details you don't even think about, so that the end result is perfect.",
+    "orderBtnText": "ORDER DESIGN",
+    "imgAlt": "Image"
+  },
+  "homeFaqSection": {
+    "title": "FAQ"
+  },
+  "homeHeroSection": {
+    "linkText": "MORE PROJECTS"
+  },
+  "homePortfolioSection": {
+    "title": "Completed projects",
+    "linkText": "OPEN PORTFOLIO",
+    "cardLinkText": "MORE"
+  },
+  "homeServicesSection": {
+    "title": "Malov&Partners services",
+    "description": "An integrated approach to design and implementation. We offer a full range of services to create your ideal space.",
+    "linkText": "ALL SERVICES",
+    "cardBtnText": "ORDER"
+  },
+  "homeStatisticsSection": {},
+  "homeTeamSection": {
+    "title": "About us Malov&Partners",
+    "subTitle": "Design that fits your lifestyle",
+    "text": "At Malov&Partners, we create interiors that harmoniously combine style and practicality. Our approach is attention to detail, individuality in every decision and control at all stages.",
+    "linkText": "MORE ABOUT US",
+    "imgAlt": "Photo description"
+  },
+  "homeWhyMeSection": {
+    "title": "Why choose Malov&Partners",
+    "description": "We don't just create interiors - we create spaces that work for you. Here are six reasons why we are trusted:"
+  },
+  "homeWorkProcessSection": {
+    "title": "Stages of cooperation with us",
+    "callBtnText": "CONTACT US"
+  },
+  "portfolioHeroSection": {
+    "title": "Malov&Partners portfolio",
+    "quote": "“Great design begins with an even greater story”",
+    "quoteAuthor": "Lorinda Mamo"
+  },
+  "portfolioIdHeroSection": {},
+  "portfolioIdSolutionSection": {
+    "orderBtnText": "ORDER A PROJECT"
+  },
+  "portfolioIdVideoSection": {},
+  "portfolioSection": {
+    "area": "Area: ",
+    "measure": "m",
+    "style": "Style: ",
+    "year": " year",
+    "cardLinkText": "OPEN A PROJECT"
+  },
+  "serviceIdHeroSection": {
+    "quote": "“Great design begins with an even greater story”",
+    "quoteAuthor": "Lorinda Mamo"
+  },
+  "serviceIdSection": {
+    "callBtnText": "CONTACT US",
+    "linkText": "TO PORTFOLIO"
+  },
+  "servicesHeroSection": {
+    "title": "Services of Malov&Partners",
+    "description": "We turn your ideas into reality: from concept to full implementation"
+  },
+  "servicesSection": {
+    "title": "3d visualization of each design",
+    "description-1": "We create realistic 3D visualizations that help businesses, designers, and brands stand out. From concept to final rendering, every detail is handled with precision and creativity.",
+    "description-2": " Using advanced technologies, we turn ideas into high-quality visual content. Our solutions are suitable for architecture, product design, advertising, and game development. Entrust us with your project and we'll help you make it impressive.",
+    "projectsCountText": "Implemented projects: ",
+    "projectsCountTextMobile": "Projects: ",
+    "cardLinkText": "LEARN MORE",
+    "orderBtnText": "ORDER A PROJECT"
+  },
+  "footer": {
+    "policy": "Privacy policy"
+  },
+  "form": {
+    "title": "Let's talk about your project!",
+    "nameLabel": "Name",
+    "nameError": "Username is required",
+    "nameWidthError": "Too short",
+    "phoneLabel": "Phone",
+    "phoneError": "Phone is required",
+    "emailLabel": "Email",
+    "emailError": "Email format is not valid",
+    "subTitle": "Where will you be comfortable communicating?",
+    "orderBtnText": "ORDER A DESIGN"
+  },
+  "successText": {
+    "title": "We have received your request and will contact you shortly!",
+    "btnText": "ОК"
+  }
 }

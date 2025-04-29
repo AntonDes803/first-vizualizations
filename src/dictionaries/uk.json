@@ -119,6 +119,13 @@
   },
   "form": {
     "title": "Давайте обговоримо ваш проєкт!",
+    "nameLabel": "Ім’я",
+    "nameError": "Ім’я обов’язкове",
+    "nameWidthError": "Занадто коротке",
+    "phoneLabel": "Телефон",
+    "phoneError": "Телефон обов’язковий",
+    "emailLabel": "Email",
+    "emailError": "Email-формат невалідний",
     "subTitle": "Де вам буде зручно спілкуватись?",
     "orderBtnText": "ЗАМОВИТИ ДИЗАЙН"
   },
