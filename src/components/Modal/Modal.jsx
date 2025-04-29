@@ -7,7 +7,7 @@ import OrderForm from "../OrderForm/OrderForm";
 
 import "./Modal.css";
 
-const ModalR = ({ dictionary }) => {
+const ModalR = ({ dictionaryForm, dictionarySuccess }) => {
     const { isModalOpen, closeModal } = useContext(SiteContext);
 
     return (
@@ -19,7 +19,10 @@ const ModalR = ({ dictionary }) => {
             onRequestClose={closeModal}
             ariaHideApp={false}
         >
-            <OrderForm dictionary={dictionary} />
+            <OrderForm
+                dictionaryForm={dictionaryForm}
+                dictionarySuccess={dictionarySuccess}
+            />
         </Modal>
     );
 };

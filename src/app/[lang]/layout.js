@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({ children, params }) {
   const { lang } = await params;
-  const { header, footer, form } = await getDictionary(lang);
+  const { header, footer, form, successText } = await getDictionary(lang);
 
   return (
     <html lang={lang}>
@@ -27,7 +27,7 @@ export default async function RootLayout({ children, params }) {
           <Header lang={lang} dictionary={header} />
           <main>{children}</main>
           <Footer lang={lang} dictionary={footer} />
-          <ModalR dictionary={form} />
+          <ModalR dictionaryForm={form} dictionarySuccess={successText} />
         </SiteProvider>
       </body>
     </html>

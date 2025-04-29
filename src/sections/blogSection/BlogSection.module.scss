@@ -52,6 +52,7 @@
 
   @media screen and (min-width: variables.$desktop) {
     margin-bottom: 24px;
+    gap: 24px;
   }
 }
 
@@ -61,13 +62,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100%;
   @media screen and (min-width: variables.$tablet) {
+    width: 100%;
     max-width: 344px;
   }
   @media screen and (min-width: variables.$desktop) {
     max-width: 384px;
     padding: 20px;
   }
+}
+
+.wrapperItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .imgWrapper {
