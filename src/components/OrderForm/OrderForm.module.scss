@@ -2,6 +2,9 @@
 
 .container {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 320px;
     height: 440px;
     padding: 40px 18px 18px;
@@ -118,14 +121,13 @@
     }
 
     @media screen and (min-width: variables.$tablet) {
-        width: fit-content;
-        min-width: 224px;
         padding: 8px 32px;
+        width: 255px;
     }
 
     @media screen and (min-width: variables.$desktop) {
-        min-width: 384px;
         padding: 12px 56px;
+        width: 100%;
     }
 }
 
@@ -184,4 +186,29 @@
     fill: none;
     stroke: variables.$mainTextColor;
     transform: scale(1);
+}
+
+// -------------styles for SuccessContent component--------------
+
+.successBox {
+    width: 100%;
+}
+
+.successTitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    @media screen and (min-width: variables.$tablet) {
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: variables.$desktop) {
+        font-size: 28px;
+    }
+}
+
+.btnOk {
+    width: 100%;
 }
