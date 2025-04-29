@@ -21,6 +21,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media screen and (min-width: variables.$tablet) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .rightSide {
