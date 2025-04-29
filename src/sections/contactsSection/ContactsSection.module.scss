@@ -8,11 +8,11 @@
   }
 
   @media screen and (min-width: variables.$tablet) {
-    min-height: calc(100vh - 274px);
+    min-height: calc(100vh - 265px);
   }
 
   @media screen and (min-width: variables.$desktop) {
-    min-height: calc(100vh - 299px);
+    min-height: calc(100vh - 357px);
   }
 }
 

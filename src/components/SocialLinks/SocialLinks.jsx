@@ -1,9 +1,9 @@
 import { socLinks } from "@/data/contactsData";
 import styles from "./SocialLinks.module.scss";
 
-const SocialLinks = ({ dark }) => {
+const SocialLinks = ({ customClass, dark }) => {
   return (
-    <ul className={styles.socialList}>
+    <ul className={`${styles.socialList} ${customClass}`}>
       {socLinks.map((item) => {
         const darkSvgClassname = `${item.name}Dark`;
 
