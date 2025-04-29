@@ -58,7 +58,17 @@
 //     width: 100%;
 // }
 
-.customOrderBtn {
+// .customOrderBtn {
+//   @media screen and (min-width: variables.$tablet) {
+//     width: 100%;
+//   }
+
+//   @media screen and (min-width: variables.$desktop) {
+//     min-width: 0;
+//   }
+// }
+
+#customOrderBtn {
   @media screen and (min-width: variables.$tablet) {
     width: 100%;
   }

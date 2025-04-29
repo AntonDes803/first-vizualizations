@@ -5,10 +5,14 @@ import { SiteContext } from "@/context/SiteContext";
 
 import styles from "./OrderButton.module.scss";
 
-const OrderButton = ({ customClass, text }) => {
+const OrderButton = ({ customClass, id, text }) => {
   const { openModal } = useContext(SiteContext);
   return (
-    <button onClick={openModal} className={`${styles.button} ${customClass}`}>
+    <button
+      onClick={openModal}
+      className={`${styles.button} ${customClass}`}
+      id={id}
+    >
       {text}
     </button>
   );
