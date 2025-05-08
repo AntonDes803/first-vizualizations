@@ -5,11 +5,11 @@ import BlogCard from "../blogSection/BlogCard";
 import { i18n } from "@/dictionaries/i18n.config";
 import { arrOfBlogs } from "@/data/blog/arrOfBlogs";
 
-import styles from "./BlogIdSection.module.scss";
-
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
+import styles from "./BlogIdSection.module.scss";
 const BlogIdSection = ({ lang, dictionary, data }) => {
   const {
     mainImage,
@@ -89,10 +89,14 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
         <div className={styles.containerSwiper}>
           <h3 className={styles.subTitle}>{dictionary.subTitle}</h3>
           <Swiper
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             spaceBetween={12}
             slidesPerView={1}
             loop={true}
-            navigation
             breakpoints={{
               768: {
                 slidesPerView: 2,
@@ -103,7 +107,7 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
             }}
           >
             {filteredCards.map((item, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className={styles.swiperSlide}>
                 <BlogCard
                   item={item}
                   lang={lang}
