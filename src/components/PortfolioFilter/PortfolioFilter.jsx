@@ -117,18 +117,28 @@ const PortfolioFilter = ({ lang, dictionary }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const categoryFromUrl = searchParams.get("category");
-  const defaultCategory = projectCategories[0].categoryEn;
+
+  const arrOfProjectCategoriesEn = projectCategories.map(
+    (item) => item.categoryEn
+  );
+  const defaultCategory = arrOfProjectCategoriesEn[0];
 
   // категория, по которой фильтруем
-  const [filteredCategoryEn, setFilteredCategoryEn] = useState(
-    categoryFromUrl || defaultCategory
-  );
+  // const [filteredCategoryEn, setFilteredCategoryEn] = useState(
+  //   categoryFromUrl || defaultCategory
+  // );
+  const [filteredCategoryEn, setFilteredCategoryEn] = useState(categoryFromUrl);
 
   // console.log("filteredCategoryEn", filteredCategoryEn);
 
   // ⏱ Синхронизация стейта с URL (например, при "назад")
   useEffect(() => {
-    setFilteredCategoryEn(categoryFromUrl || defaultCategory);
+    // console.log("useEffect worked");
+    const isCategoryInArr = arrOfProjectCategoriesEn.includes(categoryFromUrl);
+    isCategoryInArr
+      ? setFilteredCategoryEn(categoryFromUrl)
+      : router.replace("/portfolio?category=all");
+    // setFilteredCategoryEn(categoryFromUrl || defaultCategory);
   }, [categoryFromUrl]);
 
   // будем использовать для кнопок фильтра
