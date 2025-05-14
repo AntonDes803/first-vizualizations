@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
+    "keen-slider": "^6.8.6",
     "next": "15.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -18,6 +19,7 @@
     "react-modal": "^3.16.3",
     "sass": "^1.86.3",
     "swiper": "^11.2.6",
+    "yet-another-react-lightbox": "^3.23.1",
     "yup": "^1.6.1"
   },
   "devDependencies": {
