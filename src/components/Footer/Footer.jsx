@@ -1,6 +1,7 @@
 import FooterNav from "./FooterNav/FooterNav";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import styles from "./Footer.module.scss";
+import Logo from "../Logo/Logo";
 
 const Footer = ({ lang, dictionary }) => {
   return (
@@ -18,6 +19,7 @@ const Footer = ({ lang, dictionary }) => {
           >
             {dictionary.policy}
           </a>
+          <Logo lang={lang} customClass={styles.customLogoFooter} />
         </div>
       </div>
     </footer>
