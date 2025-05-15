@@ -22,7 +22,7 @@ const HomeWorkProcessSection = ({ lang, dictionary }) => {
           ))}
         </ul>
 
-        <CallBtn customClass="" text={dictionary.callBtnText} />
+        <CallBtn customClass={styles.customBtnHome} text={dictionary.callBtnText} />
       </div>
     </section>
   );
