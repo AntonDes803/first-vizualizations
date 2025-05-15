@@ -150,10 +150,9 @@
     background-color: variables.$hoverBtnBgColor;
     color: variables.$secondaryTextColor;
 
-  &:hover,
-  &:active {
+  &.customBtnHome:hover,
+  &.customBtnHome:active {
     background-color: variables.$mainBgColor;
     color: variables.$mainTextColor;
-    border: solid 1px variables.$hoverBtnBgColor;
   }
 }
