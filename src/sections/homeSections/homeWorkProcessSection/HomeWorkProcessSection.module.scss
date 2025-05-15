@@ -144,3 +144,16 @@
     color: variables.$descriptionColor;
   }
 }
+
+
+.customBtnHome {
+    background-color: variables.$hoverBtnBgColor;
+    color: variables.$secondaryTextColor;
+
+  &:hover,
+  &:active {
+    background-color: variables.$mainBgColor;
+    color: variables.$mainTextColor;
+    border: solid 1px variables.$hoverBtnBgColor;
+  }
+}
