@@ -33,12 +33,14 @@ const BlogSection = ({ lang, dictionary }) => {
           lang={lang}
           cardLinkText={dictionary.cardLinkText}
         />
-        <Pagination
-          totalItems={totalItems}
-          itemsPerPage={itemsPerPage}
-          currentPage={currentPage}
-          onPageChange={setCurrentPage}
-        />
+        {totalItems > itemsPerPage && (
+          <Pagination
+            totalItems={totalItems}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            onPageChange={setCurrentPage}
+          />
+        )}
       </div>
     </section>
   );
