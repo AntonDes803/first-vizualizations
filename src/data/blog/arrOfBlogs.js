@@ -1,9 +1,9 @@
 import { functionalDesignInterior } from "./functionalDesignInterior";
-import { functionalDesignInteriorCOPY } from "./functionalDesignInteriorCOPY";
+import { saloneSatellite2025NewHorizons } from "./saloneSatellite2025NewHorizons";
 
 export const arrOfBlogs = [
   functionalDesignInterior,
-  functionalDesignInteriorCOPY,
+  saloneSatellite2025NewHorizons,
 
   // {
   //   ...functionalDesignInteriorCOPY,

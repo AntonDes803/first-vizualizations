@@ -24,6 +24,8 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
     mainTextUk,
     mainTextEn,
     blocks,
+    mainImageSignature,
+    blocksImageSignature,
   } = data;
 
   const filteredCards = arrOfBlogs.filter((item) => item.slug !== data.slug);
@@ -39,11 +41,11 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
           text={dictionary.backBtnText}
         />
         <div className={styles.containerBlogId}>
-          <h2 className={styles.title}>
+          <h1 className={styles.title}>
             {lang === i18n.locales[0]
               ? titleUk.toUpperCase()
               : titleEn.toUpperCase()}
-          </h2>
+          </h1>
           <div className={styles.imgWrapper}>
             <Image
               className={styles.img}
@@ -53,23 +55,27 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
               fill={true}
             />
           </div>
+          {mainImageSignature.trim() !== "" && (
+            <p className={styles.text}>{lang === i18n.locales[0] ? mainImageSignature : mainImageSignature}</p>
+          )}
           <p className={styles.text}>
             {lang === i18n.locales[0] ? mainTextUk : mainTextEn}
           </p>
           <ul className={styles.list}>
             {blocks.map((block, index) => (
               <li key={index}>
-                <h3>
+                <h2>
                   {lang === i18n.locales[0]
                     ? block.subTitleUk
                     : block.subTitleEn}
-                </h3>
+                </h2>
                 <p>
                   {lang === i18n.locales[0]
                     ? block.descriptionUk
                     : block.descriptionEn}
                 </p>
                 {block.img && (
+                  <>
                   <div className={`${styles.imgWrapper} ${styles.blockImg}`}>
                     <Image
                       className={styles.img}
@@ -77,8 +83,13 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
                       alt={lang === i18n.locales[0] ? block.altUk : block.altEn}
                       sizes="(max-width: 767px) 90vw, (max-width: 1439px) 80vw, 792px"
                       fill={true}
+                      loading="lazy"
                     />
                   </div>
+                  {block.blocksImageSignature.trim() !== "" && (
+                    <p className={styles.text}>{lang === i18n.locales[0] ? block.blocksImageSignature : block.blocksImageSignature}</p>
+                  )}
+                  </>
                 )}
               </li>
             ))}
