@@ -1,20 +1,22 @@
 "use client";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { i18n } from "@/dictionaries/i18n.config";
 import styles from "./BackBtn.module.scss";
 
-const BackBtn = ({ customClass, text }) => {
-  const router = useRouter();
+const BackBtn = ({ linkCustomClass = "", iconCustomClass = "", white = false, href = "/blog", lang, text }) => {
+  const isDefaultLang = lang === i18n.defaultLocale;
+  const path = isDefaultLang ? href : `/${lang}${href}`;
+
+  const buttonClassName = white ? styles.buttonWhite : styles.button;
+  const arrowIconClassName = white ? styles.arrowIconWhite : styles.arrowIcon;
 
   return (
-    <button
-      className={`${styles.button} ${customClass}`}
-      onClick={() => router.back()}
-    >
-      <svg className={styles.arrowIcon}>
+    <Link href={path} className={`${buttonClassName} ${linkCustomClass}`}>
+      <svg className={`${arrowIconClassName} ${iconCustomClass}`}>
         <use href="/sprite.svg#icon-arrow_right" />
       </svg>
       {text}
-    </button>
+    </Link>
   );
 };
 
