@@ -5,7 +5,7 @@ export const ministerskyData = {
   categoryUk: apartmentsCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
   categoryEn: apartmentsCategoryData.categoryEn,
   mainImage:
-    "/images/projects/ministersky/common/design-ministersky-living-room-01.webp", // она же идет на портфолиоАйдиХеро
+    "/images/projects/ministersky/common/design-ministersky-living-room-05.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири в ЖК “Міністерський”",
   altEn: "Apartment design in the residential complex “Ministersky”",
   titleUk: "Дизайн квартири в ЖК “Міністерський”",
@@ -63,11 +63,11 @@ export const ministerskyData = {
           altUk: "Дизайн сучасної вітальні із одним стільцем",
           altEn: "Design of a modern living room with one chair",
         },
-        {
-          src: "/images/projects/ministersky/common/design-ministersky-living-room-03.webp",
-          altUk: "Дизайн сучасної вітальні із великим диваном в світлих тонах",
-          altEn: "Modern living room design with a large sofa in light colors",
-        },
+        // {
+        //   src: "/images/projects/ministersky/common/design-ministersky-living-room-03.webp",
+        //   altUk: "Дизайн сучасної вітальні із великим диваном в світлих тонах",
+        //   altEn: "Modern living room design with a large sofa in light colors",
+        // },
         {
           src: "/images/projects/ministersky/common/design-ministersky-living-room-04.webp",
           altUk:
@@ -167,13 +167,13 @@ export const ministerskyData = {
           altEn:
             "Premium design of a modern bedroom with a large bed and restrained decor",
         },
-        {
-          src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-03.webp",
-          altUk:
-            "Сучасна спальня з дерев'яним ліжком та світлим декором, преміум-класу та LED-підсвіткою на стелі",
-          altEn:
-            "Modern bedroom with a wooden bed and light decor, premium bedding and LED lighting on the ceiling",
-        },
+        // {
+        //   src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-03.webp",
+        //   altUk:
+        //     "Сучасна спальня з дерев'яним ліжком та світлим декором, преміум-класу та LED-підсвіткою на стелі",
+        //   altEn:
+        //     "Modern bedroom with a wooden bed and light decor, premium bedding and LED lighting on the ceiling",
+        // },
         {
           src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-04.webp",
           altUk: "Сучасна спальня з великим ліжком в світлому стилі",
@@ -189,6 +189,16 @@ export const ministerskyData = {
           src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-06.webp",
           altUk: "Візуалізація спальні з ліжком та робочим місцем",
           altEn: "Visualization of a bedroom with a bed and a workplace",
+        },
+        {
+          src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-second-floor-01.webp",
+          altUk: "Візуалізація спальні другого поверху в світлих тонах",
+          altEn: "Visualization of the second floor bedroom in light colors",
+        },
+        {
+          src: "/images/projects/ministersky/bedroom/design-ministersky-bedroom-second-floor-02.webp",
+          altUk: "Візуалізація спальні на другому поверсі в світлих тонах",
+          altEn: "Visualization of the bedroom on the second floor in light colors",
         },
         {
           src: "/images/projects/ministersky/corridor/design-ministersky-corridor-01.webp",

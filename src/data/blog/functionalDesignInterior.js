@@ -13,6 +13,7 @@ export const functionalDesignInterior = {
   cardTextEn:
     "Key points to help make your space comfortable and aesthetically pleasing...",
   creatingData: "18.04.2025",
+  mainImageSignature: "",
   mainTextUk:
     "Функціональний інтер’єр - це не просто красивий простір, а місце, яке підлаштовується під ваш стиль життя, потреби й звички. Якщо кожна деталь працює на комфорт, а дизайн допомагає, а не заважає, - вітаємо, у вас дійсно продуманий інтер’єр! Як цього досягти? Ось ключові принципи, що допоможуть створити простір, у якому вам буде зручно та затишно.",
   mainTextEn:
@@ -28,6 +29,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Мінімум зайвого",
@@ -39,6 +41,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Зручність та ергономіка",
@@ -50,6 +53,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Освітлення - ключовий елемент",
@@ -63,6 +67,7 @@ export const functionalDesignInterior = {
         "Сучасна спальня з дерев'яним ліжком і стриманим декором, преміум-класу",
       altEn:
         "Modern bedroom with a wooden bed and restrained decor, premium class",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Функціональні меблі",
@@ -74,6 +79,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Колір та матеріали",
@@ -85,6 +91,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Смарт-рішення",
@@ -96,6 +103,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
     {
       subTitleUk: "Персоналізація простору",
@@ -107,6 +115,7 @@ export const functionalDesignInterior = {
       img: "",
       altUk: "",
       altEn: "",
+      blocksImageSignature: "",
     },
   ],
 };

@@ -6,9 +6,10 @@ import { useForm, useController } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { orderFormSchema } from "@/yupSchemas/orderFormSchema";
 import SuccessContent from "./SuccessContent";
-import Checkboxes from "./Checkboxes";
+// import Checkboxes from "./Checkboxes";
 
 import styles from "./OrderForm.module.scss";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 const OrderForm = ({ dictionaryForm, dictionarySuccess }) => {
   const { closeModal } = useContext(SiteContext);
@@ -127,11 +128,12 @@ const OrderForm = ({ dictionaryForm, dictionarySuccess }) => {
             <p className={styles.error}>{errors.email?.message}</p>
           </div>
           <h4 className={styles.subTitle}>{dictionaryForm.subTitle}</h4>
-          <Checkboxes
+          {/* <Checkboxes
             field={field}
             boxValue={boxValue}
             setBoxValue={setBoxValue}
-          />
+          /> */}
+          <SocialLinks customClass={styles.customSocLinks} dark />
           <button
             type="submit"
             className={styles.submitBtn}

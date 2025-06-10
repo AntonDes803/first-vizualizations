@@ -6,13 +6,11 @@ export const useBlogCards = (data = []) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
-  const cardsToRender = Array(10).fill(arrOfBlogs).flat();
-
-  const totalItems = cardsToRender.length; //  замінити cardsToRender на arrOfBlogs
+  const totalItems = arrOfBlogs.length;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentCards = cardsToRender.slice(startIndex, endIndex); //  замінити cardsToRender на arrOfBlogs
+  const currentCards = arrOfBlogs.slice(startIndex, endIndex);
 
   useEffect(() => {
     const handleResize = () => {

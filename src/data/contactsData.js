@@ -3,9 +3,9 @@ export const contactsData = [
     name: "phone",
     type: "phone",
     // href: "tel:+380981085033",
-    href: "tel:+380636876176",
+    href: "tel:+380981085033",
     icon: "/sprite.svg#icon-phone",
-    contact: "+38 (063) 687-61-76",
+    contact: "+38 (098) 108-50-33",
   },
 
   {
@@ -19,14 +19,14 @@ export const contactsData = [
   {
     name: "instagram",
     type: "socialMedia",
-    href: "https://www.instagram.com/malov.design.kyiv",
+    href: "https://www.instagram.com/malov.and.partners.design",
     icon: "/sprite.svg#icon-instagram",
     contact: "@malov.design.kyiv",
   },
   {
     name: "viber",
     type: "socialMedia",
-    href: "viber://chat?number=%2B380636876176",
+    href: "viber://chat?number=%2B380981085033",
     icon: "/sprite.svg#icon-viber",
     contact: "Malov&Partners",
   },
@@ -34,17 +34,17 @@ export const contactsData = [
   {
     name: "telegram",
     type: "socialMedia",
-    href: "https://t.me/Volod_mirr",
+    href: "https://t.me/+380981085033",
     icon: "/sprite.svg#icon-telegram",
-    contact: "@Volod_mirr",
+    contact: "@MALOV&PARTNERS",
   },
 
   {
     name: "email",
     type: "email",
-    href: "mailto:vipstroy999@gmail.com",
+    href: "mailto:info@malov.design ",
     icon: "/sprite.svg#icon-email",
-    contact: "vipstroy999@gmail.com",
+    contact: "info@malov.design ",
   },
 ];
 
