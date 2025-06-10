@@ -1,28 +1,38 @@
 export const projectCategories = [
   {
     id: "all",
-    categoryUk: "Усі",
-    categoryEn: "All",
+    // categoryUk: "Усі",
+    // categoryEn: "All",
+    categoryUk: "усі",
+    categoryEn: "all",
   },
   {
     id: "apartment-design",
-    categoryUk: "Квартири",
-    categoryEn: "Apartments",
+    // categoryUk: "Квартири",
+    // categoryEn: "Apartments",
+    categoryUk: "квартири",
+    categoryEn: "apartments",
   },
   {
     id: "house-design",
-    categoryUk: "Будинки",
-    categoryEn: "Houses",
+    // categoryUk: "Будинки",
+    // categoryEn: "Houses",
+    categoryUk: "будинки",
+    categoryEn: "houses",
   },
   {
     id: "commercial-design",
-    categoryUk: "Комерція",
-    categoryEn: "Business",
+    // categoryUk: "Комерція",
+    // categoryEn: "Business",
+    categoryUk: "комерція",
+    categoryEn: "business",
   },
   {
     id: "architectural-design",
-    categoryUk: "Архітектура",
-    categoryEn: "Architecture",
+    // categoryUk: "Архітектура",
+    // categoryEn: "Architecture",
+    categoryUk: "архітектура",
+    categoryEn: "architecture",
   },
 ];
 

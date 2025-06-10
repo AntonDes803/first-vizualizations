@@ -25,7 +25,8 @@ const HomePortfolioCard = ({ lang, dictionary, data }) => {
         <CustomLink
           linkCustomClass={styles.customLink}
           iconCustomClass=""
-          href={portfolioHref}
+          // href={portfolioHref}
+          href={data.path}
           lang={lang}
           text={dictionary.cardLinkText}
         />
