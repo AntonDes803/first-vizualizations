@@ -38,6 +38,11 @@
     right: -15px;
     width: 24px;
     height: 24px;
+    &:hover,
+    &:focus {
+        scale: 1.4;
+
+    }
     @media screen and (min-width: variables.$tablet) {
         top: -25px;
         right: -14px;
@@ -132,6 +137,15 @@
 }
 
 // ----------------------  styles for checkboxes  --------------------------
+
+.customSocLinks{
+    justify-content: space-around;
+    margin: 0 auto 15px;
+    width: 184px;
+    @media screen and (min-width: variables.$desktop) {
+        margin: 0 auto 40px;
+    }
+}
 
 .subTitle {
     margin-bottom: 16px;
