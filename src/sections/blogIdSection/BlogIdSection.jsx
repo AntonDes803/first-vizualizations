@@ -34,7 +34,6 @@ const BlogIdSection = ({ lang, dictionary, data }) => {
     <section className={`section ${styles.section}`}>
       <div className="container">
         <BackBtn
-          customClass={styles.backBtnBlog}
           lang={lang}
           text={dictionary.backBtnText}
           href="/blog"
