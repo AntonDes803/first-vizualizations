@@ -6,18 +6,18 @@ export const alenasFlatData = {
   categoryEn: apartmentsCategoryData.categoryEn,
   mainImage:
     "/images/projects/alenas-flat/common/design-alenas-flat-living-room-01.webp", // она же идет на портфолиоАйдиХеро
-  altUk: "Дизайн квартири ЖК Парус “Balance”",
-  altEn: "Design of the apartment in Parus “Balance”",
-  titleUk: "Дизайн квартири в ЖК Парус “Balance”",
-  titleEn: "Apartment design in the residential complex Parus “Balance”",
+  altUk: "Дизайн квартири “Balance” в ЖК Парус",
+  altEn: "Apartment design “Balance” in Parus residential complex",
+  titleUk: "Дизайн квартири “Balance” в ЖК Парус",
+  titleEn: "Apartment design “Balance” in Parus residential complex",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
-  locationUk: "ЖК Парус “Balance”", // Центральний ЖК “Premium”
-  locationEn: "Residential complex Parus “Balance”",
+  locationUk: "Київ ЖК Парус", // Центральний ЖК “Premium”
+  locationEn: "Kyiv RC Parus",
   area: "122,58", // 49
   styleUk: "сучасний мінімалізм", // сучасний мінімалізм
   styleEn: "modern minimalism",
-  year: "2023", // 2024
+  year: "2021", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
 
@@ -25,7 +25,7 @@ export const alenasFlatData = {
   solutions: [
     {
       type: "floorPlan",
-      titleUk: "Облаштування квартири",
+      titleUk: "Перепланування квартири",
       titleEn: "Apartment arrangement",
       textsUk: [
         "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.",
@@ -62,11 +62,11 @@ export const alenasFlatData = {
       titleEn: "Visualization",
       textsUk: [
         "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
         "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
         {

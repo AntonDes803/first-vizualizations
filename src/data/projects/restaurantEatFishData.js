@@ -8,16 +8,16 @@ export const restaurantEatFishData = {
     "/images/projects/restaurant-eat-fish/common/design-restaurant-fish-front-view-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн Ресторану “Eat Fish” в Київській області",
   altEn: "Design of Eat Fish Restaurant in Kyiv region",
-  titleUk: "Дизайн проєкту ресторану Eat Fish",
-  titleEn: "Design of the Eat Fish restaurant project",
+  titleUk: "Архітектурний проєкт рибного ресторану “Eat Fish”",
+  titleEn: "Architectural project of the fish restaurant “Eat Fish”",
   typeUk: "Комерція", // Квартира Будинок Комерція Архітектура
   typeEn: "Business",
   locationUk: "Київська область, м. Чабани", // Центральний ЖК “Premium”
   locationEn: "Chabany, Kyiv region",
   area: "344,5", // 49
-  styleUk: "", // сучасний мінімалізм
-  styleEn: "",
-  year: "2025", // 2024
+  styleUk: "еклектика", // сучасний мінімалізм
+  styleEn: "eclectic",
+  year: "2024", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   panoramaTitleUk: "360 Панорама Ресторану",
@@ -104,11 +104,11 @@ export const restaurantEatFishData = {
       titleEn: "Visualization",
       textsUk: [
         "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
         "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
         {

@@ -7,16 +7,16 @@ export const kidsBedroomPurpleData = {
   mainImage: "/images/projects/kids-bedroom-purple/kids-bedroom-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Візуалізація дизайну дитячої кімнати",
   altEn: "Visualization of the children's room design",
-  titleUk: "Візуалізація дизайну дитячої кімнати в сучасному стилі",
-  titleEn: "Visualization of the design of a children's room in a modern style",
+  titleUk: "Дизайн дитячого блоку приміщень на мансардному поверсі приватного будинку",
+  titleEn: "Design of a children's block of rooms on the attic floor of a private house",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
-  locationUk: "", // Центральний ЖК “Premium”
-  locationEn: "",
-  area: "", // 49
-  styleUk: "сучасний", // сучасний мінімалізм
-  styleEn: "modern",
-  year: "2024", // 2024
+  locationUk: "Васильків", // Центральний ЖК “Premium”
+  locationEn: "Vasylkiv",
+  area: "53", // 49
+  styleUk: "сучасний мінімалізм “Контемпорарі”", // сучасний мінімалізм
+  styleEn: "Modern minimalism of “Contemporary”",
+  year: "2023", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   videoLink: "",
@@ -43,11 +43,11 @@ export const kidsBedroomPurpleData = {
       titleEn: "Visualization",
       textsUk: [
         "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
         "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
         {
