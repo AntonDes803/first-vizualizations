@@ -2,12 +2,18 @@ import Image from "next/image";
 import { i18n } from "@/dictionaries/i18n.config";
 import OrderButton from "../buttons/OrderButton/OrderButton";
 import styles from "./HomeServicesCard.module.scss";
+import Link from "next/link";
+import { servicesHref } from "@/data/navLinksData";
 
 const HomeServicesCard = ({ lang, data, dictionary }) => {
   // console.log("ServicesHomeCardData: ", data);
+
+  const isDefaultLang = lang === i18n.defaultLocale;
+  const path = isDefaultLang ? `${servicesHref}/${data.slug}` : `/${lang}${`${servicesHref}/${data.slug}`}`;
+
   return (
     <li className={styles.card}>
-      <div className={styles.imgWrapper}>
+      <Link className={styles.imgWrapper} href={path}>
         <Image
           className={styles.img}
           src={data.images[0]}
@@ -16,7 +22,7 @@ const HomeServicesCard = ({ lang, data, dictionary }) => {
           sizes="(max-width: 767px) 95vw, (max-width: 1439px) 42vw, 1200px"
           fill={true}
         />
-      </div>
+      </Link>
       <div className={styles.subTitleBox}>
         <h3 className={styles.subTitle}>
           {(lang === i18n.locales[0]
