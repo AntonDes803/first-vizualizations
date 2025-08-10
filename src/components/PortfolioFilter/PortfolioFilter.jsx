@@ -116,7 +116,7 @@ import styles from "./PortfolioFilter.module.scss";
 const PortfolioFilter = ({ lang, dictionary }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const categoryFromUrl = searchParams.get("category");
+  const categoryFromUrl = searchParams.get("category") || "all";
 
   const arrOfProjectCategoriesEn = projectCategories.map(
     (item) => item.categoryEn
@@ -137,7 +137,8 @@ const PortfolioFilter = ({ lang, dictionary }) => {
     const isCategoryInArr = arrOfProjectCategoriesEn.includes(categoryFromUrl);
     isCategoryInArr
       ? setFilteredCategoryEn(categoryFromUrl)
-      : router.replace("/portfolio?category=all");
+      // : router.replace("/portfolio?category=all");
+      : router.replace("/portfolio");
     // setFilteredCategoryEn(categoryFromUrl || defaultCategory);
   }, [categoryFromUrl]);
 

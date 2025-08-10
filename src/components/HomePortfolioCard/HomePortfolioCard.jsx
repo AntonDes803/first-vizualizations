@@ -3,11 +3,16 @@ import { i18n } from "@/dictionaries/i18n.config";
 import CustomLink from "../CustomLink/CustomLink";
 import { portfolioHref } from "@/data/navLinksData";
 import styles from "./HomePortfolioCard.module.scss";
+import Link from "next/link";
 
 const HomePortfolioCard = ({ lang, dictionary, data }) => {
+  
+  const isDefaultLang = lang === i18n.defaultLocale;
+  const path = isDefaultLang ? data.path : `/${lang}${data.path}`;
+  
   return (
     <li className={styles.card}>
-      <div className={styles.imgWrapper}>
+      <Link className={styles.imgWrapper} href={path}>
         <Image
           className={styles.img}
           src={data.image}
@@ -16,7 +21,7 @@ const HomePortfolioCard = ({ lang, dictionary, data }) => {
           sizes="(max-width: 767px) 95vw, (max-width: 1439px) 30vw, 1200px"
           fill={true}
         />
-      </div>
+      </Link>
 
       <div className={styles.cardTitleAndLinkWrapper}>
         <p className={styles.cardTitle}>
