@@ -14,9 +14,9 @@ export const svitloParkFirst = {
     locationUk: "ЖК “SVITLO PARK”", // Центральний ЖК “Premium”
     locationEn: "RESIDENTIAL COMPLEX “SVITLO PARK”",
     area: "49,70", // 49
-    styleUk: "сучасний мінімалізм", // сучасний мінімалізм
-    styleEn: "modern minimalism",
-    year: "2024", // 2024
+    styleUk: "сучасний мінімалізм “Контемпорарі”", // сучасний мінімалізм
+    styleEn: "Modern minimalism of “Contemporary”",
+    year: "2021", // 2024
   
     // all arguments before this are for portfolioPage, and all after - will be for idPage
     videoLink: "",
@@ -26,12 +26,12 @@ export const svitloParkFirst = {
         titleUk: "Перепланування квартири",
         titleEn: "Apartment remodeling",
         textsUk: [
-            "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.", 
-            "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність і відповідає потребам власника.",
+            "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним та гармонійним.", 
+            "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність і відповідає потребам власника. У цьому проєкті всі елементи меблювання та декору були обрані з асортименту IKEA - для створення лаконічного, доступного й водночас стильного інтер’єру.",
         ],
           textsEn: [
-            "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient as possible.",
-            "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner.",
+            "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient and harmonious as possible.",
+            "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner. In this project, all the furniture and decor elements were chosen from the IKEA assortment to create a laconic, affordable, and at the same time stylish interior.",
             ],
         images: [
             { src: "/images/projects/svitlo-park-first/floor-plan/design-svitlo-park-first-floor-plan-before.webp",
@@ -75,11 +75,11 @@ export const svitloParkFirst = {
         titleEn: "Visualization",
         textsUk: [
           "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.", 
-          "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+          "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
         ],
         textsEn: [
           "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.", 
-          "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+          "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
         ],
         images: [
           { 

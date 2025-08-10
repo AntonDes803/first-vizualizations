@@ -16,7 +16,7 @@ export const svitloPark = {
   area: "40,05", // 49
   styleUk: "сучасний мінімалізм", // сучасний мінімалізм
   styleEn: "modern minimalism",
-  year: "2023", // 2024
+  year: "2021", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   videoLink: "",
@@ -77,11 +77,11 @@ export const svitloPark = {
         titleEn: "Visualization",
         textsUk: [
           "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.", 
-          "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+          "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
         ],
         textsEn: [
           "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.", 
-          "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+          "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
         ],
       images: [
         { 

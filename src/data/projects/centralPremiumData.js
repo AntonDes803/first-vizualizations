@@ -12,12 +12,12 @@ export const centralPremiumData = {
   titleEn: "Design of an apartment in the Central residential complex “Premium” Relaxation",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
-  locationUk: "Центральний ЖК “Premium”", // Центральний ЖК “Premium”
-  locationEn: "Central residential complex “Premium”",
+  locationUk: "ЖК “Центральний Premium”", // Центральний ЖК “Premium”
+  locationEn: "RC “Central Premium”",
   area: "49,6", // 49
-  styleUk: "сучасний мінімалізм", // сучасний мінімалізм
-  styleEn: "modern minimalism",
-  year: "2024", // 2024
+  styleUk: "сучасний мінімалізм “Контемпорарі”", // сучасний мінімалізм
+  styleEn: "Modern minimalism of “Contemporary”",
+  year: "2021", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   panoramaTitleUk: "360 Панорама Квартири",
@@ -84,11 +84,11 @@ export const centralPremiumData = {
       titleEn: "Visualization",
       textsUk: [
         "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
         "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
         {

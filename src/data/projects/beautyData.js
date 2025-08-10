@@ -7,15 +7,15 @@ export const beautyData = {
   mainImage: "/images/projects/beauty/common/design-beauty-salon-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Салон краси ELEGANTE STYLE в ЖК “Premium”",
   altEn: "Beauty salon ELEGANTE STYLE in the residential complex “Premium”",
-  titleUk: "Дизайн салону краси ELEGANTE STYLE в ЖК “Premium”",
-  titleEn: "Design of the beauty salon ELEGANTE STYLE in the residential complex “Premium”",
+  titleUk: "Дизайн салону краси “ELEGANTE STYLE” в ЖК “Центральний Premium”",
+  titleEn: "Design of the beauty salon “ELEGANTE STYLE” in the residential complex “Central Premium”",
   typeUk: "Комерція", // Квартира Будинок Комерція Архітектура
   typeEn: "Business",
-  locationUk: "Центральний ЖК “Premium”", // Центральний ЖК “Premium”
-  locationEn: "Central residential complex “Premium” Relaxation",
+  locationUk: "Ірпінь, ЖК “Центральний Premium”", // Центральний ЖК “Premium”
+  locationEn: "Irpin, RC “Central Premium”",
   area: "51", // 49
-  styleUk: "елегантний стиль", // сучасний мінімалізм
-  styleEn: "elegant style",
+  styleUk: "неокласика", // сучасний мінімалізм
+  styleEn: "neoclassical",
   year: "2024", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
@@ -61,11 +61,11 @@ export const beautyData = {
       titleEn: "Visualization",
       textsUk: [
         "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
         "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
         {

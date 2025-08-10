@@ -14,10 +14,10 @@ export const architecturalData = {
   typeEn: "Architecture",
   locationUk: "Україна", // Центральний ЖК “Premium”
   locationEn: "Ukraine",
-  area: "", // 49
-  styleUk: "сучасний мінімалізм", // сучасний мінімалізм
-  styleEn: "modern minimalism",
-  year: "2025", // 2024
+  area: "85", // 49
+  styleUk: "скандинавський мінімалізм", // сучасний мінімалізм
+  styleEn: "scandinavian minimalism",
+  year: "2023", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   videoLink: "",
@@ -43,12 +43,12 @@ export const architecturalData = {
       titleUk: "Візуалізація",
       titleEn: "Visualization",
       textsUk: [
-        "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "Кожен наш проєкт оживає ще на етапі розробки - деталізовані 3D-візуалізації передають майбутню атмосферу, гру світла й відтінків, пропорції та стиль простору.",
+        "Фотореалістичні рендери дозволяють “зазирнути” в інтер’єр чи екстер’єр до початку будівництва: побачити, як виглядатиме дім у стилі скандинавського мінімалізму під Києвом, затишне бістро в Карпатах чи просторий котедж серед південних степів.",
       ],
       textsEn: [
-        "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "Each of our projects comes to life at the development stage - detailed 3D visualizations convey the future atmosphere, play of light and shades, proportions and style of the space.",
+        "Photorealistic renders allow you to “look into” the interior or exterior before construction begins: to see what a Scandinavian minimalist house near Kyiv, a cozy bistro in the Carpathians, or a spacious cottage in the southern steppes will look like.",
       ],
       images: [
         {

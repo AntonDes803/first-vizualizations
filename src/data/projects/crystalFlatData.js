@@ -7,16 +7,16 @@ export const crystalFlatData = {
   mainImage: "/images/projects/crystal-flat/common/design-crystal-flat-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн квартири ЖК “Crystal Flat”",
   altEn: "Design of the apartment in “Crystal Flat”",
-  titleUk: "Дизайн квартири в ЖК “Crystal Flat”",
-  titleEn: "Apartment design in Crystal Flat",
+  titleUk: "Дизайн квартири “Crystal Flat”",
+  titleEn: "Design apartments “Crystal Flat”",
   typeUk: "Квартира", // Квартира Будинок Комерція Архітектура
   typeEn: "Apartment",
-  locationUk: "м. Київ", // Центральний ЖК “Premium”
-  locationEn: "Kyiv",
+  locationUk: "Київ, ЖК “Парус”", // Центральний ЖК “Premium”
+  locationEn: "Kyiv, RC Parus",
   area: "103", // 49
-  styleUk: "сучасний", // сучасний мінімалізм
-  styleEn: "modern",
-  year: "2020", // 2024
+  styleUk: "неокласика з елементами мінімалізм", // сучасний мінімалізм
+  styleEn: "neoclassical with elements of minimalism",
+  year: "2019", // 2024
 
   // all arguments before this are for portfolioPage, and all after - will be for idPage
   videoLink: "",
@@ -26,12 +26,12 @@ export const crystalFlatData = {
       titleUk: "Облаштування квартири",
       titleEn: "Apartment arrangement",
       textsUk: [
-        "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.",
-        "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність та відповідає потребам власника.",
+        "Ми перетворили кожен квадратний метр на продуману функціональну зону. Тут є все для комфортного сімейного життя: гардеробні в спальні та дитячій, технічна кімната зі зручними місцями зберігання, а також два повноцінні санвузли.",
+        "Центром квартири стала простора кухня-студія - місце, де збирається вся сім’я. Планування створене так, щоб рухатися було легко, а кожна зона “працювала” на зручність та стиль.",
       ],
       textsEn: [
-        "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient as possible.",
-        "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner.",
+        "We turned every square meter into a well-thought-out functional area. There is everything for a comfortable family life: dressing rooms in the bedroom and children's room, a technical room with convenient storage space, and two full bathrooms.",
+        "The center of the apartment is a spacious studio kitchen - a place where the whole family gathers. The layout is designed so that it is easy to move around, and each zone “works” for convenience and style.",
       ],
       images: [
         {
@@ -54,12 +54,12 @@ export const crystalFlatData = {
       titleUk: "Візуалізація",
       titleEn: "Visualization",
       textsUk: [
-        "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
-        "Фотореалістичні 2D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
+        "За допомогою 3D-візуалізацій клієнти одразу відчули майбутню атмосферу: спокійні пастельні тони, м’яке світло, кремовий паркет та благородний керамограніт з текстурою оніксу.",
+        "Фотореалістичні зображення дозволили заздалегідь “прогулятися” майбутнім інтер’єром і побачити, як авторські меблі студії ідеально вписуються в гармонійний простір.",
       ],
       textsEn: [
-        "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
-        "Photorealistic 2D visualizations make it possible to see how the interior will look like even before the implementation begins.",
+        "With the help of 3D visualizations, the clients immediately felt the future atmosphere: calm pastel colors, soft light, creamy parquet and noble porcelain stoneware with onyx texture.",
+        "Photorealistic images allowed us to ‘walk’ through the future interior in advance and see how the studio's designer furniture fits perfectly into the harmonious space.",
       ],
       images: [
         {
