@@ -23,14 +23,14 @@ export const crystalFlatData = {
   solutions: [
     {
       type: "floorPlan",
-      titleUk: "Облаштування квартири",
-      titleEn: "Apartment arrangement",
+      titleUk: "Перепланування квартири",
+      titleEn: "Apartment remodeling",
       textsUk: [
-        "Ми перетворили кожен квадратний метр на продуману функціональну зону. Тут є все для комфортного сімейного життя: гардеробні в спальні та дитячій, технічна кімната зі зручними місцями зберігання, а також два повноцінні санвузли.",
+        "Замовники молода пара з дитиною звернулись до нашої студії з проханням розробити дизайн проект з переплануванням. Головним завданням при проектуванні було поєднання спальної кімнати з гардеробом, окремий великий гардероб, окрема кімната для дитини та великий об'єднаний простір з кухні, столової та вітальні. Нашим спеціалістам вдалось інтегрувати всі побажання клієнта зі збереженням простору в даній квартирі.",
         "Центром квартири стала простора кухня-студія - місце, де збирається вся сім’я. Планування створене так, щоб рухатися було легко, а кожна зона “працювала” на зручність та стиль.",
       ],
       textsEn: [
-        "We turned every square meter into a well-thought-out functional area. There is everything for a comfortable family life: dressing rooms in the bedroom and children's room, a technical room with convenient storage space, and two full bathrooms.",
+        "The clients, a young couple with a child, approached our studio with a request to develop a redesign project. The main task in the design was to combine the bedroom with a wardrobe, a separate large wardrobe, a separate room for the child, and a large combined space with a kitchen, dining room, and living room. Our specialists managed to integrate all the client's wishes while preserving the space in this apartment.",
         "The center of the apartment is a spacious studio kitchen - a place where the whole family gathers. The layout is designed so that it is easy to move around, and each zone “works” for convenience and style.",
       ],
       images: [
