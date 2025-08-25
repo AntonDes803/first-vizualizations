@@ -25,14 +25,14 @@ export const alenasFlatData = {
   solutions: [
     {
       type: "floorPlan",
-      titleUk: "Перепланування квартири",
-      titleEn: "Apartment arrangement",
+      titleUk: "Планувальне рішення",
+      titleEn: "Planning solution",
       textsUk: [
-        "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.",
+        "В даному проекті метою замовника було максимально ефективно використати простір даної квартири і розмістити дві кухонні зони для двох власників, також були враховані побажання щодо збільшення міць для зберігання речей.",
         "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність та відповідає потребам власника.",
       ],
       textsEn: [
-        "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient as possible.",
+        "In this project, the client's goal was to make the most efficient use of the apartment's space and to accommodate two kitchen areas for two owners. Requests for increased storage space were also taken into account.",
         "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner.",
       ],
       images: [
@@ -61,11 +61,11 @@ export const alenasFlatData = {
       titleUk: "Візуалізація",
       titleEn: "Visualization",
       textsUk: [
-        "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
+        "Стилістичний напрям візуалізації в даній квартирі  був зумовлений вподобанням замовником поєднання пастельних кольорів, східних мотивів та сучасного мінімалізму в інтер'єрі.",
         "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
-        "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
+        "The stylistic direction of visualization in this apartment was determined by the customer's preference for a combination of pastel colors, oriental motifs, and modern minimalism in the interior.",
         "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [

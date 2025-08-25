@@ -38,11 +38,11 @@ export const centralPremiumData = {
       titleUk: "Перепланування квартири",
       titleEn: "Apartment remodeling",
       textsUk: [
-        "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.",
+        "Замовники звернулись до нашої студії з проханням розробити дизайн квартири для молодої подружньої пари з двома гардеробами і повноцінним санвузлом з окремо розміщеною ванною. Наші спеціалісти вдало поєднали побажання клієнта та ергономічно об'єднали спальню кімнату з гардеробом та окремим гардеробом з входом з коридору.",
         "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність і відповідає потребам власника.",
       ],
       textsEn: [
-        "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient as possible.",
+        "The clients approached our studio with a request to develop a design for an apartment for a young married couple with two wardrobes and a full bathroom with a separate bathtub. Our specialists successfully combined the client's wishes and ergonomically combined the bedroom with a wardrobe and a separate wardrobe with an entrance from the corridor.",
         "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner.",
       ],
       images: [

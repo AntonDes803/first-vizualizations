@@ -23,15 +23,15 @@ export const beautyData = {
   solutions: [
     {
       type: "floorPlan",
-      titleUk: "Облаштування салону краси",
-      titleEn: "Beauty salon arrangement",
+      titleUk: "Планувальне рішення",
+      titleEn: "Planning solution",
       textsUk: [
-        "Функціональність простору - наш головний пріоритет. Ми ретельно аналізуємо кожен квадратний метр, щоб зробити його максимально ефективним.",
-        "Завдяки розумному підходу перепланування забезпечує зручність, ергономічність та відповідає потребам власника.",
+        "Головним заданням від замовника, при розробленні даного проекту було в не великому приміщенні розмістити сучасний салон краси, який складається з вхідної групи з рецепцією та місцем очікування клієнтів, двох повноцінних робочих місць для перукарів з дзеркалами, колор бару для підготовки до фарбування волосся, робоче місце для майстра з манікюру, окремий кабінет косметолога з повноцінним ліжком для процедур та розміщення апаратури, не великий але зручний санвузол, роздягальня для прцівників салону.",
+        "Враховуючи всі побажання замовника спеціалісти нашої студії знайшли ергономічний вихід для зручного поєднання цих примішень в одному ансамблі під назвою “ELEGANTE STYLE”.",
       ],
       textsEn: [
-        "The functionality of the space is our top priority. We carefully analyze every square meter to make it as efficient as possible.",
-        "Thanks to a smart approach, the redevelopment provides convenience, ergonomics and meets the needs of the owner.",
+        "The main task from the customer when developing this project was to place a modern beauty salon in a small space, consisting of an entrance area with a reception desk and a waiting area for customers, two full-fledged workplaces for hairdressers with mirrors, a color bar for preparing hair coloring, a workplace for a manicurist, a separate cosmetologist's office with a full-size bed for procedures and equipment, a small but comfortable bathroom, and a changing room for salon employees.",
+        "Taking into account all the customer's wishes, our studio's specialists found an ergonomic solution for a convenient combination of these premises in one ensemble called “ELEGANTE STYLE”.",
       ],
       images: [
         {
@@ -60,11 +60,11 @@ export const beautyData = {
       titleUk: "Візуалізація",
       titleEn: "Visualization",
       textsUk: [
-        "Завдяки деталізованій візуалізації клієнт отримує чітке розуміння майбутнього простору та його атмосфери.",
+        "Розробивши планувальне рішення з великою кількістю зон та приміщень при не великій квадратурі  наша команда при створені стилістичної концепції стикнулась з задачею візуального розширення простору. Обравши неокласичний стиль в інтер'єрі та поєднання світлих та темних відтінків з використанням штучного каменю та металевих елементів нам вдалось отримати бажаний результат компактного, але сучасного та стильного салону краси.",
         "Фотореалістичні 3D-візуалізації дають можливість побачити, як виглядатиме інтер’єр ще до початку реалізації.",
       ],
       textsEn: [
-        "Thanks to detailed visualization, the client gets a clear understanding of the future space and its atmosphere.",
+        "Having developed a layout solution with a large number of zones and rooms in a small space, our team faced the task of visually expanding the space when creating the stylistic concept. By choosing a neoclassical style for the interior and combining light and dark shades with the use of artificial stone and metal elements, we managed to achieve the desired result of a compact but modern and stylish beauty salon.",
         "Photorealistic 3D visualizations make it possible to see how the interior will look like even before the implementation begins.",
       ],
       images: [
