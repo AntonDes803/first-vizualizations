@@ -1,17 +1,17 @@
-import { businessCategoryData } from "../projectCategories";
+import { architectureCategoryData } from "../projectCategories";
 
 export const restaurantEatFishData = {
   slug: "restaurant-eat-fish",
-  categoryUk: businessCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
-  categoryEn: businessCategoryData.categoryEn,
+  categoryUk: architectureCategoryData.categoryUk, // Квартири Будинки Комерція Архітектура
+  categoryEn: architectureCategoryData.categoryEn,
   mainImage:
     "/images/projects/restaurant-eat-fish/common/design-restaurant-fish-front-view-01.webp", // она же идет на портфолиоАйдиХеро
   altUk: "Дизайн Ресторану “Eat Fish” в Київській області",
   altEn: "Design of Eat Fish Restaurant in Kyiv region",
   titleUk: "Архітектурний проєкт рибного ресторану “Eat Fish”",
   titleEn: "Architectural project of the fish restaurant “Eat Fish”",
-  typeUk: "Комерція", // Квартира Будинок Комерція Архітектура
-  typeEn: "Business",
+  typeUk: "Архітектура", // Квартира Будинок Комерція Архітектура
+  typeEn: "Architecture",
   locationUk: "Київська область, м. Чабани", // Центральний ЖК “Premium”
   locationEn: "Chabany, Kyiv region",
   area: "344,5", // 49
